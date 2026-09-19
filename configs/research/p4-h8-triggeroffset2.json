@@ -1,0 +1,39 @@
+{
+  "fees": {
+    "binance": {
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "bybit": {
+      "TakerFee": 0.00055,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "okx": {
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "bitget": {
+      "TakerFee": 0.0006,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "gate": {
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "kucoin": {
+      "TakerFee": 0.0006,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    }
+  },
+  "data": {
+    "lowCapSymbol": "DOGEUSDT"
+  },
+  "seed": 1,
+  "TriggerOffset": 2
+}

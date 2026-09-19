@@ -28,7 +28,7 @@ BEFORE WRITING: GROUND THE PLAN IN THE REAL CODEBASE
    already implemented; verify it via `wsr data fetch --help` / `--dry-run` rather than filing tickets for it,
    and do not propose REST or websocket ingestion of historical trades.
 2. Estimate compute cost per experiment from spec §10 (a 13-month ETHUSDT cell ≈ 5 min/worker; the 1 296-cell
-   grid ≈ 7 h on 16 workers) and from the machine actually available (`os.availableParallelism()`, RAM, disk).
+   grid ≈ 7 h on 16 workers) and from the machine actually available (`os.availableParallelism()`, RAM, disk) - see the terraform infrastructure configuration for this, read infra/oci/README.md, also you can also connect to OCI infrastructure to get the needed information.
    The ETHUSDT figure is the spec's benchmark only: ETH and BTC are excluded from the research universe, so
    scale the estimate by each selected symbol's measured event count.
    The plan must be affordable: the expensive grid is run only where cheap tests have earned it.

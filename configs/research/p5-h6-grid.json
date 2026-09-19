@@ -1,0 +1,91 @@
+{
+  "fees": {
+    "binance": {
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "bybit": {
+      "TakerFee": 0.00055,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "okx": {
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "bitget": {
+      "TakerFee": 0.0006,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "gate": {
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    },
+    "kucoin": {
+      "TakerFee": 0.0006,
+      "MakerFee": 0.0002,
+      "verifiedAt": "2026-09-19"
+    }
+  },
+  "data": {
+    "lowCapSymbol": "DOGEUSDT"
+  },
+  "seed": 1,
+  "search": {
+    "grid": {
+      "PivotMult": [
+        0.8,
+        1.2,
+        2
+      ],
+      "BandWidthMult": [
+        0.3,
+        0.5,
+        0.8
+      ],
+      "MinSpikeSize": [
+        1,
+        1.5,
+        2,
+        3
+      ],
+      "minStrengthPassRate": [
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "MinSweepMult": [
+        0.3,
+        0.5,
+        1
+      ],
+      "BreakoutMult": [
+        1.5,
+        2.5,
+        4
+      ]
+    },
+    "targetGrid": {
+      "TargetMult": [
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3,
+        4
+      ],
+      "StopMult": [
+        0.75,
+        1,
+        1.25,
+        1.5
+      ]
+    }
+  }
+}
