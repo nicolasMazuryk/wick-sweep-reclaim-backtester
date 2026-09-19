@@ -6,3 +6,8 @@ runs/
 /data/
 .DS_Store
 coverage/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.tfplan

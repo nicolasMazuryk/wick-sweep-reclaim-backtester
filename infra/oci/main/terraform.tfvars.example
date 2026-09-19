@@ -1,0 +1,10 @@
+# cp terraform.tfvars.example terraform.tfvars  (gitignored)
+tenancy_ocid      = "ocid1.tenancy.oc1..xxxx"
+ssh_allowed_cidrs = ["203.0.113.7/32"] # curl -4 -s https://ifconfig.me
+alert_email       = "you@example.com"
+
+# ssh_public_key_path       = "~/.ssh/wsr_oci.pub"
+# availability_domain_index = 1   # AD-2 if AD-1 is out of A1 capacity
+# ocpus                     = 4   # scripts/burst.sh overrides these
+# memory_gbs                = 24
+# shape                     = "VM.Standard.E5.Flex" # burst fallback; recreates the VM

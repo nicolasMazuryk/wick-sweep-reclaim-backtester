@@ -1,0 +1,24 @@
+#cloud-config
+# Rendered by compute.tf. Changes here do not recreate the VM (ignore_changes);
+# re-run /usr/local/sbin/wsr-bootstrap over ssh instead.
+write_files:
+  - path: /etc/wsr/wsr.env
+    permissions: "0644"
+    content: |
+      WSR_REGION=${region}
+      WSR_NAMESPACE=${namespace}
+      WSR_RESULTS_BUCKET=${results_bucket}
+      WSR_REPO_SSH_URL=${repo_ssh_url}
+      WSR_DATA_DEVICE=${data_device_path}
+      WSR_MOUNT=/mnt/wsr
+  - path: /usr/local/sbin/wsr-bootstrap
+    permissions: "0755"
+    encoding: b64
+    content: ${base64encode(bootstrap_sh)}
+  - path: /usr/local/bin/wsr-sync-results
+    permissions: "0755"
+    encoding: b64
+    content: ${base64encode(sync_results_sh)}
+
+runcmd:
+  - [bash, -o, pipefail, -c, "/usr/local/sbin/wsr-bootstrap 2>&1 | tee -a /var/log/wsr-bootstrap.log"]
