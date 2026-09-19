@@ -1,1 +1,8 @@
 prompts
+node_modules
+dist
+runs/
+*.tsbuildinfo
+/data/
+.DS_Store
+coverage/

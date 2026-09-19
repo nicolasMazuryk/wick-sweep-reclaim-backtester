@@ -1,0 +1,15 @@
+{
+  "fees": {
+    "binance": { "TakerFee": 0, "MakerFee": 0, "verifiedAt": "e2e-fixture" },
+    "bybit": { "TakerFee": 0, "MakerFee": 0, "verifiedAt": "e2e-fixture" },
+    "okx": { "TakerFee": 0, "MakerFee": 0, "verifiedAt": "e2e-fixture" },
+    "bitget": { "TakerFee": 0, "MakerFee": 0, "verifiedAt": "e2e-fixture" },
+    "gate": { "TakerFee": 0, "MakerFee": 0, "verifiedAt": "e2e-fixture" },
+    "kucoin": { "TakerFee": 0, "MakerFee": 0, "verifiedAt": "e2e-fixture" }
+  },
+  "data": { "lowCapSymbol": "DOGEUSDT" },
+  "strengthModel": "stageB",
+  "MinSweepMult": 0.3,
+  "BreakoutMult": 4,
+  "seed": 1
+}

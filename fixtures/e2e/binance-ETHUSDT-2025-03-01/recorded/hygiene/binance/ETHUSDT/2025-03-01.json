@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "venue": "binance",
+  "symbol": "ETHUSDT",
+  "day": "2025-03-01",
+  "rowsRaw": 4872005,
+  "rowsMerged": 1050997,
+  "duplicateTradeIds": {
+    "count": 0,
+    "sample": []
+  },
+  "nonMonotoneTimestamps": 0,
+  "gaps": [],
+  "tickSizeChange": {
+    "detected": false
+  },
+  "badPrints": {
+    "count": 0,
+    "sample": []
+  },
+  "aggregatedFeed": false,
+  "mergeStats": {
+    "meanN": 4.635603146345803,
+    "maxN": 371
+  },
+  "midnightSplit": false,
+  "fundingMissing": [],
+  "checksumFailed": false,
+  "suspect": false,
+  "blacklist": []
+}

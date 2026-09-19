@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "name": "binance-ETHUSDT-2025-03-01",
+  "venue": "binance",
+  "symbol": "ETHUSDT",
+  "recorded": ["2025-03-01"],
+  "syntheticFrom": "2025-02-20",
+  "span": { "from": "2025-02-28", "to": "2025-03-01" },
+  "folds": "1,1,1",
+  "seed": 1,
+  "bootstrap": 200,
+  "minPrintIntervalMs": 1000,
+  "createdAt": "2026-09-19T00:00:00.000Z",
+  "gitCommit": "e2e-fixture",
+  "wsrVersion": "e2e-fixture"
+}

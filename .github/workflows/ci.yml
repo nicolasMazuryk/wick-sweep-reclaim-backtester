@@ -1,0 +1,96 @@
+# Spec §2 (package layout: dependency violations fail CI), §8 (truncation
+# property, runtime invariants, determinism), §10 (bench regression).
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # No `engines` field in package.json; Node 22 LTS.
+  NODE_VERSION: '22'
+  PNPM_VERSION: '10'
+
+jobs:
+  # Each job installs and builds on its own: `tsc -b` is cheap and independent
+  # jobs avoid artifact plumbing for packages/*/dist.
+  lint:
+    name: build + lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # eslint exits non-zero on any error: `import/no-restricted-paths`
+      # (dependency direction, Spec §2) and the wsr/* rules fail CI.
+      - run: pnpm lint
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # Includes the e2e fixture run-twice byte-identical check (Spec §8);
+      # fails below @wsr/core ≥ 90 % lines (Spec §12.2, vitest.config.ts).
+      - run: pnpm test:coverage
+
+  property:
+    name: property tests (200 runs)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # Truncation property 200 paths × 20 cuts, L9/L12 invariants (Spec §8).
+      - run: pnpm test:property
+        env:
+          WSR_PROPERTY_RUNS: '200'
+
+  bench:
+    name: bench regression
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # `wsr bench --baseline` exits 2 only when throughput < 80 % of
+      # benchmarks/baseline.json (Spec §10 "CI fails if throughput drops
+      # > 20 %"); absolute-target misses print WARN and exit 0. The baseline
+      # is hardware-specific: refresh it on the runner class with
+      # `pnpm bench --update-baseline`.
+      - run: pnpm bench

@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/data" },
+    { "path": "packages/backtest" },
+    { "path": "packages/cli" }
+  ]
+}

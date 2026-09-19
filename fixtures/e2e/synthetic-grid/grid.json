@@ -1,0 +1,2313 @@
+{
+  "runManifest": {
+    "config": {
+      "AgeScale": 240,
+      "AnchorWindow": 20,
+      "ArmDistance": 0.5,
+      "ArmMode": "RestEarly",
+      "BandWidthMult": 0.5,
+      "BreakoutMult": 4,
+      "DailyLossLimit": 3,
+      "DistanceScale": 5,
+      "FillWindow": 100,
+      "MaxAge": 720,
+      "MaxHold": 4,
+      "MaxPending": 4,
+      "MaxSpikeDuration": 3,
+      "MaxSweeps": 3,
+      "MaxTopDwell": 0.5,
+      "MaxUses": 1,
+      "MergeTolerance": 0.25,
+      "MinRejectImbalance": 0.2,
+      "MinRejectSpeed": 0.5,
+      "MinRetrace": 0.6,
+      "MinReturnSpeed": 0.3,
+      "MinSpikeSize": 1.5,
+      "MinSweepMult": 0.3,
+      "PivotMult": 1.2,
+      "RankWindow": 500,
+      "RetraceWindow": 5,
+      "RiskFraction": 0.0025,
+      "SlipCoef": 0.05,
+      "SlipTicks": 1,
+      "StopMult": 1,
+      "StopOffset": 1,
+      "TargetMult": 2,
+      "TargetUnits": 2,
+      "TopBandMult": 0.15,
+      "TriggerOffset": 0,
+      "UnitWindow": 60,
+      "ageClock": "volume",
+      "blacklistFunding": false,
+      "blacklistMacroReleases": false,
+      "counterTrendBlock": false,
+      "data": {
+        "lowCapSymbol": "DOGEUSDT"
+      },
+      "equity": 100000,
+      "exchangeLatencyMs": 30,
+      "fees": {
+        "binance": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bitget": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bybit": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "gate": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "kucoin": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "okx": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        }
+      },
+      "latencyMs": 150,
+      "minExtremePrintQtyPct": false,
+      "minStrengthPassRate": 0.4,
+      "search": {
+        "grid": {
+          "BandWidthMult": [
+            0.5
+          ],
+          "BreakoutMult": [
+            4
+          ],
+          "MinSpikeSize": [
+            1.5
+          ],
+          "MinSweepMult": [
+            0.3,
+            0.5
+          ],
+          "PivotMult": [
+            1.2
+          ],
+          "minStrengthPassRate": [
+            0.3,
+            0.4,
+            0.5,
+            0.6
+          ]
+        },
+        "targetGrid": {
+          "StopMult": [],
+          "TargetMult": []
+        }
+      },
+      "seed": 1,
+      "stageB": {
+        "lambda": 1
+      },
+      "stopMode": "client",
+      "strengthModel": "stageA",
+      "targetMode": "sweepDepth",
+      "timeStop": false
+    },
+    "configHash": "f74b156818744fda66b1327268bae305ea0542733478b802cd758271b033eb8a",
+    "createdAt": "2026-09-19T00:00:00.000Z",
+    "dataChecksums": [
+      {
+        "day": "2025-01-01",
+        "sha256Merged": "5b500910f9c4f001c7f808279714bad3d91600490f6122537032220074d91a3a"
+      },
+      {
+        "day": "2025-01-02",
+        "sha256Merged": "f3e7f94230fc911549d2de82ad9468809d102f54d1b662c3ff46ab47d6e66a50"
+      },
+      {
+        "day": "2025-01-03",
+        "sha256Merged": "2e54d71b83bd38f9de9406aadcd58cde4552403a977f918999bcba604ddea2c9"
+      },
+      {
+        "day": "2025-01-04",
+        "sha256Merged": "5daaee0e45018aa5005db7bd4a6e6eead5e7732b053a94c112f8bf430f0ca2a6"
+      },
+      {
+        "day": "2025-01-05",
+        "sha256Merged": "60d099e5c374abebef866e8e8281653e958af89af131ebf937c97b28d4948f5e"
+      },
+      {
+        "day": "2025-01-06",
+        "sha256Merged": "924eb05ed8b50e026e8f50a82c1a821a152200cada6ea1a6570ffb2734664093"
+      },
+      {
+        "day": "2025-01-07",
+        "sha256Merged": "d2ae25d33c34379f68eeff5ccfde935cc4471da265b4b39bb7bb4f3fa4303be7"
+      },
+      {
+        "day": "2025-01-08",
+        "sha256Merged": "278fe29016e0910862a828e8be24e7bec9f7177edd6184541fa2127a32245d16"
+      },
+      {
+        "day": "2025-01-09",
+        "sha256Merged": "745370b18d4ed18554d221609a29a6c93eb60acf53c319e4889dea70389df16d"
+      },
+      {
+        "day": "2025-01-10",
+        "sha256Merged": "db7df9b132f68e70ef45efd47273c775c6d88a5101218e0d25497e08bb287679"
+      },
+      {
+        "day": "2025-01-11",
+        "sha256Merged": "8f0b80292bacd5acfb6185e51797714ba5eee314f7d9089002e81f294ec5440d"
+      },
+      {
+        "day": "2025-01-12",
+        "sha256Merged": "236e7613204a00d45bbf347c815ec18fc5013b21cde2a7e336db9ec10aeaea6a"
+      },
+      {
+        "day": "2025-01-13",
+        "sha256Merged": "7d2d4c77f0c01dc00ad1e94305d1903f6a9e8aab1d377284ad42005412dad56d"
+      },
+      {
+        "day": "2025-01-14",
+        "sha256Merged": "a714e3abc8b0c8cb7a2cc9e20c1e8a74ed18e59699428398c483a5beacf1cc71"
+      },
+      {
+        "day": "2025-01-15",
+        "sha256Merged": "a46f65af153aac5bf3c29fc75361884e9dbeae9a2ab3d4a3aadf76c7f0910fda"
+      },
+      {
+        "day": "2025-01-16",
+        "sha256Merged": "301216f4690293ad1265edb7674f5a3dd792a87cbd462a487d5db1c97a8d284a"
+      },
+      {
+        "day": "2025-01-17",
+        "sha256Merged": "87a4f2a74335c418c737482f7c029446036e7a8afc9f9b83a5b9f3a6e442d6aa"
+      },
+      {
+        "day": "2025-01-18",
+        "sha256Merged": "43184cb619f54af62a098dd6d532227cf1bbabef01df9f0a0fb0bf4cd82dc30b"
+      },
+      {
+        "day": "2025-01-19",
+        "sha256Merged": "76c89f2a95b7e0a201e2c80b942e06ad93a63b0300014fdd4d17da913da24df5"
+      },
+      {
+        "day": "2025-01-20",
+        "sha256Merged": "dfd5c3474dbcd7dd2a0e9925d6dac21f7752d76d09bd61e40b3bdb105b238966"
+      },
+      {
+        "day": "2025-01-21",
+        "sha256Merged": "448927d2e4d9fc919928db2855f3ce395ee7b7be76df8dadc19573f3b3a40812"
+      },
+      {
+        "day": "2025-01-22",
+        "sha256Merged": "89947c0709664138addb8ab635e57c71b0970a3698180997d298ae207e01605b"
+      }
+    ],
+    "feesVerifiedAt": null,
+    "gitCommit": "e2e-fixture",
+    "runId": "66d091fc3b89e126",
+    "seed": 1,
+    "span": {
+      "from": "2025-01-09",
+      "to": "2025-01-22"
+    },
+    "symbol": "ETHUSDT",
+    "venue": "binance",
+    "warnings": [
+      "[VERIFY] fees unverified",
+      "--folds 4,2,2: non-standard fold lengths (Spec §6.3: 56/14/14 days), F = 5 < 12",
+      "P&L run despite failed reaction test (§9.2)",
+      "--min-trades-train 1: non-default MinTradesTrain (Spec §6.4: 100)"
+    ],
+    "wsrVersion": "e2e-fixture"
+  },
+  "axes": {
+    "BandWidthMult": [
+      0.5
+    ],
+    "BreakoutMult": [
+      4
+    ],
+    "MinSpikeSize": [
+      1.5
+    ],
+    "MinSweepMult": [
+      0.3,
+      0.5
+    ],
+    "PivotMult": [
+      1.2
+    ],
+    "minStrengthPassRate": [
+      0.3,
+      0.4,
+      0.5,
+      0.6
+    ]
+  },
+  "cells": [
+    {
+      "MinStrength": [
+        0.6202095808383234,
+        0.6103792415169661,
+        0.6177145708582834,
+        0.6250000000000001,
+        0.6179640718562874
+      ],
+      "cellId": "c0000",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.5767722569369199,
+            "realised": 7,
+            "sharpeTrade_bps": -1.1031109716079845,
+            "trades": 7
+          },
+          "train": {
+            "expectancy_bps": -0.44421893206155627,
+            "realised": 13,
+            "sharpeTrade_bps": -1.06267504417213,
+            "trades": 13
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.2226891163586153,
+            "realised": 9,
+            "sharpeTrade_bps": -0.2800220592026932,
+            "trades": 9
+          },
+          "train": {
+            "expectancy_bps": -0.44952801297241113,
+            "realised": 15,
+            "sharpeTrade_bps": -0.8734901803510763,
+            "trades": 15
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.26147766233988995,
+            "realised": 6,
+            "sharpeTrade_bps": -0.3264518954240897,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.3776004903616236,
+            "realised": 16,
+            "sharpeTrade_bps": -0.5452689903385788,
+            "trades": 16
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": 0.04026452152184774,
+            "realised": 10,
+            "sharpeTrade_bps": 0.06208807629361994,
+            "trades": 10
+          },
+          "train": {
+            "expectancy_bps": -0.23820453475112516,
+            "realised": 15,
+            "sharpeTrade_bps": -0.30987924637706804,
+            "trades": 15
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.2461561015315821,
+            "realised": 8,
+            "sharpeTrade_bps": -0.36529146864838274,
+            "trades": 8
+          },
+          "train": {
+            "expectancy_bps": -0.07288879742630389,
+            "realised": 16,
+            "sharpeTrade_bps": -0.10423874223242093,
+            "trades": 16
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.22942693542148743,
+        "realised": 40,
+        "sharpeTrade_bps": -0.33354666361217433,
+        "trades": 40
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.3
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.5877245508982036,
+        0.5848802395209581,
+        0.5963572854291418,
+        0.6027445109780439,
+        0.5933133732534931
+      ],
+      "cellId": "c0001",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.34034160523367724,
+            "realised": 10,
+            "sharpeTrade_bps": -0.4925576075895327,
+            "trades": 10
+          },
+          "train": {
+            "expectancy_bps": -0.318102071738511,
+            "realised": 17,
+            "sharpeTrade_bps": -0.5442521494437201,
+            "trades": 17
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.3763400708299118,
+            "realised": 15,
+            "sharpeTrade_bps": -0.5359169615760087,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.2655383072973627,
+            "realised": 22,
+            "sharpeTrade_bps": -0.3987063958706622,
+            "trades": 22
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.26147766233988995,
+            "realised": 6,
+            "sharpeTrade_bps": -0.3264518954240897,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.361940684591418,
+            "realised": 25,
+            "sharpeTrade_bps": -0.5296236282902658,
+            "trades": 25
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": 0.007322568791747098,
+            "realised": 14,
+            "sharpeTrade_bps": 0.011205895977702563,
+            "trades": 14
+          },
+          "train": {
+            "expectancy_bps": -0.3435222398327627,
+            "realised": 21,
+            "sharpeTrade_bps": -0.4817792623307177,
+            "trades": 21
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.3822682917182968,
+            "realised": 11,
+            "sharpeTrade_bps": -0.6148193741546706,
+            "trades": 11
+          },
+          "train": {
+            "expectancy_bps": -0.07331750054774401,
+            "realised": 20,
+            "sharpeTrade_bps": -0.10616110292974833,
+            "trades": 20
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.2628538988328856,
+        "realised": 56,
+        "sharpeTrade_bps": -0.38788283147412245,
+        "trades": 56
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.4
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.5602295409181637,
+        0.5501996007984032,
+        0.5723552894211578,
+        0.5719560878243514,
+        0.5679141716566867
+      ],
+      "cellId": "c0002",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.2724951041075681,
+            "realised": 12,
+            "sharpeTrade_bps": -0.3735000995587753,
+            "trades": 12
+          },
+          "train": {
+            "expectancy_bps": -0.25722245956760004,
+            "realised": 17,
+            "sharpeTrade_bps": -0.44361228008974757,
+            "trades": 17
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.33011239326219277,
+            "realised": 17,
+            "sharpeTrade_bps": -0.4646349689240189,
+            "trades": 17
+          },
+          "train": {
+            "expectancy_bps": -0.19472560627460586,
+            "realised": 24,
+            "sharpeTrade_bps": -0.28731350818810636,
+            "trades": 24
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.23365381558454867,
+            "realised": 6,
+            "sharpeTrade_bps": -0.29912132562389226,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.30627075637062395,
+            "realised": 29,
+            "sharpeTrade_bps": -0.43383293359099867,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.058793937888139934,
+            "realised": 21,
+            "sharpeTrade_bps": -0.08099281162462331,
+            "trades": 21
+          },
+          "train": {
+            "expectancy_bps": -0.30494928604193783,
+            "realised": 23,
+            "sharpeTrade_bps": -0.42799681769606585,
+            "trades": 23
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.3822682917182968,
+            "realised": 11,
+            "sharpeTrade_bps": -0.6148193741546706,
+            "trades": 11
+          },
+          "train": {
+            "expectancy_bps": -0.09765168848734189,
+            "realised": 27,
+            "sharpeTrade_bps": -0.13436617691088815,
+            "trades": 27
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.23467759302697896,
+        "realised": 67,
+        "sharpeTrade_bps": -0.33469300026959997,
+        "trades": 67
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.5
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.5365269461077845,
+        0.5288423153692615,
+        0.5409181636726547,
+        0.5422654690618763,
+        0.537624750499002
+      ],
+      "cellId": "c0003",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.1950840968194099,
+            "realised": 13,
+            "sharpeTrade_bps": -0.2610589958049,
+            "trades": 13
+          },
+          "train": {
+            "expectancy_bps": -0.21961241833763942,
+            "realised": 19,
+            "sharpeTrade_bps": -0.3603486296722979,
+            "trades": 19
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.3563030552310394,
+            "realised": 18,
+            "sharpeTrade_bps": -0.5103435892867514,
+            "trades": 18
+          },
+          "train": {
+            "expectancy_bps": -0.13849706280437035,
+            "realised": 27,
+            "sharpeTrade_bps": -0.19970668086721452,
+            "trades": 27
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.45634472465162407,
+            "realised": 6,
+            "sharpeTrade_bps": -0.6978954686740947,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.2886951049293883,
+            "realised": 31,
+            "sharpeTrade_bps": -0.40579982336140713,
+            "trades": 31
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.14812211209185766,
+            "realised": 16,
+            "sharpeTrade_bps": -0.19711169976991544,
+            "trades": 16
+          },
+          "train": {
+            "expectancy_bps": -0.38131347258618553,
+            "realised": 24,
+            "sharpeTrade_bps": -0.565182842509826,
+            "trades": 24
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.3337401578127403,
+            "realised": 13,
+            "sharpeTrade_bps": -0.5079541691682732,
+            "trades": 13
+          },
+          "train": {
+            "expectancy_bps": -0.23218282460815756,
+            "realised": 22,
+            "sharpeTrade_bps": -0.3204741867785406,
+            "trades": 22
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.27873018857206255,
+        "realised": 66,
+        "sharpeTrade_bps": -0.4005394899124881,
+        "trades": 66
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.6
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.6202095808383234,
+        0.6103792415169661,
+        0.6177145708582834,
+        0.6250000000000001,
+        0.6179640718562874
+      ],
+      "cellId": "c0004",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.5767722569369199,
+            "realised": 7,
+            "sharpeTrade_bps": -1.1031109716079845,
+            "trades": 7
+          },
+          "train": {
+            "expectancy_bps": -0.44421893206155627,
+            "realised": 13,
+            "sharpeTrade_bps": -1.06267504417213,
+            "trades": 13
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.2226891163586153,
+            "realised": 9,
+            "sharpeTrade_bps": -0.2800220592026932,
+            "trades": 9
+          },
+          "train": {
+            "expectancy_bps": -0.44952801297241113,
+            "realised": 15,
+            "sharpeTrade_bps": -0.8734901803510763,
+            "trades": 15
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.26147766233988995,
+            "realised": 6,
+            "sharpeTrade_bps": -0.3264518954240897,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.3776004903616236,
+            "realised": 16,
+            "sharpeTrade_bps": -0.5452689903385788,
+            "trades": 16
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": 0.04026452152184774,
+            "realised": 10,
+            "sharpeTrade_bps": 0.06208807629361994,
+            "trades": 10
+          },
+          "train": {
+            "expectancy_bps": -0.23820453475112516,
+            "realised": 15,
+            "sharpeTrade_bps": -0.30987924637706804,
+            "trades": 15
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.2461561015315821,
+            "realised": 8,
+            "sharpeTrade_bps": -0.36529146864838274,
+            "trades": 8
+          },
+          "train": {
+            "expectancy_bps": -0.07288879742630389,
+            "realised": 16,
+            "sharpeTrade_bps": -0.10423874223242093,
+            "trades": 16
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.22942693542148743,
+        "realised": 40,
+        "sharpeTrade_bps": -0.33354666361217433,
+        "trades": 40
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.3
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.5877245508982036,
+        0.5848802395209581,
+        0.5963572854291418,
+        0.6027445109780439,
+        0.5933133732534931
+      ],
+      "cellId": "c0005",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.34034160523367724,
+            "realised": 10,
+            "sharpeTrade_bps": -0.4925576075895327,
+            "trades": 10
+          },
+          "train": {
+            "expectancy_bps": -0.318102071738511,
+            "realised": 17,
+            "sharpeTrade_bps": -0.5442521494437201,
+            "trades": 17
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.3763400708299118,
+            "realised": 15,
+            "sharpeTrade_bps": -0.5359169615760087,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.2655383072973627,
+            "realised": 22,
+            "sharpeTrade_bps": -0.3987063958706622,
+            "trades": 22
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.26147766233988995,
+            "realised": 6,
+            "sharpeTrade_bps": -0.3264518954240897,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.361940684591418,
+            "realised": 25,
+            "sharpeTrade_bps": -0.5296236282902658,
+            "trades": 25
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": 0.007322568791747098,
+            "realised": 14,
+            "sharpeTrade_bps": 0.011205895977702563,
+            "trades": 14
+          },
+          "train": {
+            "expectancy_bps": -0.3435222398327627,
+            "realised": 21,
+            "sharpeTrade_bps": -0.4817792623307177,
+            "trades": 21
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.3822682917182968,
+            "realised": 11,
+            "sharpeTrade_bps": -0.6148193741546706,
+            "trades": 11
+          },
+          "train": {
+            "expectancy_bps": -0.07331750054774401,
+            "realised": 20,
+            "sharpeTrade_bps": -0.10616110292974833,
+            "trades": 20
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.2628538988328856,
+        "realised": 56,
+        "sharpeTrade_bps": -0.38788283147412245,
+        "trades": 56
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.4
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.5602295409181637,
+        0.5501996007984032,
+        0.5723552894211578,
+        0.5719560878243514,
+        0.5679141716566867
+      ],
+      "cellId": "c0006",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.2724951041075681,
+            "realised": 12,
+            "sharpeTrade_bps": -0.3735000995587753,
+            "trades": 12
+          },
+          "train": {
+            "expectancy_bps": -0.25722245956760004,
+            "realised": 17,
+            "sharpeTrade_bps": -0.44361228008974757,
+            "trades": 17
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.33011239326219277,
+            "realised": 17,
+            "sharpeTrade_bps": -0.4646349689240189,
+            "trades": 17
+          },
+          "train": {
+            "expectancy_bps": -0.19472560627460586,
+            "realised": 24,
+            "sharpeTrade_bps": -0.28731350818810636,
+            "trades": 24
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.23365381558454867,
+            "realised": 6,
+            "sharpeTrade_bps": -0.29912132562389226,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.30627075637062395,
+            "realised": 29,
+            "sharpeTrade_bps": -0.43383293359099867,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.058793937888139934,
+            "realised": 21,
+            "sharpeTrade_bps": -0.08099281162462331,
+            "trades": 21
+          },
+          "train": {
+            "expectancy_bps": -0.30494928604193783,
+            "realised": 23,
+            "sharpeTrade_bps": -0.42799681769606585,
+            "trades": 23
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.3822682917182968,
+            "realised": 11,
+            "sharpeTrade_bps": -0.6148193741546706,
+            "trades": 11
+          },
+          "train": {
+            "expectancy_bps": -0.09765168848734189,
+            "realised": 27,
+            "sharpeTrade_bps": -0.13436617691088815,
+            "trades": 27
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.23467759302697896,
+        "realised": 67,
+        "sharpeTrade_bps": -0.33469300026959997,
+        "trades": 67
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.5
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.5365269461077845,
+        0.5288423153692615,
+        0.5409181636726547,
+        0.5422654690618763,
+        0.537624750499002
+      ],
+      "cellId": "c0007",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.1950840968194099,
+            "realised": 13,
+            "sharpeTrade_bps": -0.2610589958049,
+            "trades": 13
+          },
+          "train": {
+            "expectancy_bps": -0.21961241833763942,
+            "realised": 19,
+            "sharpeTrade_bps": -0.3603486296722979,
+            "trades": 19
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.3563030552310394,
+            "realised": 18,
+            "sharpeTrade_bps": -0.5103435892867514,
+            "trades": 18
+          },
+          "train": {
+            "expectancy_bps": -0.13849706280437035,
+            "realised": 27,
+            "sharpeTrade_bps": -0.19970668086721452,
+            "trades": 27
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.45634472465162407,
+            "realised": 6,
+            "sharpeTrade_bps": -0.6978954686740947,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.2886951049293883,
+            "realised": 31,
+            "sharpeTrade_bps": -0.40579982336140713,
+            "trades": 31
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.14812211209185766,
+            "realised": 16,
+            "sharpeTrade_bps": -0.19711169976991544,
+            "trades": 16
+          },
+          "train": {
+            "expectancy_bps": -0.38131347258618553,
+            "realised": 24,
+            "sharpeTrade_bps": -0.565182842509826,
+            "trades": 24
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.3337401578127403,
+            "realised": 13,
+            "sharpeTrade_bps": -0.5079541691682732,
+            "trades": 13
+          },
+          "train": {
+            "expectancy_bps": -0.23218282460815756,
+            "realised": 22,
+            "sharpeTrade_bps": -0.3204741867785406,
+            "trades": 22
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.27873018857206255,
+        "realised": 66,
+        "sharpeTrade_bps": -0.4005394899124881,
+        "trades": 66
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.6
+      },
+      "variant": "baseline"
+    },
+    {
+      "MinStrength": [
+        0.6202095808383234,
+        0.6103792415169661,
+        0.6177145708582834,
+        0.6250000000000001,
+        0.6179640718562874
+      ],
+      "cellId": "c0000",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.08639887784972111,
+            "realised": 17,
+            "sharpeTrade_bps": -0.2380682812513592,
+            "trades": 17
+          },
+          "train": {
+            "expectancy_bps": -0.1346674098318056,
+            "realised": 29,
+            "sharpeTrade_bps": -0.38808944012565644,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.23386557282149514,
+            "realised": 13,
+            "sharpeTrade_bps": -0.4665823827997946,
+            "trades": 13
+          },
+          "train": {
+            "expectancy_bps": -0.07486794102880329,
+            "realised": 29,
+            "sharpeTrade_bps": -0.20502586429400485,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.3375333992599715,
+            "realised": 9,
+            "sharpeTrade_bps": -0.9827323441567245,
+            "trades": 9
+          },
+          "train": {
+            "expectancy_bps": -0.15030111233748986,
+            "realised": 30,
+            "sharpeTrade_bps": -0.35216707896913346,
+            "trades": 30
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.06399957252400937,
+            "realised": 12,
+            "sharpeTrade_bps": -0.16735022597551574,
+            "trades": 12
+          },
+          "train": {
+            "expectancy_bps": -0.27627513818269,
+            "realised": 22,
+            "sharpeTrade_bps": -0.6317882504115419,
+            "trades": 22
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.18232762454297677,
+            "realised": 15,
+            "sharpeTrade_bps": -0.5680591602721731,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.18122835541085028,
+            "realised": 21,
+            "sharpeTrade_bps": -0.4728970873954317,
+            "trades": 21
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.167420351543897,
+        "realised": 66,
+        "sharpeTrade_bps": -0.43388195133457214,
+        "trades": 66
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.3
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.5877245508982036,
+        0.5848802395209581,
+        0.5963572854291418,
+        0.6027445109780439,
+        0.5933133732534931
+      ],
+      "cellId": "c0001",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.11416747775814134,
+            "realised": 19,
+            "sharpeTrade_bps": -0.40656888269139596,
+            "trades": 19
+          },
+          "train": {
+            "expectancy_bps": -0.1783807005669121,
+            "realised": 29,
+            "sharpeTrade_bps": -0.480191199209152,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.19596995346968632,
+            "realised": 15,
+            "sharpeTrade_bps": -0.44795842249883105,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.10825298321775491,
+            "realised": 33,
+            "sharpeTrade_bps": -0.3165869250543321,
+            "trades": 33
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.3375333992599715,
+            "realised": 9,
+            "sharpeTrade_bps": -0.9827323441567245,
+            "trades": 9
+          },
+          "train": {
+            "expectancy_bps": -0.1502568052779406,
+            "realised": 34,
+            "sharpeTrade_bps": -0.4234633951695482,
+            "trades": 34
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.08973260984838376,
+            "realised": 16,
+            "sharpeTrade_bps": -0.2520390261132678,
+            "trades": 16
+          },
+          "train": {
+            "expectancy_bps": -0.24905624564104326,
+            "realised": 24,
+            "sharpeTrade_bps": -0.6179705150526308,
+            "trades": 24
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.1634702730842104,
+            "realised": 20,
+            "sharpeTrade_bps": -0.49077277605644265,
+            "trades": 20
+          },
+          "train": {
+            "expectancy_bps": -0.17894089403655536,
+            "realised": 25,
+            "sharpeTrade_bps": -0.4901447859937278,
+            "trades": 25
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.1626792302790895,
+        "realised": 79,
+        "sharpeTrade_bps": -0.4667945036871582,
+        "trades": 79
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.4
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.5602295409181637,
+        0.5501996007984032,
+        0.5723552894211578,
+        0.5719560878243514,
+        0.5679141716566867
+      ],
+      "cellId": "c0002",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.09594447394387434,
+            "realised": 24,
+            "sharpeTrade_bps": -0.3671366757258274,
+            "trades": 24
+          },
+          "train": {
+            "expectancy_bps": -0.1924828156147582,
+            "realised": 30,
+            "sharpeTrade_bps": -0.4825664787690719,
+            "trades": 30
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.291714453185333,
+            "realised": 15,
+            "sharpeTrade_bps": -0.7226375526747661,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.10260561631825625,
+            "realised": 41,
+            "sharpeTrade_bps": -0.3074228014120645,
+            "trades": 41
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.2725921963151567,
+            "realised": 6,
+            "sharpeTrade_bps": -1.1718982240133207,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.17124061980597383,
+            "realised": 39,
+            "sharpeTrade_bps": -0.5147144373876503,
+            "trades": 39
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.05394964278764163,
+            "realised": 26,
+            "sharpeTrade_bps": -0.16210711073403414,
+            "trades": 26
+          },
+          "train": {
+            "expectancy_bps": -0.2862509512224255,
+            "realised": 21,
+            "sharpeTrade_bps": -0.8011125246238731,
+            "trades": 21
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.15922054336077454,
+            "realised": 22,
+            "sharpeTrade_bps": -0.49680177580739376,
+            "trades": 22
+          },
+          "train": {
+            "expectancy_bps": -0.09494512157405072,
+            "realised": 32,
+            "sharpeTrade_bps": -0.29222184751168645,
+            "trades": 32
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.14214494641655528,
+        "realised": 93,
+        "sharpeTrade_bps": -0.43672474152605456,
+        "trades": 93
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.5
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.5365269461077845,
+        0.5288423153692615,
+        0.5409181636726547,
+        0.5422654690618763,
+        0.537624750499002
+      ],
+      "cellId": "c0003",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.11936332155641725,
+            "realised": 26,
+            "sharpeTrade_bps": -0.44404357289395124,
+            "trades": 26
+          },
+          "train": {
+            "expectancy_bps": -0.22413780620380547,
+            "realised": 28,
+            "sharpeTrade_bps": -0.5896511453226474,
+            "trades": 28
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.2872522437529207,
+            "realised": 15,
+            "sharpeTrade_bps": -0.7181826181255353,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.13855847882566827,
+            "realised": 40,
+            "sharpeTrade_bps": -0.4280623720232185,
+            "trades": 40
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.42916004878418174,
+            "realised": 7,
+            "sharpeTrade_bps": -1.3572119626899017,
+            "trades": 7
+          },
+          "train": {
+            "expectancy_bps": -0.18078609796977219,
+            "realised": 41,
+            "sharpeTrade_bps": -0.5504802626770289,
+            "trades": 41
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.15443454937237228,
+            "realised": 16,
+            "sharpeTrade_bps": -0.6810721311448346,
+            "trades": 16
+          },
+          "train": {
+            "expectancy_bps": -0.3324047271719583,
+            "realised": 22,
+            "sharpeTrade_bps": -0.8890379519247326,
+            "trades": 22
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.15014179623194363,
+            "realised": 22,
+            "sharpeTrade_bps": -0.5534512389486361,
+            "trades": 22
+          },
+          "train": {
+            "expectancy_bps": -0.23804665788900997,
+            "realised": 23,
+            "sharpeTrade_bps": -0.8467626017738513,
+            "trades": 23
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.1882607286664029,
+        "realised": 86,
+        "sharpeTrade_bps": -0.6259135278775924,
+        "trades": 86
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.3,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.6
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.6202095808383234,
+        0.6103792415169661,
+        0.6177145708582834,
+        0.6250000000000001,
+        0.6179640718562874
+      ],
+      "cellId": "c0004",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.08639887784972111,
+            "realised": 17,
+            "sharpeTrade_bps": -0.2380682812513592,
+            "trades": 17
+          },
+          "train": {
+            "expectancy_bps": -0.1346674098318056,
+            "realised": 29,
+            "sharpeTrade_bps": -0.38808944012565644,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.23386557282149514,
+            "realised": 13,
+            "sharpeTrade_bps": -0.4665823827997946,
+            "trades": 13
+          },
+          "train": {
+            "expectancy_bps": -0.07486794102880329,
+            "realised": 29,
+            "sharpeTrade_bps": -0.20502586429400485,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.3375333992599715,
+            "realised": 9,
+            "sharpeTrade_bps": -0.9827323441567245,
+            "trades": 9
+          },
+          "train": {
+            "expectancy_bps": -0.15030111233748986,
+            "realised": 30,
+            "sharpeTrade_bps": -0.35216707896913346,
+            "trades": 30
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.06399957252400937,
+            "realised": 12,
+            "sharpeTrade_bps": -0.16735022597551574,
+            "trades": 12
+          },
+          "train": {
+            "expectancy_bps": -0.27627513818269,
+            "realised": 22,
+            "sharpeTrade_bps": -0.6317882504115419,
+            "trades": 22
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.18232762454297677,
+            "realised": 15,
+            "sharpeTrade_bps": -0.5680591602721731,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.18122835541085028,
+            "realised": 21,
+            "sharpeTrade_bps": -0.4728970873954317,
+            "trades": 21
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.167420351543897,
+        "realised": 66,
+        "sharpeTrade_bps": -0.43388195133457214,
+        "trades": 66
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.3
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.5877245508982036,
+        0.5848802395209581,
+        0.5963572854291418,
+        0.6027445109780439,
+        0.5933133732534931
+      ],
+      "cellId": "c0005",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.11416747775814134,
+            "realised": 19,
+            "sharpeTrade_bps": -0.40656888269139596,
+            "trades": 19
+          },
+          "train": {
+            "expectancy_bps": -0.1783807005669121,
+            "realised": 29,
+            "sharpeTrade_bps": -0.480191199209152,
+            "trades": 29
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.19596995346968632,
+            "realised": 15,
+            "sharpeTrade_bps": -0.44795842249883105,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.10825298321775491,
+            "realised": 33,
+            "sharpeTrade_bps": -0.3165869250543321,
+            "trades": 33
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.3375333992599715,
+            "realised": 9,
+            "sharpeTrade_bps": -0.9827323441567245,
+            "trades": 9
+          },
+          "train": {
+            "expectancy_bps": -0.1502568052779406,
+            "realised": 34,
+            "sharpeTrade_bps": -0.4234633951695482,
+            "trades": 34
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.08973260984838376,
+            "realised": 16,
+            "sharpeTrade_bps": -0.2520390261132678,
+            "trades": 16
+          },
+          "train": {
+            "expectancy_bps": -0.24905624564104326,
+            "realised": 24,
+            "sharpeTrade_bps": -0.6179705150526308,
+            "trades": 24
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.1634702730842104,
+            "realised": 20,
+            "sharpeTrade_bps": -0.49077277605644265,
+            "trades": 20
+          },
+          "train": {
+            "expectancy_bps": -0.17894089403655536,
+            "realised": 25,
+            "sharpeTrade_bps": -0.4901447859937278,
+            "trades": 25
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.1626792302790895,
+        "realised": 79,
+        "sharpeTrade_bps": -0.4667945036871582,
+        "trades": 79
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.4
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.5602295409181637,
+        0.5501996007984032,
+        0.5723552894211578,
+        0.5719560878243514,
+        0.5679141716566867
+      ],
+      "cellId": "c0006",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.09594447394387434,
+            "realised": 24,
+            "sharpeTrade_bps": -0.3671366757258274,
+            "trades": 24
+          },
+          "train": {
+            "expectancy_bps": -0.1924828156147582,
+            "realised": 30,
+            "sharpeTrade_bps": -0.4825664787690719,
+            "trades": 30
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.291714453185333,
+            "realised": 15,
+            "sharpeTrade_bps": -0.7226375526747661,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.10260561631825625,
+            "realised": 41,
+            "sharpeTrade_bps": -0.3074228014120645,
+            "trades": 41
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.2725921963151567,
+            "realised": 6,
+            "sharpeTrade_bps": -1.1718982240133207,
+            "trades": 6
+          },
+          "train": {
+            "expectancy_bps": -0.17124061980597383,
+            "realised": 39,
+            "sharpeTrade_bps": -0.5147144373876503,
+            "trades": 39
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.05394964278764163,
+            "realised": 26,
+            "sharpeTrade_bps": -0.16210711073403414,
+            "trades": 26
+          },
+          "train": {
+            "expectancy_bps": -0.2862509512224255,
+            "realised": 21,
+            "sharpeTrade_bps": -0.8011125246238731,
+            "trades": 21
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.15922054336077454,
+            "realised": 22,
+            "sharpeTrade_bps": -0.49680177580739376,
+            "trades": 22
+          },
+          "train": {
+            "expectancy_bps": -0.09494512157405072,
+            "realised": 32,
+            "sharpeTrade_bps": -0.29222184751168645,
+            "trades": 32
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.14214494641655528,
+        "realised": 93,
+        "sharpeTrade_bps": -0.43672474152605456,
+        "trades": 93
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.5
+      },
+      "variant": "timeStop"
+    },
+    {
+      "MinStrength": [
+        0.5365269461077845,
+        0.5288423153692615,
+        0.5409181636726547,
+        0.5422654690618763,
+        0.537624750499002
+      ],
+      "cellId": "c0007",
+      "folds": [
+        {
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.11936332155641725,
+            "realised": 26,
+            "sharpeTrade_bps": -0.44404357289395124,
+            "trades": 26
+          },
+          "train": {
+            "expectancy_bps": -0.22413780620380547,
+            "realised": 28,
+            "sharpeTrade_bps": -0.5896511453226474,
+            "trades": 28
+          }
+        },
+        {
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.2872522437529207,
+            "realised": 15,
+            "sharpeTrade_bps": -0.7181826181255353,
+            "trades": 15
+          },
+          "train": {
+            "expectancy_bps": -0.13855847882566827,
+            "realised": 40,
+            "sharpeTrade_bps": -0.4280623720232185,
+            "trades": 40
+          }
+        },
+        {
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.42916004878418174,
+            "realised": 7,
+            "sharpeTrade_bps": -1.3572119626899017,
+            "trades": 7
+          },
+          "train": {
+            "expectancy_bps": -0.18078609796977219,
+            "realised": 41,
+            "sharpeTrade_bps": -0.5504802626770289,
+            "trades": 41
+          }
+        },
+        {
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.15443454937237228,
+            "realised": 16,
+            "sharpeTrade_bps": -0.6810721311448346,
+            "trades": 16
+          },
+          "train": {
+            "expectancy_bps": -0.3324047271719583,
+            "realised": 22,
+            "sharpeTrade_bps": -0.8890379519247326,
+            "trades": 22
+          }
+        },
+        {
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.15014179623194363,
+            "realised": 22,
+            "sharpeTrade_bps": -0.5534512389486361,
+            "trades": 22
+          },
+          "train": {
+            "expectancy_bps": -0.23804665788900997,
+            "realised": 23,
+            "sharpeTrade_bps": -0.8467626017738513,
+            "trades": 23
+          }
+        }
+      ],
+      "oos": {
+        "expectancy_bps": -0.1882607286664029,
+        "realised": 86,
+        "sharpeTrade_bps": -0.6259135278775924,
+        "trades": 86
+      },
+      "params": {
+        "BandWidthMult": 0.5,
+        "BreakoutMult": 4,
+        "MinSpikeSize": 1.5,
+        "MinSweepMult": 0.5,
+        "PivotMult": 1.2,
+        "minStrengthPassRate": 0.6
+      },
+      "variant": "timeStop"
+    }
+  ],
+  "centre": {
+    "cellId": "c0003",
+    "params": {
+      "BandWidthMult": 0.5,
+      "BreakoutMult": 4,
+      "MinSpikeSize": 1.5,
+      "MinSweepMult": 0.3,
+      "PivotMult": 1.2,
+      "minStrengthPassRate": 0.6
+    }
+  },
+  "dsr": {
+    "DSR": 0.0004319349006778883,
+    "N": 16,
+    "SR": -0.3512010438165269,
+    "SR0": 0.16207299440414635,
+    "VSR": 0.008103275855954105,
+    "kurt": 1.902297448458027,
+    "nTrades": 55,
+    "skew": 0.7231582599647729,
+    "trials": 16
+  },
+  "foldDays": {
+    "step": 2,
+    "test": 2,
+    "train": 4
+  },
+  "folds": [
+    {
+      "foldId": 0,
+      "testFrom": "2025-01-13",
+      "testTo": "2025-01-14",
+      "trainFrom": "2025-01-09"
+    },
+    {
+      "foldId": 1,
+      "testFrom": "2025-01-15",
+      "testTo": "2025-01-16",
+      "trainFrom": "2025-01-11"
+    },
+    {
+      "foldId": 2,
+      "testFrom": "2025-01-17",
+      "testTo": "2025-01-18",
+      "trainFrom": "2025-01-13"
+    },
+    {
+      "foldId": 3,
+      "testFrom": "2025-01-19",
+      "testTo": "2025-01-20",
+      "trainFrom": "2025-01-15"
+    },
+    {
+      "foldId": 4,
+      "testFrom": "2025-01-21",
+      "testTo": "2025-01-22",
+      "trainFrom": "2025-01-17"
+    }
+  ],
+  "gate": "forced",
+  "minTradesTrain": 1,
+  "nConfigs": {
+    "N": 16,
+    "cells": 8,
+    "latencyPoints": 1,
+    "variants": 2
+  },
+  "realityCheck": {
+    "B": 200,
+    "V": -3.9962977531548503,
+    "cells": 16,
+    "firstVolumeDay": 5,
+    "meanBlock": 1,
+    "n": 11,
+    "p": 1
+  },
+  "variants": [
+    {
+      "id": "baseline",
+      "overrides": {}
+    },
+    {
+      "id": "timeStop",
+      "overrides": {
+        "timeStop": true
+      }
+    }
+  ],
+  "walkForward": [
+    {
+      "folds": [
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0003",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.6
+            }
+          },
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.1950840968194099,
+            "realised": 13,
+            "sharpeTrade_bps": -0.2610589958049,
+            "trades": 13
+          },
+          "top": [
+            "c0003",
+            "c0007"
+          ],
+          "train": {
+            "expectancy_bps": -0.21961241833763942,
+            "realised": 19,
+            "sharpeTrade_bps": -0.3603486296722979,
+            "trades": 19
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0003",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.6
+            }
+          },
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.3563030552310394,
+            "realised": 18,
+            "sharpeTrade_bps": -0.5103435892867514,
+            "trades": 18
+          },
+          "top": [
+            "c0003",
+            "c0007"
+          ],
+          "train": {
+            "expectancy_bps": -0.13849706280437035,
+            "realised": 27,
+            "sharpeTrade_bps": -0.19970668086721452,
+            "trades": 27
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0003",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.6
+            }
+          },
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.45634472465162407,
+            "realised": 6,
+            "sharpeTrade_bps": -0.6978954686740947,
+            "trades": 6
+          },
+          "top": [
+            "c0003",
+            "c0007"
+          ],
+          "train": {
+            "expectancy_bps": -0.2886951049293883,
+            "realised": 31,
+            "sharpeTrade_bps": -0.40579982336140713,
+            "trades": 31
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0000",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.3
+            }
+          },
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": 0.04026452152184774,
+            "realised": 10,
+            "sharpeTrade_bps": 0.06208807629361994,
+            "trades": 10
+          },
+          "top": [
+            "c0000",
+            "c0004"
+          ],
+          "train": {
+            "expectancy_bps": -0.23820453475112516,
+            "realised": 15,
+            "sharpeTrade_bps": -0.30987924637706804,
+            "trades": 15
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0000",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.3
+            }
+          },
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.2461561015315821,
+            "realised": 8,
+            "sharpeTrade_bps": -0.36529146864838274,
+            "trades": 8
+          },
+          "top": [
+            "c0000",
+            "c0004"
+          ],
+          "train": {
+            "expectancy_bps": -0.07288879742630389,
+            "realised": 16,
+            "sharpeTrade_bps": -0.10423874223242093,
+            "trades": 16
+          }
+        }
+      ],
+      "pooled": {
+        "expectancy_bps": -0.2409858217773629,
+        "realised": 55,
+        "sharpeTrade_bps": -0.3512010438165269,
+        "trades": 55
+      },
+      "variant": "baseline"
+    },
+    {
+      "folds": [
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0000",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.3
+            }
+          },
+          "foldId": 0,
+          "test": {
+            "expectancy_bps": -0.08639887784972111,
+            "realised": 17,
+            "sharpeTrade_bps": -0.2380682812513592,
+            "trades": 17
+          },
+          "top": [
+            "c0000",
+            "c0004"
+          ],
+          "train": {
+            "expectancy_bps": -0.1346674098318056,
+            "realised": 29,
+            "sharpeTrade_bps": -0.38808944012565644,
+            "trades": 29
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0000",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.3
+            }
+          },
+          "foldId": 1,
+          "test": {
+            "expectancy_bps": -0.23386557282149514,
+            "realised": 13,
+            "sharpeTrade_bps": -0.4665823827997946,
+            "trades": 13
+          },
+          "top": [
+            "c0000",
+            "c0004"
+          ],
+          "train": {
+            "expectancy_bps": -0.07486794102880329,
+            "realised": 29,
+            "sharpeTrade_bps": -0.20502586429400485,
+            "trades": 29
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0001",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.4
+            }
+          },
+          "foldId": 2,
+          "test": {
+            "expectancy_bps": -0.3375333992599715,
+            "realised": 9,
+            "sharpeTrade_bps": -0.9827323441567245,
+            "trades": 9
+          },
+          "top": [
+            "c0001",
+            "c0005"
+          ],
+          "train": {
+            "expectancy_bps": -0.1502568052779406,
+            "realised": 34,
+            "sharpeTrade_bps": -0.4234633951695482,
+            "trades": 34
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0001",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.4
+            }
+          },
+          "foldId": 3,
+          "test": {
+            "expectancy_bps": -0.08973260984838376,
+            "realised": 16,
+            "sharpeTrade_bps": -0.2520390261132678,
+            "trades": 16
+          },
+          "top": [
+            "c0001",
+            "c0005"
+          ],
+          "train": {
+            "expectancy_bps": -0.24905624564104326,
+            "realised": 24,
+            "sharpeTrade_bps": -0.6179705150526308,
+            "trades": 24
+          }
+        },
+        {
+          "admissible": 8,
+          "chosen": {
+            "cellId": "c0002",
+            "params": {
+              "BandWidthMult": 0.5,
+              "BreakoutMult": 4,
+              "MinSpikeSize": 1.5,
+              "MinSweepMult": 0.3,
+              "PivotMult": 1.2,
+              "minStrengthPassRate": 0.5
+            }
+          },
+          "foldId": 4,
+          "test": {
+            "expectancy_bps": -0.15922054336077454,
+            "realised": 22,
+            "sharpeTrade_bps": -0.49680177580739376,
+            "trades": 22
+          },
+          "top": [
+            "c0002",
+            "c0006"
+          ],
+          "train": {
+            "expectancy_bps": -0.09494512157405072,
+            "realised": 32,
+            "sharpeTrade_bps": -0.29222184751168645,
+            "trades": 32
+          }
+        }
+      ],
+      "pooled": {
+        "expectancy_bps": -0.16214815162305998,
+        "realised": 77,
+        "sharpeTrade_bps": -0.4331650857928999,
+        "trades": 77
+      },
+      "variant": "timeStop"
+    }
+  ]
+}

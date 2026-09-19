@@ -1,0 +1,28 @@
+{
+  "name": "wsr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:property": "WSR_PROPERTY_RUNS=${WSR_PROPERTY_RUNS:-200} vitest run --testNamePattern property",
+    "test:coverage": "vitest run --coverage",
+    "bench": "node packages/cli/dist/main.js bench --synthetic --baseline benchmarks/baseline.json",
+    "goldens:update": "UPDATE_GOLDENS=1 vitest run packages/cli/src/e2e-reaction.test.ts packages/cli/src/e2e-backtest.test.ts packages/cli/src/e2e-grid.test.ts packages/cli/src/e2e-fixture.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@typescript-eslint/utils": "^8.15.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^9.15.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import": "^2.31.0",
+    "fast-check": "^3.23.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4",
+    "zod": "^3.23.8"
+  }
+}

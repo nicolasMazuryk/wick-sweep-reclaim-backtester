@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "venue": "binance",
+      "symbol": "ETHUSDT",
+      "venueSymbol": "ETHUSDT",
+      "Tick": 0.01,
+      "TickDecimal": "0.01",
+      "LotSize": 0.001,
+      "LotSizeDecimal": "0.001",
+      "contractMultiplier": 1,
+      "contractMultiplierDecimal": "1",
+      "TakerFee": 0.0005,
+      "MakerFee": 0.0002,
+      "feesVerifiedAt": "2026-09-19",
+      "fundingIntervalHours": 8,
+      "validFrom": 0
+    }
+  ]
+}

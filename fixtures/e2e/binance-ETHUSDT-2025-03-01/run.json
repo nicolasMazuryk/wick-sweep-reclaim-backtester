@@ -1,0 +1,167 @@
+{
+  "runManifest": {
+    "config": {
+      "AgeScale": 240,
+      "AnchorWindow": 20,
+      "ArmDistance": 0.5,
+      "ArmMode": "RestEarly",
+      "BandWidthMult": 0.5,
+      "BreakoutMult": 4,
+      "DailyLossLimit": 3,
+      "DistanceScale": 5,
+      "FillWindow": 100,
+      "MaxAge": 720,
+      "MaxHold": 4,
+      "MaxPending": 4,
+      "MaxSpikeDuration": 3,
+      "MaxSweeps": 3,
+      "MaxTopDwell": 0.5,
+      "MaxUses": 1,
+      "MergeTolerance": 0.25,
+      "MinRejectImbalance": 0.2,
+      "MinRejectSpeed": 0.5,
+      "MinRetrace": 0.6,
+      "MinReturnSpeed": 0.3,
+      "MinSpikeSize": 1.5,
+      "MinSweepMult": 0.3,
+      "PivotMult": 1.2,
+      "RankWindow": 500,
+      "RetraceWindow": 5,
+      "RiskFraction": 0.0025,
+      "SlipCoef": 0.05,
+      "SlipTicks": 1,
+      "StopMult": 1,
+      "StopOffset": 1,
+      "TargetMult": 2,
+      "TargetUnits": 2,
+      "TopBandMult": 0.15,
+      "TriggerOffset": 0,
+      "UnitWindow": 60,
+      "ageClock": "volume",
+      "blacklistFunding": false,
+      "blacklistMacroReleases": false,
+      "counterTrendBlock": false,
+      "data": {
+        "lowCapSymbol": "DOGEUSDT"
+      },
+      "equity": 100000,
+      "exchangeLatencyMs": 30,
+      "fees": {
+        "binance": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bitget": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bybit": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "gate": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "kucoin": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "okx": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        }
+      },
+      "latencyMs": 150,
+      "minExtremePrintQtyPct": false,
+      "minStrengthPassRate": 0.4,
+      "search": {
+        "grid": {
+          "BandWidthMult": [],
+          "BreakoutMult": [],
+          "MinSpikeSize": [],
+          "MinSweepMult": [],
+          "PivotMult": [],
+          "minStrengthPassRate": []
+        },
+        "targetGrid": {
+          "StopMult": [],
+          "TargetMult": []
+        }
+      },
+      "seed": 1,
+      "stageB": {
+        "lambda": 1
+      },
+      "stopMode": "client",
+      "strengthModel": "stageB",
+      "targetMode": "sweepDepth",
+      "timeStop": false
+    },
+    "configHash": "90f1f4f2b9d9ee02c3665716d39841433c7f04bf81accb691f3d7331bdd29a3e",
+    "createdAt": "2026-09-19T00:00:00.000Z",
+    "dataChecksums": [
+      {
+        "day": "2025-02-20",
+        "sha256Merged": "5b5c38c4afcf8ddcf6f53bdfc69e0b6528d962022aaac42a554fbc3da25e1bc3"
+      },
+      {
+        "day": "2025-02-21",
+        "sha256Merged": "3e5111e3a6dbd09fdd5584f61f240f57d89ba73c4fc7c3ce04862d46164576ef"
+      },
+      {
+        "day": "2025-02-22",
+        "sha256Merged": "edb739d8fb7d82fe1e4ab93cc6847968414d4d32e24e984572bd5c76cce82c1d"
+      },
+      {
+        "day": "2025-02-23",
+        "sha256Merged": "9bd3be7a9c4b23fefea7d5c57b21c0e4e54c22ac40ac01441bb8e2a64af1bfbd"
+      },
+      {
+        "day": "2025-02-24",
+        "sha256Merged": "154636cbfcec832eb872181eed997f8b739b0e819abe5648d8beb92db6408ec7"
+      },
+      {
+        "day": "2025-02-25",
+        "sha256Merged": "a2d6dbb4c8e010a8289d41c5165af341bddbccfb020dff827d799b3b2416d056"
+      },
+      {
+        "day": "2025-02-26",
+        "sha256Merged": "312cd0fb6faa7b979034d2a72e231360a59d243c1d0e5cbd7df2b63f41344554"
+      },
+      {
+        "day": "2025-02-27",
+        "sha256Merged": "25aec69226da8591d9e2ec425a7421c3cef1405b63fe3302558561d42fdc6b03"
+      },
+      {
+        "day": "2025-02-28",
+        "sha256Merged": "e3c3f6a7989cd6a47197fbfad2d22f8bd0344b038fd9f8785223cd47456eb4a1"
+      },
+      {
+        "day": "2025-03-01",
+        "sha256Merged": "aaa81984c487f9705a4a13d0e7b40f7b90fd4d7066d8432228c575ee9c60fdb4"
+      }
+    ],
+    "feesVerifiedAt": "2026-09-19",
+    "gitCommit": "e2e-fixture",
+    "runId": "9d6f9a2299fe375a",
+    "seed": 1,
+    "span": {
+      "from": "2025-02-28",
+      "to": "2025-03-01"
+    },
+    "symbol": "ETHUSDT",
+    "venue": "binance",
+    "warnings": [
+      "--folds 1,1,1: non-standard fold lengths (Spec §6.3: 56/14/14 days), F = 1 < 12",
+      "P&L run despite failed reaction test (§9.2)"
+    ],
+    "wsrVersion": "e2e-fixture"
+  }
+}

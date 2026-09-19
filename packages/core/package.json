@@ -1,0 +1,14 @@
+{
+  "name": "@wsr/core",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}

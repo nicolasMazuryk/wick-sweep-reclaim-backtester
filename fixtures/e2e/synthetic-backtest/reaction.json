@@ -1,0 +1,528 @@
+{
+  "runManifest": {
+    "config": {
+      "AgeScale": 240,
+      "AnchorWindow": 20,
+      "ArmDistance": 0.5,
+      "ArmMode": "RestEarly",
+      "BandWidthMult": 0.5,
+      "BreakoutMult": 4,
+      "DailyLossLimit": 3,
+      "DistanceScale": 5,
+      "FillWindow": 100,
+      "MaxAge": 720,
+      "MaxHold": 4,
+      "MaxPending": 4,
+      "MaxSpikeDuration": 3,
+      "MaxSweeps": 3,
+      "MaxTopDwell": 0.5,
+      "MaxUses": 1,
+      "MergeTolerance": 0.25,
+      "MinRejectImbalance": 0.2,
+      "MinRejectSpeed": 0.5,
+      "MinRetrace": 0.6,
+      "MinReturnSpeed": 0.3,
+      "MinSpikeSize": 1.5,
+      "MinSweepMult": 0.3,
+      "PivotMult": 1.2,
+      "RankWindow": 500,
+      "RetraceWindow": 5,
+      "RiskFraction": 0.0025,
+      "SlipCoef": 0.05,
+      "SlipTicks": 1,
+      "StopMult": 1,
+      "StopOffset": 1,
+      "TargetMult": 2,
+      "TargetUnits": 2,
+      "TopBandMult": 0.15,
+      "TriggerOffset": 0,
+      "UnitWindow": 60,
+      "ageClock": "volume",
+      "blacklistFunding": false,
+      "blacklistMacroReleases": false,
+      "counterTrendBlock": false,
+      "data": {
+        "lowCapSymbol": "DOGEUSDT"
+      },
+      "equity": 100000,
+      "exchangeLatencyMs": 30,
+      "fees": {
+        "binance": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bitget": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bybit": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "gate": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "kucoin": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "okx": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        }
+      },
+      "latencyMs": 150,
+      "minExtremePrintQtyPct": false,
+      "minStrengthPassRate": 0.4,
+      "search": {
+        "grid": {
+          "BandWidthMult": [],
+          "BreakoutMult": [],
+          "MinSpikeSize": [],
+          "MinSweepMult": [],
+          "PivotMult": [],
+          "minStrengthPassRate": []
+        },
+        "targetGrid": {
+          "StopMult": [],
+          "TargetMult": []
+        }
+      },
+      "seed": 1,
+      "stageB": {
+        "lambda": 1
+      },
+      "stopMode": "client",
+      "strengthModel": "stageB",
+      "targetMode": "sweepDepth",
+      "timeStop": false
+    },
+    "configHash": "90f1f4f2b9d9ee02c3665716d39841433c7f04bf81accb691f3d7331bdd29a3e",
+    "createdAt": "2026-09-19T00:00:00.000Z",
+    "dataChecksums": [
+      {
+        "day": "2025-01-01",
+        "sha256Merged": "5b500910f9c4f001c7f808279714bad3d91600490f6122537032220074d91a3a"
+      },
+      {
+        "day": "2025-01-02",
+        "sha256Merged": "f3e7f94230fc911549d2de82ad9468809d102f54d1b662c3ff46ab47d6e66a50"
+      },
+      {
+        "day": "2025-01-03",
+        "sha256Merged": "2e54d71b83bd38f9de9406aadcd58cde4552403a977f918999bcba604ddea2c9"
+      },
+      {
+        "day": "2025-01-04",
+        "sha256Merged": "5daaee0e45018aa5005db7bd4a6e6eead5e7732b053a94c112f8bf430f0ca2a6"
+      },
+      {
+        "day": "2025-01-05",
+        "sha256Merged": "60d099e5c374abebef866e8e8281653e958af89af131ebf937c97b28d4948f5e"
+      },
+      {
+        "day": "2025-01-06",
+        "sha256Merged": "924eb05ed8b50e026e8f50a82c1a821a152200cada6ea1a6570ffb2734664093"
+      },
+      {
+        "day": "2025-01-07",
+        "sha256Merged": "d2ae25d33c34379f68eeff5ccfde935cc4471da265b4b39bb7bb4f3fa4303be7"
+      },
+      {
+        "day": "2025-01-08",
+        "sha256Merged": "278fe29016e0910862a828e8be24e7bec9f7177edd6184541fa2127a32245d16"
+      },
+      {
+        "day": "2025-01-09",
+        "sha256Merged": "745370b18d4ed18554d221609a29a6c93eb60acf53c319e4889dea70389df16d"
+      },
+      {
+        "day": "2025-01-10",
+        "sha256Merged": "db7df9b132f68e70ef45efd47273c775c6d88a5101218e0d25497e08bb287679"
+      },
+      {
+        "day": "2025-01-11",
+        "sha256Merged": "8f0b80292bacd5acfb6185e51797714ba5eee314f7d9089002e81f294ec5440d"
+      },
+      {
+        "day": "2025-01-12",
+        "sha256Merged": "236e7613204a00d45bbf347c815ec18fc5013b21cde2a7e336db9ec10aeaea6a"
+      },
+      {
+        "day": "2025-01-13",
+        "sha256Merged": "7d2d4c77f0c01dc00ad1e94305d1903f6a9e8aab1d377284ad42005412dad56d"
+      },
+      {
+        "day": "2025-01-14",
+        "sha256Merged": "a714e3abc8b0c8cb7a2cc9e20c1e8a74ed18e59699428398c483a5beacf1cc71"
+      },
+      {
+        "day": "2025-01-15",
+        "sha256Merged": "a46f65af153aac5bf3c29fc75361884e9dbeae9a2ab3d4a3aadf76c7f0910fda"
+      },
+      {
+        "day": "2025-01-16",
+        "sha256Merged": "301216f4690293ad1265edb7674f5a3dd792a87cbd462a487d5db1c97a8d284a"
+      },
+      {
+        "day": "2025-01-17",
+        "sha256Merged": "87a4f2a74335c418c737482f7c029446036e7a8afc9f9b83a5b9f3a6e442d6aa"
+      },
+      {
+        "day": "2025-01-18",
+        "sha256Merged": "43184cb619f54af62a098dd6d532227cf1bbabef01df9f0a0fb0bf4cd82dc30b"
+      },
+      {
+        "day": "2025-01-19",
+        "sha256Merged": "76c89f2a95b7e0a201e2c80b942e06ad93a63b0300014fdd4d17da913da24df5"
+      },
+      {
+        "day": "2025-01-20",
+        "sha256Merged": "dfd5c3474dbcd7dd2a0e9925d6dac21f7752d76d09bd61e40b3bdb105b238966"
+      },
+      {
+        "day": "2025-01-21",
+        "sha256Merged": "448927d2e4d9fc919928db2855f3ce395ee7b7be76df8dadc19573f3b3a40812"
+      },
+      {
+        "day": "2025-01-22",
+        "sha256Merged": "89947c0709664138addb8ab635e57c71b0970a3698180997d298ae207e01605b"
+      }
+    ],
+    "feesVerifiedAt": null,
+    "gitCommit": "e2e-fixture",
+    "runId": "ca705ef826b52ddd",
+    "seed": 1,
+    "span": {
+      "from": "2025-01-09",
+      "to": "2025-01-22"
+    },
+    "symbol": "ETHUSDT",
+    "venue": "binance",
+    "warnings": [
+      "[VERIFY] fees unverified",
+      "--folds 4,2,2: non-standard fold lengths (Spec §6.3: 56/14/14 days), F = 5 < 12",
+      "P&L run despite failed reaction test (§9.2)"
+    ],
+    "wsrVersion": "e2e-fixture"
+  },
+  "B": 200,
+  "blacklistedBuckets": 2,
+  "blocks": 15,
+  "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+  "configHash": "90f1f4f2b9d9ee02c3665716d39841433c7f04bf81accb691f3d7331bdd29a3e",
+  "contrasts": {
+    "1-2": {
+      "ci95": [
+        -0.2450503935561836,
+        0.2891242444344289
+      ],
+      "ci95Hit": [
+        -0.03512368285595558,
+        0.004653277446851128
+      ],
+      "diffDisp": 0.05788481256431405,
+      "diffHit": -0.014097210561375195,
+      "significant": false
+    },
+    "1-3": {
+      "ci95": [
+        -0.24387236214365934,
+        0.1362072902033656
+      ],
+      "ci95Hit": [
+        -0.045458886774640196,
+        0.008626506507813636
+      ],
+      "diffDisp": -0.04398175861065459,
+      "diffHit": -0.018861567709390015,
+      "significant": false
+    },
+    "1-4": {
+      "ci95": [
+        -0.35564897789413946,
+        0.2444796374762137
+      ],
+      "ci95Hit": [
+        -0.033198600501293425,
+        0.026602973442053892
+      ],
+      "diffDisp": -0.040897533247337026,
+      "diffHit": -0.004311709222648119,
+      "significant": false
+    }
+  },
+  "gate": {
+    "pass": false,
+    "reasons": [
+      "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+      "(1)−(4): 95 % block-bootstrap CI contains 0",
+      "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+    ]
+  },
+  "gateConfigHash": "fd10a2369e6427cf4224ddd1bd47a2a8cba8fc95624a72e93f030ad3c1356dc0",
+  "monotone": {
+    "ci95": [
+      -0.09264730247327778,
+      0.06895289940744764
+    ],
+    "pass": false,
+    "slope": -0.014174825118816724,
+    "spearman": -0.01818181818181818
+  },
+  "randomClipped": 0,
+  "reactionKey": "12018847ad02ad52d093df7476cfe406d7bb19d20f77587851fe52e065db931e",
+  "seed": 1,
+  "sets": {
+    "placebo": {
+      "approached": 4203,
+      "ci95Disp": [
+        -0.18930727036088987,
+        0.1449730122147961
+      ],
+      "ci95Hit": [
+        0.4932259026729488,
+        0.5236224995436917
+      ],
+      "complete": 4198,
+      "meanDisp": -0.018171351437192285,
+      "n": 4904,
+      "pHit": 0.5088137208194379,
+      "unresolvedShare": 0.0007146260123868509
+    },
+    "random": {
+      "approached": 1046,
+      "ci95Disp": [
+        -0.23483151007848213,
+        0.2633337956874349
+      ],
+      "ci95Hit": [
+        0.4622849597704971,
+        0.5259463824289405
+      ],
+      "complete": 1046,
+      "meanDisp": -0.021255576800509855,
+      "n": 1046,
+      "pHit": 0.494263862332696,
+      "unresolvedShare": 0.0009560229445506692
+    },
+    "slow": {
+      "approached": 5189,
+      "ci95Disp": [
+        -0.22575382027229876,
+        -0.0032660368946401575
+      ],
+      "ci95Hit": [
+        0.49376121814913504,
+        0.5136521650561735
+      ],
+      "complete": 5186,
+      "meanDisp": -0.12003792261216092,
+      "n": 5968,
+      "pHit": 0.5040493636714231,
+      "unresolvedShare": 0.0007713073659853452
+    },
+    "wick": {
+      "approached": 1046,
+      "ci95Disp": [
+        -0.342509983243882,
+        0.17179823341147135
+      ],
+      "ci95Hit": [
+        0.47246397707309284,
+        0.507391000661716
+      ],
+      "complete": 1045,
+      "meanDisp": -0.06215311004784688,
+      "n": 1226,
+      "pHit": 0.48995215311004786,
+      "unresolvedShare": 0
+    }
+  },
+  "span": {
+    "from": 1736380800000,
+    "to": 1737590400000
+  },
+  "symbol": "ETHUSDT",
+  "totalBuckets": 21916,
+  "venue": "binance",
+  "wickByDecile": [
+    {
+      "approached": 106,
+      "ci95Disp": [
+        -0.9801847826086956,
+        0.4435913975405127
+      ],
+      "ci95Hit": [
+        0.39825311800447716,
+        0.575909090909091
+      ],
+      "complete": 105,
+      "decile": 1,
+      "meanDisp": -0.20857142857142855,
+      "n": 123,
+      "pHit": 0.49523809523809526,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 108,
+      "ci95Disp": [
+        -0.6026993014547026,
+        0.8398044217687077
+      ],
+      "ci95Hit": [
+        0.45508664955070605,
+        0.5957633445315416
+      ],
+      "complete": 108,
+      "decile": 2,
+      "meanDisp": 0.20046296296296295,
+      "n": 123,
+      "pHit": 0.5185185185185185,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 109,
+      "ci95Disp": [
+        -0.820735346585117,
+        0.545792147396558
+      ],
+      "ci95Hit": [
+        0.4943824404761905,
+        0.632183908045977
+      ],
+      "complete": 109,
+      "decile": 3,
+      "meanDisp": -0.11590214067278286,
+      "n": 122,
+      "pHit": 0.5688073394495413,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 107,
+      "ci95Disp": [
+        -1.0190183313900762,
+        0.889693104853882
+      ],
+      "ci95Hit": [
+        0.3516919191919192,
+        0.5530243902439025
+      ],
+      "complete": 107,
+      "decile": 4,
+      "meanDisp": 0.12803738317757013,
+      "n": 123,
+      "pHit": 0.4485981308411215,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 95,
+      "ci95Disp": [
+        -1.011402329749104,
+        0.9373708390332879
+      ],
+      "ci95Hit": [
+        0.410427993059572,
+        0.663670784103115
+      ],
+      "complete": 95,
+      "decile": 5,
+      "meanDisp": -0.03807017543859652,
+      "n": 122,
+      "pHit": 0.5368421052631579,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 106,
+      "ci95Disp": [
+        -0.34839630681818157,
+        0.9611321780147664
+      ],
+      "ci95Hit": [
+        0.43768207282913174,
+        0.5941589011842361
+      ],
+      "complete": 106,
+      "decile": 6,
+      "meanDisp": 0.25801886792452833,
+      "n": 123,
+      "pHit": 0.5188679245283019,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 101,
+      "ci95Disp": [
+        -1.1566289836347976,
+        -0.21626547619047606
+      ],
+      "ci95Hit": [
+        0.39811040185695634,
+        0.5521963443396227
+      ],
+      "complete": 101,
+      "decile": 7,
+      "meanDisp": -0.691089108910891,
+      "n": 123,
+      "pHit": 0.4752475247524752,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 104,
+      "ci95Disp": [
+        -0.6832263423710789,
+        0.6275407983633076
+      ],
+      "ci95Hit": [
+        0.4597341954022989,
+        0.6240976744186046
+      ],
+      "complete": 104,
+      "decile": 8,
+      "meanDisp": 0.009615384615384625,
+      "n": 122,
+      "pHit": 0.5384615384615384,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 110,
+      "ci95Disp": [
+        -0.9006145736793326,
+        0.3899565849442089
+      ],
+      "ci95Hit": [
+        0.23878984448835813,
+        0.4134698275862069
+      ],
+      "complete": 110,
+      "decile": 9,
+      "meanDisp": -0.20136363636363636,
+      "n": 123,
+      "pHit": 0.32727272727272727,
+      "unresolvedShare": 0
+    },
+    {
+      "approached": 100,
+      "ci95Disp": [
+        -0.6506960227272728,
+        0.5559686248331108
+      ],
+      "ci95Hit": [
+        0.39280582922824303,
+        0.5731977103960396
+      ],
+      "complete": 100,
+      "decile": 10,
+      "meanDisp": 0.014500000000000004,
+      "n": 122,
+      "pHit": 0.48,
+      "unresolvedShare": 0
+    }
+  ]
+}

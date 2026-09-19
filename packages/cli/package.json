@@ -1,0 +1,21 @@
+{
+  "name": "@wsr/cli",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "dependencies": {
+    "@wsr/backtest": "workspace:*",
+    "@wsr/core": "workspace:*",
+    "@wsr/data": "workspace:*",
+    "commander": "^15.0.0",
+    "pino": "^10.3.1"
+  },
+  "bin": {
+    "wsr": "./dist/main.js"
+  }
+}

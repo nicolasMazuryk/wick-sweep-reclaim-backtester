@@ -1,0 +1,479 @@
+{
+  "runManifest": {
+    "config": {
+      "AgeScale": 240,
+      "AnchorWindow": 20,
+      "ArmDistance": 0.5,
+      "ArmMode": "RestEarly",
+      "BandWidthMult": 0.5,
+      "BreakoutMult": 4,
+      "DailyLossLimit": 3,
+      "DistanceScale": 5,
+      "FillWindow": 100,
+      "MaxAge": 720,
+      "MaxHold": 4,
+      "MaxPending": 4,
+      "MaxSpikeDuration": 3,
+      "MaxSweeps": 3,
+      "MaxTopDwell": 0.5,
+      "MaxUses": 1,
+      "MergeTolerance": 0.25,
+      "MinRejectImbalance": 0.2,
+      "MinRejectSpeed": 0.5,
+      "MinRetrace": 0.6,
+      "MinReturnSpeed": 0.3,
+      "MinSpikeSize": 1.5,
+      "MinSweepMult": 0.3,
+      "PivotMult": 1.2,
+      "RankWindow": 500,
+      "RetraceWindow": 5,
+      "RiskFraction": 0.0025,
+      "SlipCoef": 0.05,
+      "SlipTicks": 1,
+      "StopMult": 1,
+      "StopOffset": 1,
+      "TargetMult": 2,
+      "TargetUnits": 2,
+      "TopBandMult": 0.15,
+      "TriggerOffset": 0,
+      "UnitWindow": 60,
+      "ageClock": "volume",
+      "blacklistFunding": false,
+      "blacklistMacroReleases": false,
+      "counterTrendBlock": false,
+      "data": {
+        "lowCapSymbol": "DOGEUSDT"
+      },
+      "equity": 100000,
+      "exchangeLatencyMs": 30,
+      "fees": {
+        "binance": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bitget": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bybit": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "gate": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "kucoin": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "okx": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        }
+      },
+      "latencyMs": 150,
+      "minExtremePrintQtyPct": false,
+      "minStrengthPassRate": 0.4,
+      "search": {
+        "grid": {
+          "BandWidthMult": [],
+          "BreakoutMult": [],
+          "MinSpikeSize": [],
+          "MinSweepMult": [],
+          "PivotMult": [],
+          "minStrengthPassRate": []
+        },
+        "targetGrid": {
+          "StopMult": [],
+          "TargetMult": []
+        }
+      },
+      "seed": 1,
+      "stageB": {
+        "lambda": 1
+      },
+      "stopMode": "client",
+      "strengthModel": "stageB",
+      "targetMode": "sweepDepth",
+      "timeStop": false
+    },
+    "configHash": "90f1f4f2b9d9ee02c3665716d39841433c7f04bf81accb691f3d7331bdd29a3e",
+    "createdAt": "2026-09-19T00:00:00.000Z",
+    "dataChecksums": [
+      {
+        "day": "2025-02-20",
+        "sha256Merged": "5b5c38c4afcf8ddcf6f53bdfc69e0b6528d962022aaac42a554fbc3da25e1bc3"
+      },
+      {
+        "day": "2025-02-21",
+        "sha256Merged": "3e5111e3a6dbd09fdd5584f61f240f57d89ba73c4fc7c3ce04862d46164576ef"
+      },
+      {
+        "day": "2025-02-22",
+        "sha256Merged": "edb739d8fb7d82fe1e4ab93cc6847968414d4d32e24e984572bd5c76cce82c1d"
+      },
+      {
+        "day": "2025-02-23",
+        "sha256Merged": "9bd3be7a9c4b23fefea7d5c57b21c0e4e54c22ac40ac01441bb8e2a64af1bfbd"
+      },
+      {
+        "day": "2025-02-24",
+        "sha256Merged": "154636cbfcec832eb872181eed997f8b739b0e819abe5648d8beb92db6408ec7"
+      },
+      {
+        "day": "2025-02-25",
+        "sha256Merged": "a2d6dbb4c8e010a8289d41c5165af341bddbccfb020dff827d799b3b2416d056"
+      },
+      {
+        "day": "2025-02-26",
+        "sha256Merged": "312cd0fb6faa7b979034d2a72e231360a59d243c1d0e5cbd7df2b63f41344554"
+      },
+      {
+        "day": "2025-02-27",
+        "sha256Merged": "25aec69226da8591d9e2ec425a7421c3cef1405b63fe3302558561d42fdc6b03"
+      },
+      {
+        "day": "2025-02-28",
+        "sha256Merged": "e3c3f6a7989cd6a47197fbfad2d22f8bd0344b038fd9f8785223cd47456eb4a1"
+      },
+      {
+        "day": "2025-03-01",
+        "sha256Merged": "aaa81984c487f9705a4a13d0e7b40f7b90fd4d7066d8432228c575ee9c60fdb4"
+      }
+    ],
+    "feesVerifiedAt": "2026-09-19",
+    "gitCommit": "e2e-fixture",
+    "runId": "9d6f9a2299fe375a",
+    "seed": 1,
+    "span": {
+      "from": "2025-02-28",
+      "to": "2025-03-01"
+    },
+    "symbol": "ETHUSDT",
+    "venue": "binance",
+    "warnings": [
+      "--folds 1,1,1: non-standard fold lengths (Spec §6.3: 56/14/14 days), F = 1 < 12",
+      "P&L run despite failed reaction test (§9.2)"
+    ],
+    "wsrVersion": "e2e-fixture"
+  },
+  "B": 200,
+  "blacklistedBuckets": 0,
+  "blocks": 290,
+  "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+  "configHash": "90f1f4f2b9d9ee02c3665716d39841433c7f04bf81accb691f3d7331bdd29a3e",
+  "contrasts": {
+    "1-2": {
+      "ci95": [
+        -0.674751890576002,
+        1.3806187708184339
+      ],
+      "ci95Hit": [
+        -0.021248704276228252,
+        0.2085284864053406
+      ],
+      "diffDisp": 0.4498128474057963,
+      "diffHit": 0.14638280366142137,
+      "significant": false
+    },
+    "1-3": {
+      "ci95": [
+        -0.30345347802831074,
+        1.2178169539413222
+      ],
+      "ci95Hit": [
+        -0.1196170376512306,
+        -0.023539441931217417
+      ],
+      "diffDisp": 0.17108707907179052,
+      "diffHit": -0.07009795191451473,
+      "significant": false
+    },
+    "1-4": {
+      "ci95": [
+        -1.3438884275015968,
+        0.9473754647880145
+      ],
+      "ci95Hit": [
+        -0.08550067871847658,
+        0.04504169087459059
+      ],
+      "diffDisp": -0.21996964255787793,
+      "diffHit": -0.033333333333333326,
+      "significant": false
+    }
+  },
+  "gate": {
+    "pass": false,
+    "reasons": [
+      "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+      "(1)−(4): 95 % block-bootstrap CI contains 0",
+      "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+    ]
+  },
+  "gateConfigHash": "fd10a2369e6427cf4224ddd1bd47a2a8cba8fc95624a72e93f030ad3c1356dc0",
+  "monotone": {
+    "ci95": [
+      -0.4139082052170373,
+      0.01964282321406177
+    ],
+    "pass": false,
+    "slope": -0.15404618926283964,
+    "spearman": -0.5636363636363636
+  },
+  "randomClipped": 1,
+  "reactionKey": "82ae3647351b1ca29c3bdaa1f03cddc89e1a3d9add100765869fbbea3c636970",
+  "seed": 1,
+  "sets": {
+    "placebo": {
+      "approached": 1123,
+      "ci95Disp": [
+        -1.498844529976698,
+        -0.023879121342087636
+      ],
+      "ci95Hit": [
+        0.24190760760673563,
+        0.4968699144417769
+      ],
+      "complete": 1123,
+      "meanDisp": -0.4043412325980029,
+      "n": 2348,
+      "pHit": 0.4300979519145147,
+      "unresolvedShare": 0.15138023152270705
+    },
+    "random": {
+      "approached": 300,
+      "ci95Disp": [
+        -0.5782862376223159,
+        0.378226832662258
+      ],
+      "ci95Hit": [
+        0.19432714446676141,
+        0.4696295343927322
+      ],
+      "complete": 300,
+      "meanDisp": -0.013284510968334464,
+      "n": 300,
+      "pHit": 0.3933333333333333,
+      "unresolvedShare": 0.22333333333333333
+    },
+    "slow": {
+      "approached": 9723,
+      "ci95Disp": [
+        -0.7972328913532342,
+        -0.5702918150684484
+      ],
+      "ci95Hit": [
+        0.19432528609121374,
+        0.2378164265854534
+      ],
+      "complete": 9723,
+      "meanDisp": -0.6830670009320087,
+      "n": 23672,
+      "pHit": 0.21361719633857862,
+      "unresolvedShare": 0.42435462305872673
+    },
+    "wick": {
+      "approached": 300,
+      "ci95Disp": [
+        -1.3544203487017292,
+        0.6123678440171576
+      ],
+      "ci95Hit": [
+        0.17947761194029851,
+        0.4341535641324967
+      ],
+      "complete": 300,
+      "meanDisp": -0.2332541535262124,
+      "n": 587,
+      "pHit": 0.36,
+      "unresolvedShare": 0.19666666666666666
+    }
+  },
+  "span": {
+    "from": 1740700800000,
+    "to": 1740873600000
+  },
+  "symbol": "ETHUSDT",
+  "totalBuckets": 419027,
+  "venue": "binance",
+  "wickByDecile": [
+    {
+      "approached": 45,
+      "ci95Disp": [
+        0.06318681318681318,
+        0.25
+      ],
+      "ci95Hit": [
+        0,
+        0.5714285714285714
+      ],
+      "complete": 45,
+      "decile": 1,
+      "meanDisp": 0.14032819032819033,
+      "n": 59,
+      "pHit": 0.5333333333333333,
+      "unresolvedShare": 0.06666666666666667
+    },
+    {
+      "approached": 27,
+      "ci95Disp": [
+        -2.145989691614691,
+        3.170426062464106
+      ],
+      "ci95Hit": [
+        0.09958333333333341,
+        0.474342105263158
+      ],
+      "complete": 27,
+      "decile": 2,
+      "meanDisp": 0.5235879346990457,
+      "n": 59,
+      "pHit": 0.25925925925925924,
+      "unresolvedShare": 0.4444444444444444
+    },
+    {
+      "approached": 29,
+      "ci95Disp": [
+        -4.063909791898922,
+        0.6283099467582226
+      ],
+      "ci95Hit": [
+        0.04062500000000017,
+        0.3687693498452013
+      ],
+      "complete": 29,
+      "decile": 3,
+      "meanDisp": -1.5080320063078683,
+      "n": 59,
+      "pHit": 0.20689655172413793,
+      "unresolvedShare": 0.41379310344827586
+    },
+    {
+      "approached": 28,
+      "ci95Disp": [
+        -1.2794835955215413,
+        2.0048066726690683
+      ],
+      "ci95Hit": [
+        0.11748366013071898,
+        0.42105263157894735
+      ],
+      "complete": 28,
+      "decile": 4,
+      "meanDisp": 0.2760204081632653,
+      "n": 58,
+      "pHit": 0.2857142857142857,
+      "unresolvedShare": 0.32142857142857145
+    },
+    {
+      "approached": 36,
+      "ci95Disp": [
+        -0.27178308823529396,
+        2.4730952380952402
+      ],
+      "ci95Hit": [
+        0.25,
+        0.5939062500000001
+      ],
+      "complete": 36,
+      "decile": 5,
+      "meanDisp": 0.9006291910703675,
+      "n": 59,
+      "pHit": 0.4444444444444444,
+      "unresolvedShare": 0.1111111111111111
+    },
+    {
+      "approached": 40,
+      "ci95Disp": [
+        -1.5312284617794476,
+        5.466984126984127
+      ],
+      "ci95Hit": [
+        0,
+        0.41277421080791865
+      ],
+      "complete": 40,
+      "decile": 6,
+      "meanDisp": 0.09618818681318668,
+      "n": 59,
+      "pHit": 0.325,
+      "unresolvedShare": 0.125
+    },
+    {
+      "approached": 26,
+      "ci95Disp": [
+        -4.283222853535353,
+        0.6937743506493508
+      ],
+      "ci95Hit": [
+        0,
+        0.3333333333333333
+      ],
+      "complete": 26,
+      "decile": 7,
+      "meanDisp": -0.7092036168959245,
+      "n": 58,
+      "pHit": 0.23076923076923078,
+      "unresolvedShare": 0.11538461538461539
+    },
+    {
+      "approached": 30,
+      "ci95Disp": [
+        -6.779246794871796,
+        0.9045006613756656
+      ],
+      "ci95Hit": [
+        0.165277777777778,
+        0.6406666666666668
+      ],
+      "complete": 30,
+      "decile": 8,
+      "meanDisp": -1.3909203296703299,
+      "n": 59,
+      "pHit": 0.5,
+      "unresolvedShare": 0.06666666666666667
+    },
+    {
+      "approached": 23,
+      "ci95Disp": [
+        -0.5840266740834922,
+        1.5007812500000002
+      ],
+      "ci95Hit": [
+        0,
+        0.6384515366430261
+      ],
+      "complete": 23,
+      "decile": 9,
+      "meanDisp": 0.024196817675078544,
+      "n": 59,
+      "pHit": 0.4782608695652174,
+      "unresolvedShare": 0.17391304347826086
+    },
+    {
+      "approached": 16,
+      "ci95Disp": [
+        -4.376215277777778,
+        0.3718818082788681
+      ],
+      "ci95Hit": [
+        0,
+        0.3076923076923077
+      ],
+      "complete": 16,
+      "decile": 10,
+      "meanDisp": -1.9427083333333333,
+      "n": 58,
+      "pHit": 0.125,
+      "unresolvedShare": 0.3125
+    }
+  ]
+}

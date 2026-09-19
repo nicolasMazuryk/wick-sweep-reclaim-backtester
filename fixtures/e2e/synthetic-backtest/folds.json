@@ -1,0 +1,4535 @@
+{
+  "runManifest": {
+    "config": {
+      "AgeScale": 240,
+      "AnchorWindow": 20,
+      "ArmDistance": 0.5,
+      "ArmMode": "RestEarly",
+      "BandWidthMult": 0.5,
+      "BreakoutMult": 4,
+      "DailyLossLimit": 3,
+      "DistanceScale": 5,
+      "FillWindow": 100,
+      "MaxAge": 720,
+      "MaxHold": 4,
+      "MaxPending": 4,
+      "MaxSpikeDuration": 3,
+      "MaxSweeps": 3,
+      "MaxTopDwell": 0.5,
+      "MaxUses": 1,
+      "MergeTolerance": 0.25,
+      "MinRejectImbalance": 0.2,
+      "MinRejectSpeed": 0.5,
+      "MinRetrace": 0.6,
+      "MinReturnSpeed": 0.3,
+      "MinSpikeSize": 1.5,
+      "MinSweepMult": 0.3,
+      "PivotMult": 1.2,
+      "RankWindow": 500,
+      "RetraceWindow": 5,
+      "RiskFraction": 0.0025,
+      "SlipCoef": 0.05,
+      "SlipTicks": 1,
+      "StopMult": 1,
+      "StopOffset": 1,
+      "TargetMult": 2,
+      "TargetUnits": 2,
+      "TopBandMult": 0.15,
+      "TriggerOffset": 0,
+      "UnitWindow": 60,
+      "ageClock": "volume",
+      "blacklistFunding": false,
+      "blacklistMacroReleases": false,
+      "counterTrendBlock": false,
+      "data": {
+        "lowCapSymbol": "DOGEUSDT"
+      },
+      "equity": 100000,
+      "exchangeLatencyMs": 30,
+      "fees": {
+        "binance": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bitget": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "bybit": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "gate": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "kucoin": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        },
+        "okx": {
+          "MakerFee": 0,
+          "TakerFee": 0,
+          "verifiedAt": "e2e-fixture"
+        }
+      },
+      "latencyMs": 150,
+      "minExtremePrintQtyPct": false,
+      "minStrengthPassRate": 0.4,
+      "search": {
+        "grid": {
+          "BandWidthMult": [],
+          "BreakoutMult": [],
+          "MinSpikeSize": [],
+          "MinSweepMult": [],
+          "PivotMult": [],
+          "minStrengthPassRate": []
+        },
+        "targetGrid": {
+          "StopMult": [],
+          "TargetMult": []
+        }
+      },
+      "seed": 1,
+      "stageB": {
+        "lambda": 1
+      },
+      "stopMode": "client",
+      "strengthModel": "stageB",
+      "targetMode": "sweepDepth",
+      "timeStop": false
+    },
+    "configHash": "90f1f4f2b9d9ee02c3665716d39841433c7f04bf81accb691f3d7331bdd29a3e",
+    "createdAt": "2026-09-19T00:00:00.000Z",
+    "dataChecksums": [
+      {
+        "day": "2025-01-01",
+        "sha256Merged": "5b500910f9c4f001c7f808279714bad3d91600490f6122537032220074d91a3a"
+      },
+      {
+        "day": "2025-01-02",
+        "sha256Merged": "f3e7f94230fc911549d2de82ad9468809d102f54d1b662c3ff46ab47d6e66a50"
+      },
+      {
+        "day": "2025-01-03",
+        "sha256Merged": "2e54d71b83bd38f9de9406aadcd58cde4552403a977f918999bcba604ddea2c9"
+      },
+      {
+        "day": "2025-01-04",
+        "sha256Merged": "5daaee0e45018aa5005db7bd4a6e6eead5e7732b053a94c112f8bf430f0ca2a6"
+      },
+      {
+        "day": "2025-01-05",
+        "sha256Merged": "60d099e5c374abebef866e8e8281653e958af89af131ebf937c97b28d4948f5e"
+      },
+      {
+        "day": "2025-01-06",
+        "sha256Merged": "924eb05ed8b50e026e8f50a82c1a821a152200cada6ea1a6570ffb2734664093"
+      },
+      {
+        "day": "2025-01-07",
+        "sha256Merged": "d2ae25d33c34379f68eeff5ccfde935cc4471da265b4b39bb7bb4f3fa4303be7"
+      },
+      {
+        "day": "2025-01-08",
+        "sha256Merged": "278fe29016e0910862a828e8be24e7bec9f7177edd6184541fa2127a32245d16"
+      },
+      {
+        "day": "2025-01-09",
+        "sha256Merged": "745370b18d4ed18554d221609a29a6c93eb60acf53c319e4889dea70389df16d"
+      },
+      {
+        "day": "2025-01-10",
+        "sha256Merged": "db7df9b132f68e70ef45efd47273c775c6d88a5101218e0d25497e08bb287679"
+      },
+      {
+        "day": "2025-01-11",
+        "sha256Merged": "8f0b80292bacd5acfb6185e51797714ba5eee314f7d9089002e81f294ec5440d"
+      },
+      {
+        "day": "2025-01-12",
+        "sha256Merged": "236e7613204a00d45bbf347c815ec18fc5013b21cde2a7e336db9ec10aeaea6a"
+      },
+      {
+        "day": "2025-01-13",
+        "sha256Merged": "7d2d4c77f0c01dc00ad1e94305d1903f6a9e8aab1d377284ad42005412dad56d"
+      },
+      {
+        "day": "2025-01-14",
+        "sha256Merged": "a714e3abc8b0c8cb7a2cc9e20c1e8a74ed18e59699428398c483a5beacf1cc71"
+      },
+      {
+        "day": "2025-01-15",
+        "sha256Merged": "a46f65af153aac5bf3c29fc75361884e9dbeae9a2ab3d4a3aadf76c7f0910fda"
+      },
+      {
+        "day": "2025-01-16",
+        "sha256Merged": "301216f4690293ad1265edb7674f5a3dd792a87cbd462a487d5db1c97a8d284a"
+      },
+      {
+        "day": "2025-01-17",
+        "sha256Merged": "87a4f2a74335c418c737482f7c029446036e7a8afc9f9b83a5b9f3a6e442d6aa"
+      },
+      {
+        "day": "2025-01-18",
+        "sha256Merged": "43184cb619f54af62a098dd6d532227cf1bbabef01df9f0a0fb0bf4cd82dc30b"
+      },
+      {
+        "day": "2025-01-19",
+        "sha256Merged": "76c89f2a95b7e0a201e2c80b942e06ad93a63b0300014fdd4d17da913da24df5"
+      },
+      {
+        "day": "2025-01-20",
+        "sha256Merged": "dfd5c3474dbcd7dd2a0e9925d6dac21f7752d76d09bd61e40b3bdb105b238966"
+      },
+      {
+        "day": "2025-01-21",
+        "sha256Merged": "448927d2e4d9fc919928db2855f3ce395ee7b7be76df8dadc19573f3b3a40812"
+      },
+      {
+        "day": "2025-01-22",
+        "sha256Merged": "89947c0709664138addb8ab635e57c71b0970a3698180997d298ae207e01605b"
+      }
+    ],
+    "feesVerifiedAt": null,
+    "gitCommit": "e2e-fixture",
+    "runId": "ca705ef826b52ddd",
+    "seed": 1,
+    "span": {
+      "from": "2025-01-09",
+      "to": "2025-01-22"
+    },
+    "symbol": "ETHUSDT",
+    "venue": "binance",
+    "warnings": [
+      "[VERIFY] fees unverified",
+      "--folds 4,2,2: non-standard fold lengths (Spec §6.3: 56/14/14 days), F = 5 < 12",
+      "P&L run despite failed reaction test (§9.2)"
+    ],
+    "wsrVersion": "e2e-fixture"
+  },
+  "folds": [
+    {
+      "BreakevenHitRate": 0.5032973368016846,
+      "HitRate": 0.043478260869565216,
+      "HitRateMinusBreakeven": -0.45981907593211946,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0.0003450655624568668,
+      "byDecile": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.40899122807017546,
+          "expectancy_bps": 0.13326964855954818,
+          "key": "07",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.125,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.0920375950803582,
+          "expectancy_bps": -0.004147263393537971,
+          "key": "08",
+          "trades": 8
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6511158758639022,
+          "expectancy_bps": -0.36720374160895725,
+          "key": "09",
+          "trades": 6
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4759573759573759,
+          "expectancy_bps": -0.6673963153657901,
+          "key": "10",
+          "trades": 6
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.03588516746411485,
+          "expectancy_bps": 0.21681932970604073,
+          "key": "00",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6507177033492821,
+          "expectancy_bps": -0.7678248103706202,
+          "key": "02",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5833333333333333,
+          "expectancy_bps": -0.6337283573427436,
+          "key": "03",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7073863636363638,
+          "expectancy_bps": -0.7676534827449338,
+          "key": "04",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.01041666666666663,
+          "expectancy_bps": 0.0998561273513604,
+          "key": "06",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2666666666666666,
+          "expectancy_bps": -0.6340032634483771,
+          "key": "07",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2105263157894737,
+          "expectancy_bps": -0.7670501917625479,
+          "key": "09",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2666666666666666,
+          "expectancy_bps": -0.6334959306221931,
+          "key": "12",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1818181818181819,
+          "expectancy_bps": 0.43375118030369264,
+          "key": "15",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.014583333333333282,
+          "expectancy_bps": 0.01666470405093695,
+          "key": "16",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1,
+          "expectancy_bps": 0.4003469673717222,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1904761904761905,
+          "expectancy_bps": -0.8339921871611906,
+          "key": "19",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4000000000000001,
+          "expectancy_bps": -0.7006165425574505,
+          "key": "20",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.25,
+          "expectancy_bps": 0.5004687724168304,
+          "key": "22",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.2832861159673659,
+          "expectancy_bps": -0.14209342162536348,
+          "key": "23",
+          "trades": 4
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9368693540669856,
+          "expectancy_bps": -0.4473282307691019,
+          "key": "1",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1818181818181819,
+          "expectancy_bps": 0.43375118030369264,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4000000000000001,
+          "expectancy_bps": -0.7006165425574505,
+          "key": "12",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6104199893673578,
+          "expectancy_bps": -0.14463291785009771,
+          "key": "2",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.415163783584836,
+          "expectancy_bps": -0.6563693188167569,
+          "key": "4",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.09523809523809523,
+          "expectancy_bps": -0.2168226098947342,
+          "key": "5",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5722222222222222,
+          "expectancy_bps": -0.28934750099550754,
+          "key": "6",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.0340909090909092,
+          "expectancy_bps": 0.40035949046195984,
+          "key": "7",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.07291666666666663,
+          "expectancy_bps": 0.06681830572276015,
+          "key": "8",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3076923076923077,
+          "expectancy_bps": -0.5671241468117615,
+          "key": "9",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.5263157894736843,
+          "expectancy_bps": 0.9673438073317988,
+          "key": "neutral",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.045454545454545456,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6271855625833497,
+          "expectancy_bps": -0.30946878684772466,
+          "key": "range",
+          "trades": 22
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.836013986013986,
+          "expectancy_bps": -0.3753679966556907,
+          "key": "[0.3,0.5)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1904761904761905,
+          "expectancy_bps": -0.8339921871611906,
+          "key": "[0.5,1)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.1111111111111111,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.20868298368298366,
+          "expectancy_bps": -0.0741855840056962,
+          "key": "[1,2)",
+          "trades": 9
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6510097332978911,
+          "expectancy_bps": -0.3153150081647694,
+          "key": "[2,inf)",
+          "trades": 9
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.047619047619047616,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.4470682501917464,
+          "expectancy_bps": -0.2161500302600469,
+          "key": "1",
+          "trades": 21
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4416666666666667,
+          "expectancy_bps": -0.6509094339285796,
+          "key": "2",
+          "trades": 2
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6171943015318015,
+          "expectancy_bps": -0.26462051025701616,
+          "key": "[1.5,2.5]",
+          "trades": 14
+        },
+        {
+          "HitRate": 0.1111111111111111,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.4034495962127541,
+          "expectancy_bps": -0.23736470663554632,
+          "key": "outside",
+          "trades": 9
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 353,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.5335550690156525,
+      "expectancy_bps": -0.25395519579644105,
+      "foldId": 0,
+      "from": "2025-01-09",
+      "killSwitchTrips": 3,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.25395519579644105,
+          "latencyMs": 150,
+          "trades": 23
+        }
+      ],
+      "maxDrawdown_R": 14.373324920693342,
+      "meanHoldBuckets": 13.260527216706608,
+      "mechanism": {
+        "ci95": [
+          -0.12059355266617028,
+          0.15216034405562176
+        ],
+        "diff": 0.018882986219735554,
+        "losersMeanImb": -0.024451394978363298,
+        "winnersMeanImb": -0.0055684087586277435
+      },
+      "profitFactor": 0.4315242230491276,
+      "realised": 23,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -2.333796055237916,
+      "sharpeTrade": -0.4119527547356654,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.25395519579644105,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.25395519579644105,
+        "optimistic": -0.25395519579644105
+      },
+      "to": "2025-01-12",
+      "touchAndReverseShare": 0,
+      "trades": 23,
+      "volumeDays": 4.025,
+      "window": "train"
+    },
+    {
+      "BreakevenHitRate": 0.5432626250364078,
+      "HitRate": 0.09090909090909091,
+      "HitRateMinusBreakeven": -0.4523535341273168,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.20062656641604015,
+          "expectancy_bps": 0.1250175597400516,
+          "key": "07",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.4,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.5429049897470951,
+          "expectancy_bps": 0.3871296001631556,
+          "key": "08",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3756474685960754,
+          "expectancy_bps": -0.19083506555577023,
+          "key": "09",
+          "trades": 7
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.495234375,
+          "expectancy_bps": -0.6673411333937221,
+          "key": "10",
+          "trades": 6
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.590253411306043,
+          "expectancy_bps": 0.911767214367158,
+          "key": "01",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1904761904761905,
+          "expectancy_bps": -0.8340450517775168,
+          "key": "02",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4000000000000001,
+          "expectancy_bps": 0.7006048555252702,
+          "key": "03",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -2.3076923076923075,
+          "expectancy_bps": -1.0007639164562283,
+          "key": "04",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3076923076923077,
+          "expectancy_bps": -0.5671525273317475,
+          "key": "05",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.08471546513342171,
+          "expectancy_bps": 0.083449955894624,
+          "key": "06",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.0091247863247863,
+          "expectancy_bps": -0.42285965591570057,
+          "key": "07",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -2.75,
+          "expectancy_bps": -1.1010570147341445,
+          "key": "08",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.5333333333333334,
+          "expectancy_bps": 0.7672165051620328,
+          "key": "09",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5263157894736843,
+          "expectancy_bps": -0.967553590791559,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.55,
+          "expectancy_bps": 1.0346058985885975,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -3.12140625,
+          "expectancy_bps": -1.6679468982215915,
+          "key": "15",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2,
+          "expectancy_bps": -0.8013596401895215,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.28409090909090917,
+          "expectancy_bps": -0.13362256909159967,
+          "key": "22",
+          "trades": 2
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0.16666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.2887041605750487,
+          "expectancy_bps": -0.07808006088228965,
+          "key": "1",
+          "trades": 6
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6923076923076923,
+          "expectancy_bps": -0.7338568178634093,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3333333333333333,
+          "expectancy_bps": -0.5338547314543871,
+          "key": "16",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4000000000000001,
+          "expectancy_bps": 0.7006048555252702,
+          "key": "2",
+          "trades": 1
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.380952380952381,
+          "expectancy_bps": 0.9676859625472164,
+          "key": "25",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.634992156862745,
+          "expectancy_bps": -0.27554345863570623,
+          "key": "3",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.55,
+          "expectancy_bps": 1.0346058985885975,
+          "key": "4",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.1722488038277512,
+          "expectancy_bps": -0.2666686755520973,
+          "key": "5",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6660561660561661,
+          "expectancy_bps": -0.811810537903185,
+          "key": "6",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.11282051282051286,
+          "expectancy_bps": 0.10003198891514264,
+          "key": "7",
+          "trades": 2
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.880769230769231,
+          "expectancy_bps": -0.8787578242623585,
+          "key": "neutral",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.10526315789473684,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.12850524334027363,
+          "expectancy_bps": -0.014100028773140217,
+          "key": "range",
+          "trades": 19
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.47470862470862474,
+          "expectancy_bps": 0.3005565369814048,
+          "key": "[0,0.3)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.46963562753036414,
+          "expectancy_bps": -0.06658880415145957,
+          "key": "[0.3,0.5)",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.6896095238095239,
+          "expectancy_bps": 0.48340927205895556,
+          "key": "[0.5,1)",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5242812499999999,
+          "expectancy_bps": -0.22692147394458226,
+          "key": "[1,2)",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7326574732457085,
+          "expectancy_bps": -0.3504877196513035,
+          "key": "[2,inf)",
+          "trades": 10
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.1111111111111111,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.42275268563410656,
+          "expectancy_bps": -0.16503357572075436,
+          "key": "1",
+          "trades": 18
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.1185897435897435,
+          "expectancy_bps": 0.016607585874209768,
+          "key": "2",
+          "trades": 4
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2752525252525253,
+          "expectancy_bps": -0.533861038261148,
+          "key": "[1.5,2.5]",
+          "trades": 6
+        },
+        {
+          "HitRate": 0.125,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.027024510266108734,
+          "expectancy_bps": 0.018687013130634266,
+          "key": "outside",
+          "trades": 16
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 193,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.3674503325351315,
+      "expectancy_bps": -0.13200790997621545,
+      "foldId": 0,
+      "from": "2025-01-13",
+      "killSwitchTrips": 2,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.13200790997621545,
+          "latencyMs": 150,
+          "trades": 22
+        }
+      ],
+      "maxDrawdown_R": 11.054667549691022,
+      "meanHoldBuckets": 19.34216177523264,
+      "mechanism": {
+        "ci95": [
+          -0.3594955553466274,
+          0.2444444444444444
+        ],
+        "diff": -0.19572875087320896,
+        "losersMeanImb": -0.00041838335302136614,
+        "winnersMeanImb": -0.1961471342262303
+      },
+      "profitFactor": 0.6199241077736759,
+      "realised": 22,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -66.62275378734893,
+      "sharpeTrade": -0.2200050342152073,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.13200790997621545,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.13200790997621545,
+        "optimistic": -0.13200790997621545
+      },
+      "to": "2025-01-14",
+      "touchAndReverseShare": 0,
+      "trades": 22,
+      "volumeDays": 2.042361111111111,
+      "window": "test"
+    },
+    {
+      "BreakevenHitRate": 0.5257260621009961,
+      "HitRate": 0.07407407407407407,
+      "HitRateMinusBreakeven": -0.4516519880269221,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.08160401002506261,
+          "expectancy_bps": -0.05356655030422704,
+          "key": "08",
+          "trades": 5
+        },
+        {
+          "HitRate": 0.4,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.5429049897470951,
+          "expectancy_bps": 0.3871296001631556,
+          "key": "09",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9489385855538207,
+          "expectancy_bps": -0.43006023202359484,
+          "key": "10",
+          "trades": 17
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.590253411306043,
+          "expectancy_bps": 0.911767214367158,
+          "key": "01",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4973038657249182,
+          "expectancy_bps": -0.789898224172919,
+          "key": "02",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4000000000000001,
+          "expectancy_bps": 0.7006048555252702,
+          "key": "03",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.9975961538461537,
+          "expectancy_bps": -0.9511332103149255,
+          "key": "04",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3076923076923077,
+          "expectancy_bps": -0.5671525273317475,
+          "key": "05",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.4,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3511057054400707,
+          "expectancy_bps": -0.046796696718454635,
+          "key": "06",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.0091247863247863,
+          "expectancy_bps": -0.42285965591570057,
+          "key": "07",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -2.75,
+          "expectancy_bps": -1.1010570147341445,
+          "key": "08",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.5333333333333334,
+          "expectancy_bps": 0.7672165051620328,
+          "key": "09",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5263157894736843,
+          "expectancy_bps": -0.967553590791559,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.55,
+          "expectancy_bps": 1.0346058985885975,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -3.12140625,
+          "expectancy_bps": -1.6679468982215915,
+          "key": "15",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2,
+          "expectancy_bps": -0.8013596401895215,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.28409090909090917,
+          "expectancy_bps": -0.13362256909159967,
+          "key": "22",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.6640583333333335,
+          "expectancy_bps": 0.2659007564559024,
+          "key": "23",
+          "trades": 1
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0.125,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.31060416209795316,
+          "expectancy_bps": -0.09629536450107559,
+          "key": "1",
+          "trades": 8
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6923076923076923,
+          "expectancy_bps": -0.7338568178634093,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3333333333333333,
+          "expectancy_bps": -0.5338547314543871,
+          "key": "16",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.34545454545454535,
+          "expectancy_bps": -0.03357088736731434,
+          "key": "2",
+          "trades": 2
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.380952380952381,
+          "expectancy_bps": 0.9676859625472164,
+          "key": "25",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.634992156862745,
+          "expectancy_bps": -0.27554345863570623,
+          "key": "3",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.16973684210526319,
+          "expectancy_bps": 0.13335145405362797,
+          "key": "4",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.1722488038277512,
+          "expectancy_bps": -0.2666686755520973,
+          "key": "5",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6714171245421245,
+          "expectancy_bps": -0.8342335294707944,
+          "key": "6",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.11282051282051286,
+          "expectancy_bps": 0.10003198891514264,
+          "key": "7",
+          "trades": 2
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.880769230769231,
+          "expectancy_bps": -0.8787578242623585,
+          "key": "neutral",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.08333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.34096430681237905,
+          "expectancy_bps": -0.1252889675966414,
+          "key": "range",
+          "trades": 24
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.47470862470862474,
+          "expectancy_bps": 0.3005565369814048,
+          "key": "[0,0.3)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.46963562753036414,
+          "expectancy_bps": -0.06658880415145957,
+          "key": "[0.3,0.5)",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.6896095238095239,
+          "expectancy_bps": 0.48340927205895556,
+          "key": "[0.5,1)",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6730121527777778,
+          "expectancy_bps": -0.28373177948228007,
+          "key": "[1,2)",
+          "trades": 6
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8322465575587368,
+          "expectancy_bps": -0.40543775464085685,
+          "key": "[2,inf)",
+          "trades": 14
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.09090909090909091,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5424738824899613,
+          "expectancy_bps": -0.2337207150651154,
+          "key": "1",
+          "trades": 22
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.37820512820512814,
+          "expectancy_bps": -0.10027059273478603,
+          "key": "2",
+          "trades": 5
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1661147306397306,
+          "expectancy_bps": -0.4747550456157393,
+          "key": "[1.5,2.5]",
+          "trades": 9
+        },
+        {
+          "HitRate": 0.1111111111111111,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.18502324889151187,
+          "expectancy_bps": -0.07613407136471201,
+          "key": "outside",
+          "trades": 18
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 372,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.5120537428075848,
+      "expectancy_bps": -0.20900772944838777,
+      "foldId": 1,
+      "from": "2025-01-11",
+      "killSwitchTrips": 4,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.20900772944838777,
+          "latencyMs": 150,
+          "trades": 27
+        }
+      ],
+      "maxDrawdown_R": 13.82545105580479,
+      "meanHoldBuckets": 16.851268591426074,
+      "mechanism": {
+        "ci95": [
+          -0.29739675209925354,
+          0.48604885203080234
+        ],
+        "diff": -0.12808641842465693,
+        "losersMeanImb": -0.058147494916263774,
+        "winnersMeanImb": -0.1862339133409207
+      },
+      "profitFactor": 0.5004316646347666,
+      "realised": 27,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -3.4500865367403772,
+      "sharpeTrade": -0.3223565319966619,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.20900772944838777,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.20900772944838777,
+        "optimistic": -0.20900772944838777
+      },
+      "to": "2025-01-14",
+      "touchAndReverseShare": 0,
+      "trades": 27,
+      "volumeDays": 4.063888888888889,
+      "window": "train"
+    },
+    {
+      "BreakevenHitRate": 0.5521645021645022,
+      "HitRate": 0.09090909090909091,
+      "HitRateMinusBreakeven": -0.46125541125541125,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.06837606837606842,
+          "expectancy_bps": -0.022366551545941655,
+          "key": "07",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6212162837162836,
+          "expectancy_bps": -0.7814247042171039,
+          "key": "08",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.43885918003565055,
+          "expectancy_bps": -0.18926594493068036,
+          "key": "10",
+          "trades": 3
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7461174242424242,
+          "expectancy_bps": -0.3090504914017197,
+          "key": "02",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8349921844731534,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4615384615384615,
+          "expectancy_bps": -0.6343906510851419,
+          "key": "20",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4055258467023173,
+          "expectancy_bps": -0.723428556139655,
+          "key": "21",
+          "trades": 3
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3,
+          "expectancy_bps": 1.1018216785084674,
+          "key": "22",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7692307692307692,
+          "expectancy_bps": -0.767972219439714,
+          "key": "23",
+          "trades": 1
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4615384615384615,
+          "expectancy_bps": -0.6343906510851419,
+          "key": "0",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.573015873015873,
+          "expectancy_bps": -0.2226863818566304,
+          "key": "1",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5011174920071759,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5007745312750387,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.15224358974358973,
+          "expectancy_bps": -0.1893893511447372,
+          "key": "3",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3529411764705883,
+          "expectancy_bps": -0.7681440637492777,
+          "key": "5",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5,
+          "expectancy_bps": -0.9013670733946485,
+          "key": "6",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3,
+          "expectancy_bps": 1.1018216785084674,
+          "key": "neutral",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2217530753560166,
+          "expectancy_bps": -0.5643842689023852,
+          "key": "range",
+          "trades": 10
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3,
+          "expectancy_bps": 1.1018216785084674,
+          "key": "[0,0.3)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8349921844731534,
+          "key": "[0.3,0.5)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5011174920071759,
+          "key": "[0.5,1)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.4323232323232322,
+          "expectancy_bps": -0.11128049745725883,
+          "key": "[1,2)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5542420814479638,
+          "expectancy_bps": -0.7947783040343495,
+          "key": "[2,inf)",
+          "trades": 5
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.159090718649542,
+          "expectancy_bps": -0.5343167227278555,
+          "key": "1",
+          "trades": 9
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.6071428571428571,
+          "expectancy_bps": 0.133414747017657,
+          "key": "2",
+          "trades": 2
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.458275058275058,
+          "expectancy_bps": -0.5877571151736442,
+          "key": "[1.5,2.5]",
+          "trades": 5
+        },
+        {
+          "HitRate": 0.16666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3210259103641457,
+          "expectancy_bps": -0.26720590577452746,
+          "key": "outside",
+          "trades": 6
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 147,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.8379573412327423,
+      "expectancy_bps": -0.4129110009559442,
+      "foldId": 1,
+      "from": "2025-01-15",
+      "killSwitchTrips": 2,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.4129110009559442,
+          "latencyMs": 150,
+          "trades": 11
+        }
+      ],
+      "maxDrawdown_R": 9.243756243756245,
+      "meanHoldBuckets": 9.398711524695777,
+      "mechanism": {
+        "ci95": [
+          0.07233271176056855,
+          0.17890011521288338
+        ],
+        "diff": 0.11969600218381957,
+        "losersMeanImb": -0.13099589540253198,
+        "winnersMeanImb": -0.011299893218712408
+      },
+      "profitFactor": 0.3231129108226662,
+      "realised": 11,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -1.0073874656298947,
+      "sharpeTrade": -0.5395962117472287,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.4129110009559442,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.4129110009559442,
+        "optimistic": -0.4129110009559442
+      },
+      "to": "2025-01-16",
+      "touchAndReverseShare": 0,
+      "trades": 11,
+      "volumeDays": 2.0506944444444444,
+      "window": "test"
+    },
+    {
+      "BreakevenHitRate": 0.5462299174124392,
+      "HitRate": 0.09090909090909091,
+      "HitRateMinusBreakeven": -0.45532082650334826,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.28962703962703956,
+          "expectancy_bps": -0.1419685464782159,
+          "key": "06",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.41386800334168755,
+          "expectancy_bps": -0.20604816981793259,
+          "key": "07",
+          "trades": 6
+        },
+        {
+          "HitRate": 0.2857142857142857,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.1060294029278991,
+          "expectancy_bps": 0.03795118126758561,
+          "key": "08",
+          "trades": 7
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.3355733808674986,
+          "expectancy_bps": 0.26682793694118406,
+          "key": "09",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3268529976924521,
+          "expectancy_bps": -0.6583481617046077,
+          "key": "10",
+          "trades": 11
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.590253411306043,
+          "expectancy_bps": 0.911767214367158,
+          "key": "01",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8349891774891773,
+          "expectancy_bps": -0.4140494034768791,
+          "key": "02",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4000000000000001,
+          "expectancy_bps": 0.7006048555252702,
+          "key": "03",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -2.3076923076923075,
+          "expectancy_bps": -1.0007639164562283,
+          "key": "04",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3076923076923077,
+          "expectancy_bps": -0.5671525273317475,
+          "key": "05",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.08471546513342171,
+          "expectancy_bps": 0.083449955894624,
+          "key": "06",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.0091247863247863,
+          "expectancy_bps": -0.42285965591570057,
+          "key": "07",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -2.75,
+          "expectancy_bps": -1.1010570147341445,
+          "key": "08",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.5333333333333334,
+          "expectancy_bps": 0.7672165051620328,
+          "key": "09",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5263157894736843,
+          "expectancy_bps": -0.967553590791559,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.55,
+          "expectancy_bps": 1.0346058985885975,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8349921844731534,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -3.12140625,
+          "expectancy_bps": -1.6679468982215915,
+          "key": "15",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2,
+          "expectancy_bps": -0.8013596401895215,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4615384615384615,
+          "expectancy_bps": -0.6343906510851419,
+          "key": "20",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4055258467023173,
+          "expectancy_bps": -0.723428556139655,
+          "key": "21",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8106060606060606,
+          "expectancy_bps": 0.27819218010842267,
+          "key": "22",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7692307692307692,
+          "expectancy_bps": -0.767972219439714,
+          "key": "23",
+          "trades": 1
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4615384615384615,
+          "expectancy_bps": -0.6343906510851419,
+          "key": "0",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.1111111111111111,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3834747313886568,
+          "expectancy_bps": -0.12628216787373658,
+          "key": "1",
+          "trades": 9
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5011174920071759,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6923076923076923,
+          "expectancy_bps": -0.7338568178634093,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5007745312750387,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3333333333333333,
+          "expectancy_bps": -0.5338547314543871,
+          "key": "16",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4000000000000001,
+          "expectancy_bps": 0.7006048555252702,
+          "key": "2",
+          "trades": 1
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.380952380952381,
+          "expectancy_bps": 0.9676859625472164,
+          "key": "25",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.14285714285714285,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.42809991381167845,
+          "expectancy_bps": -0.23862026971100522,
+          "key": "3",
+          "trades": 7
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.55,
+          "expectancy_bps": 1.0346058985885975,
+          "key": "4",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5658129280420302,
+          "expectancy_bps": -0.43382713828449077,
+          "key": "5",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6245421245421245,
+          "expectancy_bps": -0.8341996717760509,
+          "key": "6",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.11282051282051286,
+          "expectancy_bps": 0.10003198891514264,
+          "key": "7",
+          "trades": 2
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6605769230769231,
+          "expectancy_bps": -0.383612948569652,
+          "key": "neutral",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.06896551724137931,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.505487254380185,
+          "expectancy_bps": -0.20385321502460402,
+          "key": "range",
+          "trades": 29
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1060314685314685,
+          "expectancy_bps": 0.5008728223631704,
+          "key": "[0,0.3)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9083285135916714,
+          "expectancy_bps": -0.32272326425869086,
+          "key": "[0.3,0.5)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.005194227994228079,
+          "expectancy_bps": 0.1552336840369117,
+          "key": "[0.5,1)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.4897969933712121,
+          "expectancy_bps": -0.18355610776183595,
+          "key": "[1,2)",
+          "trades": 8
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.0065190093131269,
+          "expectancy_bps": -0.49858458111231874,
+          "key": "[2,inf)",
+          "trades": 15
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.07407407407407407,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6681986966392517,
+          "expectancy_bps": -0.28812795805645475,
+          "key": "1",
+          "trades": 27
+        },
+        {
+          "HitRate": 0.16666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.12332112332112337,
+          "expectancy_bps": 0.05554330625535884,
+          "key": "2",
+          "trades": 6
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.358444585717313,
+          "expectancy_bps": -0.5583592550395553,
+          "key": "[1.5,2.5]",
+          "trades": 11
+        },
+        {
+          "HitRate": 0.13636363636363635,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.10720671029284609,
+          "expectancy_bps": -0.059283782934409834,
+          "key": "outside",
+          "trades": 22
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 340,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.5242860021010017,
+      "expectancy_bps": -0.225642273636125,
+      "foldId": 2,
+      "from": "2025-01-13",
+      "killSwitchTrips": 4,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.225642273636125,
+          "latencyMs": 150,
+          "trades": 33
+        }
+      ],
+      "maxDrawdown_R": 20.272198303251184,
+      "meanHoldBuckets": 16.02767835838702,
+      "mechanism": {
+        "ci95": [
+          -0.30793824117976554,
+          0.31194590517273557
+        ],
+        "diff": -0.10870208848795132,
+        "losersMeanImb": -0.0538364564641848,
+        "winnersMeanImb": -0.16253854495213613
+      },
+      "profitFactor": 0.504068125161402,
+      "realised": 33,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -1.624984940716352,
+      "sharpeTrade": -0.322982226288799,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.225642273636125,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.225642273636125,
+        "optimistic": -0.22564227363612502
+      },
+      "to": "2025-01-16",
+      "touchAndReverseShare": 0,
+      "trades": 33,
+      "volumeDays": 4.093055555555556,
+      "window": "train"
+    },
+    {
+      "BreakevenHitRate": 0.5881057538952276,
+      "HitRate": 0,
+      "HitRateMinusBreakeven": -0.5881057538952276,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3295454545454547,
+          "expectancy_bps": -0.016339405871282076,
+          "key": "07",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3571428571428572,
+          "expectancy_bps": -0.6344605582585059,
+          "key": "08",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3409090909090908,
+          "expectancy_bps": -0.7343177850062302,
+          "key": "10",
+          "trades": 2
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6136363636363638,
+          "expectancy_bps": -0.8341658923835801,
+          "key": "02",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3571428571428572,
+          "expectancy_bps": -0.6344605582585059,
+          "key": "20",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.25,
+          "expectancy_bps": 0.6680896977228163,
+          "key": "21",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5010722947106808,
+          "key": "22",
+          "trades": 1
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.9090909090909094,
+          "expectancy_bps": -0.7007685094653805,
+          "key": "0",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.05681818181818177,
+          "expectancy_bps": 0.08350870150606776,
+          "key": "1",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3376623376623376,
+          "expectancy_bps": -0.8010119167801428,
+          "key": "2",
+          "trades": 2
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9396103896103897,
+          "expectancy_bps": -0.4271549880027061,
+          "key": "range",
+          "trades": 5
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5010722947106808,
+          "key": "[0.5,1)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3571428571428572,
+          "expectancy_bps": -0.6344605582585059,
+          "key": "[1,2)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6590909090909092,
+          "expectancy_bps": -0.3334140290147813,
+          "key": "[2,inf)",
+          "trades": 3
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9396103896103897,
+          "expectancy_bps": -0.4271549880027061,
+          "key": "1",
+          "trades": 5
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6363636363636365,
+          "expectancy_bps": -0.6009204020880307,
+          "key": "[1.5,2.5]",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.4751082251082251,
+          "expectancy_bps": -0.31131137861248975,
+          "key": "outside",
+          "trades": 3
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 171,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.9396103896103897,
+      "expectancy_bps": -0.4271549880027061,
+      "foldId": 2,
+      "from": "2025-01-17",
+      "killSwitchTrips": 1,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.4271549880027061,
+          "latencyMs": 150,
+          "trades": 5
+        }
+      ],
+      "maxDrawdown_R": 4.6980519480519485,
+      "meanHoldBuckets": 8.699212598425197,
+      "mechanism": {
+        "ci95": [
+          -0.055907264723575795,
+          -0.019048572000343073
+        ],
+        "diff": -0.055907264723575795,
+        "losersMeanImb": -0.14409273527642422,
+        "winnersMeanImb": -0.2
+      },
+      "profitFactor": 0.21015283842794757,
+      "realised": 5,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -0.7071067811865476,
+      "sharpeTrade": -0.7527891613533783,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.4271549880027061,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.4271549880027061,
+        "optimistic": -0.4271549880027061
+      },
+      "to": "2025-01-18",
+      "touchAndReverseShare": 0,
+      "trades": 5,
+      "volumeDays": 2.053472222222222,
+      "window": "test"
+    },
+    {
+      "BreakevenHitRate": 0.5633961433303538,
+      "HitRate": 0.0625,
+      "HitRateMinusBreakeven": -0.5008961433303538,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8333333333333334,
+          "expectancy_bps": 0.2836454982236585,
+          "key": "06",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.578088578088578,
+          "expectancy_bps": -0.611977897275187,
+          "key": "07",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.125,
+          "expectancy_bps": -0.11663868783591608,
+          "key": "08",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.649896978021978,
+          "expectancy_bps": -0.7848606186685846,
+          "key": "09",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7996791443850266,
+          "expectancy_bps": -0.4072866809609003,
+          "key": "10",
+          "trades": 5
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.035290404040404,
+          "expectancy_bps": -0.4840889583956731,
+          "key": "02",
+          "trades": 6
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8349921844731534,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4093406593406592,
+          "expectancy_bps": -0.634425604671824,
+          "key": "20",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.741644385026738,
+          "expectancy_bps": -0.37554899267403713,
+          "key": "21",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8181818181818182,
+          "expectancy_bps": 0.30037469189889326,
+          "key": "22",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7692307692307692,
+          "expectancy_bps": -0.767972219439714,
+          "key": "23",
+          "trades": 1
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6853146853146854,
+          "expectancy_bps": -0.6675795802752612,
+          "key": "0",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3665367965367965,
+          "expectancy_bps": -0.10020834851155114,
+          "key": "1",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5011174920071759,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5007745312750387,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3376623376623376,
+          "expectancy_bps": -0.8010119167801428,
+          "key": "2",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.15224358974358973,
+          "expectancy_bps": -0.1893893511447372,
+          "key": "3",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3529411764705883,
+          "expectancy_bps": -0.7681440637492777,
+          "key": "5",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5,
+          "expectancy_bps": -0.9013670733946485,
+          "key": "6",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3,
+          "expectancy_bps": 1.1018216785084674,
+          "key": "neutral",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1277055134408076,
+          "expectancy_bps": -0.5186411752691589,
+          "key": "range",
+          "trades": 15
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3,
+          "expectancy_bps": 1.1018216785084674,
+          "key": "[0,0.3)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8349921844731534,
+          "key": "[0.3,0.5)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5010948933589283,
+          "key": "[0.5,1)",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6635281385281384,
+          "expectancy_bps": -0.2420755126575706,
+          "key": "[1,2)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2185603918140684,
+          "expectancy_bps": -0.6217667009020114,
+          "key": "[2,inf)",
+          "trades": 8
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.0807048868498448,
+          "expectancy_bps": -0.49604467461173074,
+          "key": "1",
+          "trades": 14
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.6071428571428571,
+          "expectancy_bps": 0.133414747017657,
+          "key": "2",
+          "trades": 2
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5091575091575091,
+          "expectancy_bps": -0.5915180542920403,
+          "key": "[1.5,2.5]",
+          "trades": 7
+        },
+        {
+          "HitRate": 0.1111111111111111,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.37238668194550545,
+          "expectancy_bps": -0.28190773005384817,
+          "key": "outside",
+          "trades": 9
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 318,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.8697239188507571,
+      "expectancy_bps": -0.41736224690805723,
+      "foldId": 3,
+      "from": "2025-01-15",
+      "killSwitchTrips": 3,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.41736224690805723,
+          "latencyMs": 150,
+          "trades": 16
+        }
+      ],
+      "maxDrawdown_R": 13.941808191808192,
+      "meanHoldBuckets": 9.18011811023622,
+      "mechanism": {
+        "ci95": [
+          -0.10489948889813898,
+          0.15293605178778746
+        ],
+        "diff": 0.06082576347433158,
+        "losersMeanImb": -0.13502569228680653,
+        "winnersMeanImb": -0.07419992881247495
+      },
+      "profitFactor": 0.2887723859885076,
+      "realised": 16,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -0.989636056062086,
+      "sharpeTrade": -0.6110962157499957,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.41736224690805723,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.41736224690805723,
+        "optimistic": -0.4173622469080573
+      },
+      "to": "2025-01-18",
+      "touchAndReverseShare": 0,
+      "trades": 16,
+      "volumeDays": 4.104166666666667,
+      "window": "train"
+    },
+    {
+      "BreakevenHitRate": 0.5617083681509463,
+      "HitRate": 0.25,
+      "HitRateMinusBreakeven": -0.31170836815094627,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.5301857585139319,
+          "expectancy_bps": 0.22547132864365282,
+          "key": "07",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 2.7002241176470587,
+          "expectancy_bps": 1.4014918647479147,
+          "key": "08",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3208333333333333,
+          "expectancy_bps": -0.5424648042665796,
+          "key": "09",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.16666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.15328739887563422,
+          "expectancy_bps": -0.1446650306838483,
+          "key": "10",
+          "trades": 6
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.15606060606060604,
+          "expectancy_bps": 0.000004238750591393596,
+          "key": "00",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.6666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.24019607843137258,
+          "expectancy_bps": 0.17801841495702295,
+          "key": "01",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3303167420814481,
+          "expectancy_bps": -0.6677373318449611,
+          "key": "03",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3529411764705883,
+          "expectancy_bps": -0.7677543186180421,
+          "key": "04",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4484848484848485,
+          "expectancy_bps": -0.6341136283570842,
+          "key": "07",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 2.090909090909091,
+          "expectancy_bps": 0.7678670988979438,
+          "key": "20",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6363636363636365,
+          "expectancy_bps": -0.6010518407212623,
+          "key": "21",
+          "trades": 1
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4736842105263157,
+          "expectancy_bps": 0.9350788137857333,
+          "key": "22",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 2.555839090909091,
+          "expectancy_bps": 1.2012569244189537,
+          "key": "23",
+          "trades": 2
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.0340909090909092,
+          "expectancy_bps": 0.40078520501834813,
+          "key": "0",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1416666666666666,
+          "expectancy_bps": -0.5341108455466557,
+          "key": "1",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8307363225010285,
+          "expectancy_bps": -0.3605965356449265,
+          "key": "2",
+          "trades": 5
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1818181818181819,
+          "expectancy_bps": 0.43416548384403447,
+          "key": "3",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6764705882352942,
+          "expectancy_bps": -0.38387715930902105,
+          "key": "4",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.22727272727272718,
+          "expectancy_bps": 0.08340762908834076,
+          "key": "5",
+          "trades": 2
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4736842105263157,
+          "expectancy_bps": 0.9350788137857333,
+          "key": "6",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3.92986,
+          "expectancy_bps": 1.968348364993873,
+          "key": "9",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7058282275000543,
+          "expectancy_bps": -0.250313216877533,
+          "key": "neutral",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.3451205377302436,
+          "expectancy_bps": 0.13902270920093038,
+          "key": "range",
+          "trades": 12
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 2.090909090909091,
+          "expectancy_bps": 0.7678670988979438,
+          "key": "[0,0.3)",
+          "trades": 1
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4736842105263157,
+          "expectancy_bps": 0.9350788137857333,
+          "key": "[0.3,0.5)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.44823803647333066,
+          "expectancy_bps": 0.23375844212981,
+          "key": "[0.5,1)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.2720745454545455,
+          "expectancy_bps": 0.6562476437002066,
+          "key": "[1,2)",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9259246880570411,
+          "expectancy_bps": -0.4632430659090868,
+          "key": "[2,inf)",
+          "trades": 8
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.2857142857142857,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.33590253915331314,
+          "expectancy_bps": -0.14779970149934174,
+          "key": "1",
+          "trades": 14
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3.0103845454545457,
+          "expectancy_bps": 1.3681077319459083,
+          "key": "2",
+          "trades": 2
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0.2222222222222222,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.549002849002849,
+          "expectancy_bps": -0.2559118376585634,
+          "key": "[1.5,2.5]",
+          "trades": 9
+        },
+        {
+          "HitRate": 0.2857142857142857,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8941655976840497,
+          "expectancy_bps": 0.42431802597544327,
+          "key": "outside",
+          "trades": 7
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 172,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": 0.08238334642266917,
+      "expectancy_bps": 0.04168872768131453,
+      "foldId": 3,
+      "from": "2025-01-19",
+      "killSwitchTrips": 2,
+      "latencyCurve": [
+        {
+          "expectancy_bps": 0.04168872768131453,
+          "latencyMs": 150,
+          "trades": 16
+        }
+      ],
+      "maxDrawdown_R": 6.702635548146384,
+      "meanHoldBuckets": 13.22509765625,
+      "mechanism": {
+        "ci95": [
+          -0.05622299581210933,
+          0.16925360753754848
+        ],
+        "diff": 0.05957119421887877,
+        "losersMeanImb": -0.03115663242102768,
+        "winnersMeanImb": 0.028414561797851092
+      },
+      "profitFactor": 1.1209639967128753,
+      "realised": 16,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -1.8784187576316955,
+      "sharpeTrade": 0.04862830196652531,
+      "slippageCurve": [
+        {
+          "expectancy_bps": 0.04168872768131453,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": 0.04168872768131453,
+        "optimistic": 0.041688727681314514
+      },
+      "to": "2025-01-20",
+      "touchAndReverseShare": 0,
+      "trades": 16,
+      "volumeDays": 2.03125,
+      "window": "test"
+    },
+    {
+      "BreakevenHitRate": 0.5679934599948228,
+      "HitRate": 0.19047619047619047,
+      "HitRateMinusBreakeven": -0.3775172695186323,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.145933014354067,
+          "expectancy_bps": 0.6178344862319691,
+          "key": "08",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.16666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.7617057219251336,
+          "expectancy_bps": 0.40608687664398974,
+          "key": "09",
+          "trades": 6
+        },
+        {
+          "HitRate": 0.15384615384615385,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7878475973498598,
+          "expectancy_bps": -0.39545734841849034,
+          "key": "10",
+          "trades": 13
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.15606060606060604,
+          "expectancy_bps": 0.000004238750591393596,
+          "key": "00",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.6666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.24019607843137258,
+          "expectancy_bps": 0.17801841495702295,
+          "key": "01",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6136363636363638,
+          "expectancy_bps": -0.8341658923835801,
+          "key": "02",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3303167420814481,
+          "expectancy_bps": -0.6677373318449611,
+          "key": "03",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3529411764705883,
+          "expectancy_bps": -0.7677543186180421,
+          "key": "04",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4484848484848485,
+          "expectancy_bps": -0.6341136283570842,
+          "key": "07",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.3668831168831168,
+          "expectancy_bps": 0.06670327031971895,
+          "key": "20",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.19318181818181823,
+          "expectancy_bps": 0.033518928500777034,
+          "key": "21",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.055023923444976086,
+          "expectancy_bps": 0.21700325953752625,
+          "key": "22",
+          "trades": 2
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 2.555839090909091,
+          "expectancy_bps": 1.2012569244189537,
+          "key": "23",
+          "trades": 2
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.05303030303030295,
+          "expectancy_bps": 0.03360063352377194,
+          "key": "0",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5992424242424242,
+          "expectancy_bps": -0.22530107202029398,
+          "key": "1",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.975572326832831,
+          "expectancy_bps": -0.48642950168355975,
+          "key": "2",
+          "trades": 7
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1818181818181819,
+          "expectancy_bps": 0.43416548384403447,
+          "key": "3",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6764705882352942,
+          "expectancy_bps": -0.38387715930902105,
+          "key": "4",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.22727272727272718,
+          "expectancy_bps": 0.08340762908834076,
+          "key": "5",
+          "trades": 2
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4736842105263157,
+          "expectancy_bps": 0.9350788137857333,
+          "key": "6",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3.92986,
+          "expectancy_bps": 1.968348364993873,
+          "key": "9",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7058282275000543,
+          "expectancy_bps": -0.250313216877533,
+          "key": "neutral",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.17647058823529413,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.032741499722883816,
+          "expectancy_bps": -0.02750014291778624,
+          "key": "range",
+          "trades": 17
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 2.090909090909091,
+          "expectancy_bps": 0.7678670988979438,
+          "key": "[0,0.3)",
+          "trades": 1
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.4736842105263157,
+          "expectancy_bps": 0.9350788137857333,
+          "key": "[0.3,0.5)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.004730563554092904,
+          "expectancy_bps": 0.050050757919687286,
+          "key": "[0.5,1)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.6147701948051949,
+          "expectancy_bps": 0.3335705932105285,
+          "key": "[1,2)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.18181818181818182,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8531518392480959,
+          "expectancy_bps": -0.42783514675609435,
+          "key": "[2,inf)",
+          "trades": 11
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.21052631578947367,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.4947730261157017,
+          "expectancy_bps": -0.22131425057917448,
+          "key": "1",
+          "trades": 19
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3.0103845454545457,
+          "expectancy_bps": 1.3681077319459083,
+          "key": "2",
+          "trades": 2
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0.18181818181818182,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7467048103411741,
+          "expectancy_bps": -0.31864066755483017,
+          "key": "[1.5,2.5]",
+          "trades": 11
+        },
+        {
+          "HitRate": 0.2,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.48338345084636725,
+          "expectancy_bps": 0.2036292045990634,
+          "key": "outside",
+          "trades": 10
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 343,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.1609484954899639,
+      "expectancy_bps": -0.06994072843392847,
+      "foldId": 4,
+      "from": "2025-01-17",
+      "killSwitchTrips": 3,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.06994072843392847,
+          "latencyMs": 150,
+          "trades": 21
+        }
+      ],
+      "maxDrawdown_R": 10.582505678016515,
+      "meanHoldBuckets": 12.147505975815523,
+      "mechanism": {
+        "ci95": [
+          -0.06276812610796431,
+          0.273307386520197
+        ],
+        "diff": 0.06576894410350018,
+        "losersMeanImb": -0.06590620253038047,
+        "winnersMeanImb": -0.000137258426880291
+      },
+      "profitFactor": 0.7993513539406982,
+      "realised": 21,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -0.8914424851645525,
+      "sharpeTrade": -0.09862590945098779,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.06994072843392847,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.06994072843392847,
+        "optimistic": -0.06994072843392848
+      },
+      "to": "2025-01-20",
+      "touchAndReverseShare": 0,
+      "trades": 21,
+      "volumeDays": 4.084722222222222,
+      "window": "train"
+    },
+    {
+      "BreakevenHitRate": 0.5396978524824091,
+      "HitRate": 0,
+      "HitRateMinusBreakeven": -0.5396978524824091,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.2857142857142858,
+          "expectancy_bps": 0.6009795967426906,
+          "key": "07",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8248227962513678,
+          "expectancy_bps": -0.3765456903347264,
+          "key": "08",
+          "trades": 7
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.16624158435303943,
+          "expectancy_bps": -0.06661210313833041,
+          "key": "09",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3697066822066821,
+          "expectancy_bps": -0.80926084940519,
+          "key": "10",
+          "trades": 4
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1818181818181819,
+          "expectancy_bps": -0.8682555743677598,
+          "key": "00",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.11029411764705888,
+          "expectancy_bps": 0.08354021310259169,
+          "key": "02",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1333333333333333,
+          "expectancy_bps": 0.5677264226556238,
+          "key": "04",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5714285714285716,
+          "expectancy_bps": -0.7346645232591489,
+          "key": "05",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2777777777777777,
+          "expectancy_bps": -0.7678568447760695,
+          "key": "06",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8181818181818182,
+          "expectancy_bps": 0.300524916854773,
+          "key": "12",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.2857142857142858,
+          "expectancy_bps": 0.6009795967426906,
+          "key": "15",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4615384615384615,
+          "expectancy_bps": -0.633438906484414,
+          "key": "19",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.25,
+          "expectancy_bps": -0.8335250440934748,
+          "key": "20",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7409710172868067,
+          "expectancy_bps": -0.33364824084848765,
+          "key": "21",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.6923076923076923,
+          "expectancy_bps": -0.733966991502664,
+          "key": "22",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2857142857142858,
+          "expectancy_bps": -0.6002901402344467,
+          "key": "23",
+          "trades": 1
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6897922124315312,
+          "expectancy_bps": -0.38332979273533485,
+          "key": "0",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6560592185592184,
+          "expectancy_bps": -0.2670778274948149,
+          "key": "1",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2777777777777777,
+          "expectancy_bps": -0.7678568447760695,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.2857142857142858,
+          "expectancy_bps": 0.6009795967426906,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8354145854145855,
+          "expectancy_bps": -0.47549694731252434,
+          "key": "2",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.14761904761904765,
+          "expectancy_bps": -0.049804902346241076,
+          "key": "3",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8348388260162493,
+          "key": "4",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3531746031746033,
+          "expectancy_bps": -0.7175965360620877,
+          "key": "neutral",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5394487154858673,
+          "expectancy_bps": -0.2779834051192421,
+          "key": "range",
+          "trades": 15
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4285714285714286,
+          "expectancy_bps": -0.6673362273481059,
+          "key": "[0,0.3)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5795932009167304,
+          "expectancy_bps": -0.3339163421661563,
+          "key": "[0.5,1)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.1333333333333333,
+          "expectancy_bps": 0.5677264226556238,
+          "key": "[1,2)",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7440426399756543,
+          "expectancy_bps": -0.3790608159596091,
+          "key": "[2,inf)",
+          "trades": 11
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6351811728610126,
+          "expectancy_bps": -0.32970259699487103,
+          "key": "1",
+          "trades": 17
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6793798793798794,
+          "expectancy_bps": -0.30391112031891016,
+          "key": "[1.5,2.5]",
+          "trades": 9
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5854576280272874,
+          "expectancy_bps": -0.35871800825532696,
+          "key": "outside",
+          "trades": 8
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 190,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.6351811728610126,
+      "expectancy_bps": -0.32970259699487103,
+      "foldId": 4,
+      "from": "2025-01-21",
+      "killSwitchTrips": 2,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.32970259699487103,
+          "latencyMs": 150,
+          "trades": 17
+        }
+      ],
+      "maxDrawdown_R": 11.08684999211315,
+      "meanHoldBuckets": 17.79733455882353,
+      "mechanism": {
+        "ci95": [
+          -0.1862967602711839,
+          -0.05688238502860332
+        ],
+        "diff": -0.10625743154344185,
+        "losersMeanImb": -0.09293899472741331,
+        "winnersMeanImb": -0.19919642627085515
+      },
+      "profitFactor": 0.3629579920443873,
+      "realised": 17,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -2.723450259859075,
+      "sharpeTrade": -0.5034179749602071,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.32970259699487103,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.32970259699487103,
+        "optimistic": -0.329702596994871
+      },
+      "to": "2025-01-22",
+      "touchAndReverseShare": 0,
+      "trades": 17,
+      "volumeDays": 2.0104166666666665,
+      "window": "test"
+    },
+    {
+      "BreakevenHitRate": 0.5511030060098976,
+      "HitRate": 0.09859154929577464,
+      "HitRateMinusBreakeven": -0.45251145671412296,
+      "HitRate_0": 0.3333333333333333,
+      "blacklistedBucketShare": 0,
+      "byDecile": [
+        {
+          "HitRate": 0.21428571428571427,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.26821434867653354,
+          "expectancy_bps": 0.1359397631355085,
+          "key": "07",
+          "trades": 14
+        },
+        {
+          "HitRate": 0.1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.35610053327271285,
+          "expectancy_bps": -0.12193860906877514,
+          "key": "08",
+          "trades": 20
+        },
+        {
+          "HitRate": 0.0625,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5465045959544411,
+          "expectancy_bps": -0.23992282447802263,
+          "key": "09",
+          "trades": 16
+        },
+        {
+          "HitRate": 0.047619047619047616,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9223025282859841,
+          "expectancy_bps": -0.4831197041376516,
+          "key": "10",
+          "trades": 21
+        }
+      ],
+      "byHour": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.17840909090909093,
+          "expectancy_bps": -0.2170607145289964,
+          "key": "00",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.9152247448687078,
+          "expectancy_bps": 0.5448928146620905,
+          "key": "01",
+          "trades": 6
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7979589310471664,
+          "expectancy_bps": -0.39683315288293025,
+          "key": "02",
+          "trades": 9
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.420211161387632,
+          "expectancy_bps": -0.21162326938821738,
+          "key": "03",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8424333836098542,
+          "expectancy_bps": -0.40026393747288225,
+          "key": "04",
+          "trades": 3
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4835164835164836,
+          "expectancy_bps": -0.6788271912833485,
+          "key": "05",
+          "trades": 3
+        },
+        {
+          "HitRate": 0.4,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3233279276622929,
+          "expectancy_bps": -0.0868114042395147,
+          "key": "06",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.1848688111888113,
+          "expectancy_bps": -0.507361244892254,
+          "key": "07",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -2.75,
+          "expectancy_bps": -1.1010570147341445,
+          "key": "08",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.5333333333333334,
+          "expectancy_bps": 0.7672165051620328,
+          "key": "09",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.5263157894736843,
+          "expectancy_bps": -0.967553590791559,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.55,
+          "expectancy_bps": 1.0346058985885975,
+          "key": "11",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8181818181818182,
+          "expectancy_bps": 0.300524916854773,
+          "key": "12",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.7857142857142858,
+          "expectancy_bps": -0.8349921844731534,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9178459821428572,
+          "expectancy_bps": -0.5334836507394505,
+          "key": "15",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.2,
+          "expectancy_bps": -0.8013596401895215,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.4615384615384615,
+          "expectancy_bps": -0.633438906484414,
+          "key": "19",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.49444305694305696,
+          "expectancy_bps": -0.33362728863479474,
+          "key": "20",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8407583606242017,
+          "expectancy_bps": -0.38198230831237345,
+          "key": "21",
+          "trades": 9
+        },
+        {
+          "HitRate": 0.3333333333333333,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.14159305606674025,
+          "expectancy_bps": 0.08910267798294276,
+          "key": "22",
+          "trades": 6
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.5141832817182818,
+          "expectancy_bps": 0.25856287229093666,
+          "key": "23",
+          "trades": 4
+        }
+      ],
+      "byPriorTouches": [
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.5077020502717097,
+          "expectancy_bps": -0.2583634901818957,
+          "key": "0",
+          "trades": 8
+        },
+        {
+          "HitRate": 0.11764705882352941,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.49838112668849893,
+          "expectancy_bps": -0.18270912405435674,
+          "key": "1",
+          "trades": 17
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5011174920071759,
+          "key": "10",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.485042735042735,
+          "expectancy_bps": -0.7508568313197395,
+          "key": "11",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3636363636363635,
+          "expectancy_bps": -0.5007745312750387,
+          "key": "13",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.3333333333333333,
+          "expectancy_bps": -0.5338547314543871,
+          "key": "16",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.2857142857142858,
+          "expectancy_bps": 0.6009795967426906,
+          "key": "17",
+          "trades": 1
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.7308887191240133,
+          "expectancy_bps": -0.38386578712581215,
+          "key": "2",
+          "trades": 12
+        },
+        {
+          "HitRate": 1,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 1.380952380952381,
+          "expectancy_bps": 0.9676859625472164,
+          "key": "25",
+          "trades": 1
+        },
+        {
+          "HitRate": 0.2,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.21101193101016627,
+          "expectancy_bps": -0.1335786208825484,
+          "key": "3",
+          "trades": 10
+        },
+        {
+          "HitRate": 0.25,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3971638655462185,
+          "expectancy_bps": -0.14199681151142346,
+          "key": "4",
+          "trades": 4
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.24857866591612726,
+          "expectancy_bps": -0.22693323133535817,
+          "key": "5",
+          "trades": 5
+        },
+        {
+          "HitRate": 0.2,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -1.0048968575284365,
+          "expectancy_bps": -0.480343974663694,
+          "key": "6",
+          "trades": 5
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.11282051282051286,
+          "expectancy_bps": 0.10003198891514264,
+          "key": "7",
+          "trades": 2
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 3.92986,
+          "expectancy_bps": 1.968348364993873,
+          "key": "9",
+          "trades": 1
+        }
+      ],
+      "byRegime": [
+        {
+          "HitRate": 0.2,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8171969808657116,
+          "expectancy_bps": -0.39708977339129153,
+          "key": "neutral",
+          "trades": 10
+        },
+        {
+          "HitRate": 0.08196721311475409,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3820896164688917,
+          "expectancy_bps": -0.17293437282138546,
+          "key": "range",
+          "trades": 61
+        }
+      ],
+      "byReturnSpeed": [
+        {
+          "HitRate": 0.16666666666666666,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8477439227439229,
+          "expectancy_bps": 0.35067036016708664,
+          "key": "[0,0.3)",
+          "trades": 6
+        },
+        {
+          "HitRate": 0.5,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.3128253325621746,
+          "expectancy_bps": -0.008272744747584798,
+          "key": "[0.3,0.5)",
+          "trades": 4
+        },
+        {
+          "HitRate": 0.18181818181818182,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.21106476126369172,
+          "expectancy_bps": -0.060887389534103706,
+          "key": "[0.5,1)",
+          "trades": 11
+        },
+        {
+          "HitRate": 0,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.025073987262737223,
+          "expectancy_bps": 0.03335076410792692,
+          "key": "[1,2)",
+          "trades": 13
+        },
+        {
+          "HitRate": 0.05405405405405406,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.8828898489502205,
+          "expectancy_bps": -0.4420168731502032,
+          "key": "[2,inf)",
+          "trades": 37
+        }
+      ],
+      "bySweepCount": [
+        {
+          "HitRate": 0.09523809523809523,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.6069862260967515,
+          "expectancy_bps": -0.27919634567367296,
+          "key": "1",
+          "trades": 63
+        },
+        {
+          "HitRate": 0.125,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": 0.8450869788544789,
+          "expectancy_bps": 0.38368441267799624,
+          "key": "2",
+          "trades": 8
+        }
+      ],
+      "bySweepDepthBin": [
+        {
+          "HitRate": 0.06451612903225806,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.9442278151955571,
+          "expectancy_bps": -0.39942578165833653,
+          "key": "[1.5,2.5]",
+          "trades": 31
+        },
+        {
+          "HitRate": 0.125,
+          "HitRate_0": 0.3333333333333333,
+          "expectancy_R": -0.05520935355493102,
+          "expectancy_bps": -0.053442381115224945,
+          "key": "outside",
+          "trades": 40
+        }
+      ],
+      "costFloor": {
+        "minSweepSetByCost": 873,
+        "shareOfSpikes": 1
+      },
+      "expectancy_R": -0.44337234384872554,
+      "expectancy_bps": -0.20450555600024548,
+      "foldId": "pooled",
+      "from": "2025-01-13",
+      "killSwitchTrips": 9,
+      "latencyCurve": [
+        {
+          "expectancy_bps": -0.20450555600024548,
+          "latencyMs": 150,
+          "trades": 71
+        }
+      ],
+      "maxDrawdown_R": 34.45019664717764,
+      "meanHoldBuckets": 15.303742236885881,
+      "mechanism": {
+        "ci95": [
+          -0.1923465640594457,
+          0.05490469382977662
+        ],
+        "diff": -0.04888331772903283,
+        "losersMeanImb": -0.06715852365608449,
+        "winnersMeanImb": -0.11604184138511732
+      },
+      "profitFactor": 0.5416641210148652,
+      "realised": 71,
+      "ringUnderflow": 0,
+      "ruleBinding": {
+        "book.bound.blacklist": 1,
+        "book.bound.conflict": 5,
+        "book.bound.killSwitch": 376,
+        "book.bound.minStrength": 415,
+        "book.bound.nested": 38,
+        "book.bound.position": 61,
+        "book.invalidatedMaxSweeps": 78,
+        "book.minSweepFloor.cost": 1314,
+        "book.missedReclaim.killSwitch": 125,
+        "book.missedReclaim.minStrength": 354,
+        "book.missedReclaim.nested": 3,
+        "book.missedReclaim.position": 13,
+        "book.priorTouchesHist.0": 8,
+        "book.priorTouchesHist.1": 23,
+        "book.priorTouchesHist.2": 16,
+        "book.priorTouchesHist.3+": 52,
+        "book.reclaimSlow": 6,
+        "book.reclaimViolent": 43,
+        "book.resweeps": 370,
+        "book.retiredNestedInner": 119,
+        "book.suppress.killSwitch": 142,
+        "book.suppress.minStrength": 415,
+        "book.suppress.position": 20,
+        "book.suppressedNested": 7,
+        "book.sweepLegStrongerSpike": 18,
+        "book.tradesLostToKillSwitch": 113,
+        "engine.blacklistedBuckets": 2,
+        "engine.burstPivots": 0,
+        "engine.liquidityGuardBuckets": 0,
+        "engine.ringUnderflow": 0,
+        "engine.tickChanges": 0,
+        "engine.totalBuckets": 21916,
+        "exec.capG": 99,
+        "exec.capLiquidity": 99,
+        "exec.killSwitchTrips": 13,
+        "exec.noPrintFallback": 160,
+        "exec.stopReplaced": 17,
+        "exec.touchAndFly": 4
+      },
+      "sharpeDaily": -1.374882968238439,
+      "sharpeTrade": -0.2882877336952441,
+      "slippageCurve": [
+        {
+          "expectancy_bps": -0.20450555600024548,
+          "slipCoefMult": 1
+        }
+      ],
+      "targetFill": {
+        "conservative": -0.20450555600024548,
+        "optimistic": -0.2045055560002455
+      },
+      "to": "2025-01-22",
+      "touchAndReverseShare": 0,
+      "trades": 71,
+      "volumeDays": 10.188194444444445,
+      "window": "test"
+    }
+  ],
+  "nConfigs": {
+    "N": 1,
+    "cells": 1,
+    "latencyPoints": 1,
+    "variants": 1
+  },
+  "schedule": [
+    {
+      "MinStrength": 0.5235609477041393,
+      "foldId": 0,
+      "testEnd": 1736899200000,
+      "testStart": 1736726400000,
+      "trainEnd": 1736726400000,
+      "trainStart": 1736380800000
+    },
+    {
+      "MinStrength": 0.5144816163915489,
+      "foldId": 1,
+      "testEnd": 1737072000000,
+      "testStart": 1736899200000,
+      "trainEnd": 1736899200000,
+      "trainStart": 1736553600000
+    },
+    {
+      "MinStrength": 0.5241550689922305,
+      "foldId": 2,
+      "testEnd": 1737244800000,
+      "testStart": 1737072000000,
+      "trainEnd": 1737072000000,
+      "trainStart": 1736726400000
+    },
+    {
+      "MinStrength": 0.5178429182994279,
+      "foldId": 3,
+      "testEnd": 1737417600000,
+      "testStart": 1737244800000,
+      "trainEnd": 1737244800000,
+      "trainStart": 1736899200000
+    },
+    {
+      "MinStrength": 0.4995399666131173,
+      "foldId": 4,
+      "testEnd": 1737590400000,
+      "testStart": 1737417600000,
+      "trainEnd": 1737417600000,
+      "trainStart": 1737072000000
+    }
+  ],
+  "variants": []
+}

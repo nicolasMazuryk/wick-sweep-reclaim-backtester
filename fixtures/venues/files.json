@@ -1,0 +1,8 @@
+{
+  "binance": { "day": "2025-01-09", "files": [["ETHUSDT-trades-2025-01-09.zip", "zip"]] },
+  "bybit": { "day": "2025-01-09", "files": [["ETHUSDT2025-01-09.csv.gz", "csv.gz"]] },
+  "okx": { "day": "2025-01-09", "files": [["ETH-USDT-SWAP-trades-2025-01-09.zip", "zip"], ["ETH-USDT-SWAP-trades-2025-01-10.zip", "zip"]] },
+  "gate": { "day": "2025-01-09", "files": [["ETH_USDT-202501.csv.gz", "csv.gz"]] },
+  "bitget": { "day": "2025-01-09", "files": [["20250109_001.zip", "zip"], ["20250109_002.zip", "zip"], ["20250110_001.zip", "zip"]] },
+  "kucoin": { "day": "2025-01-09", "files": [["ETHUSDTM-trades-2025-01-09.zip", "zip"]] }
+}
