@@ -1,0 +1,1176 @@
+{
+  "phase": 1,
+  "hypothesis": "H1a",
+  "computedAt": "2026-09-20T20:05:01.800Z",
+  "inputs": {
+    "universe": "research/universe.json",
+    "universeScreenedAt": "2026-09-19T21:31:53.168Z",
+    "baseConfig": "configs/research/base.json",
+    "manifest": "research/data-manifest.json",
+    "feesVerifiedAt": "2026-09-19",
+    "primaryVenue": "binance",
+    "takerBps": {
+      "binance": 5,
+      "bybit": 5.5,
+      "okx": 5,
+      "bitget": 5.999999999999999,
+      "gate": 5,
+      "kucoin": 5.999999999999999
+    }
+  },
+  "formulas": {
+    "RTC_bps": "2*taker_bps + 2*max(0.5*tickBps, 0.4) + 1.0",
+    "floorRatio": "4*RTC_bps / volUnitBps",
+    "SweepDepth_bps": "max(0.5*volUnitBps, 2*RTC_bps)",
+    "BE_atFloor": "(SweepDepth_bps + RTC_bps) / (3*SweepDepth_bps)"
+  },
+  "thresholds": {
+    "symbolEligible": "floorRatio <= 4",
+    "tierEligible": ">= 2 eligible symbols in the tier",
+    "universeKill": "0 eligible symbols => verdict (a) \"cost floor\"; Phase 2 still runs, Phases 3-7 skipped"
+  },
+  "counts": {
+    "symbols": 25,
+    "eligible": 16,
+    "reactionOnly": 9,
+    "tiersEligible": [
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ]
+  },
+  "symbols": [
+    {
+      "slot": "T1#1",
+      "symbol": "BNBUSDT",
+      "tier": "T1",
+      "alsoT6": null,
+      "rank": 6,
+      "volUnitBps": 5.300066007320412,
+      "tickBps": 0.14038240166212765,
+      "tpm": 874.5413194444444,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 8.905549465762824,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T1#2",
+      "symbol": "XRPUSDT",
+      "tier": "T1",
+      "alsoT6": null,
+      "rank": 3,
+      "volUnitBps": 10.243312196971626,
+      "tickBps": 0.7163836951070993,
+      "tpm": 1712.9715277777777,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 4.607884548706267,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance",
+        "bitget",
+        "bybit",
+        "gate",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T1#3",
+      "symbol": "SOLUSDT",
+      "tier": "T1",
+      "alsoT6": null,
+      "rank": 1,
+      "volUnitBps": 9.034615417899019,
+      "tickBps": 0.9833325138895719,
+      "tpm": 1457.051736111111,
+      "takerBps": 5,
+      "RTC_bps": 11.983332513889572,
+      "floorRatio": 5.305519697119004,
+      "SweepDepth_bps": 23.966665027779143,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance",
+        "bitget",
+        "bybit",
+        "gate",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T1#4",
+      "symbol": "ZECUSDT",
+      "tier": "T1",
+      "alsoT6": null,
+      "rank": 2,
+      "volUnitBps": 18.71653514176785,
+      "tickBps": 0.1012965964343598,
+      "tpm": 4399.707638888889,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 2.5218342840961205,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "kucoin"
+      ]
+    },
+    {
+      "slot": "T1#5",
+      "symbol": "HYPEUSDT",
+      "tier": "T1",
+      "alsoT6": null,
+      "rank": 4,
+      "volUnitBps": 11.446228029851476,
+      "tickBps": 0.12184200746891508,
+      "tpm": 1679.8145833333333,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 4.1236291883145775,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance",
+        "bitget",
+        "bybit",
+        "kucoin",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T2#1",
+      "symbol": "AVAXUSDT",
+      "tier": "T2",
+      "alsoT6": null,
+      "rank": 25,
+      "volUnitBps": 8.522418559393303,
+      "tickBps": 1.3393156097234313,
+      "tpm": 284.31111111111113,
+      "takerBps": 5,
+      "RTC_bps": 12.339315609723432,
+      "floorRatio": 5.79146190660781,
+      "SweepDepth_bps": 24.678631219446864,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "gate",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T2#2",
+      "symbol": "SUIUSDT",
+      "tier": "T2",
+      "alsoT6": "T6#2",
+      "rank": 8,
+      "volUnitBps": 12.896624697885983,
+      "tickBps": 1.332445036642239,
+      "tpm": 696.6815972222222,
+      "takerBps": 5,
+      "RTC_bps": 12.33244503664224,
+      "floorRatio": 3.8250147850433383,
+      "SweepDepth_bps": 24.66489007328448,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "gate",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T2#3",
+      "symbol": "WLDUSDT",
+      "tier": "T2",
+      "alsoT6": null,
+      "rank": 19,
+      "volUnitBps": 15.84744481929696,
+      "tickBps": 2.5546046749265554,
+      "tpm": 513.2020833333333,
+      "takerBps": 5,
+      "RTC_bps": 13.554604674926555,
+      "floorRatio": 3.421271966423639,
+      "SweepDepth_bps": 27.10920934985311,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T2#4",
+      "symbol": "NEARUSDT",
+      "tier": "T2",
+      "alsoT6": null,
+      "rank": 10,
+      "volUnitBps": 20.62390639862148,
+      "tickBps": 4.775549188156638,
+      "tpm": 475.8260416666667,
+      "takerBps": 5,
+      "RTC_bps": 15.775549188156639,
+      "floorRatio": 3.0596626814037697,
+      "SweepDepth_bps": 31.551098376313277,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "bybit"
+      ]
+    },
+    {
+      "slot": "T2#5",
+      "symbol": "PUMPUSDT",
+      "tier": "T2",
+      "alsoT6": null,
+      "rank": 12,
+      "volUnitBps": 22.17427959850884,
+      "tickBps": 2.3582124749439926,
+      "tpm": 722.3125,
+      "takerBps": 5,
+      "RTC_bps": 13.358212474943993,
+      "floorRatio": 2.4096769260260067,
+      "SweepDepth_bps": 26.716424949887987,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T3#1",
+      "symbol": "TRXUSDT",
+      "tier": "T3",
+      "alsoT6": null,
+      "rank": 42,
+      "volUnitBps": 1.1863461616792303,
+      "tickBps": 0.29637532971755437,
+      "tpm": 155.9482638888889,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 39.786026646042416,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T3#2",
+      "symbol": "POLUSDT",
+      "tier": "T3",
+      "alsoT6": null,
+      "rank": 64,
+      "volUnitBps": 11.05125011190625,
+      "tickBps": 1.0326844632622503,
+      "tpm": 225.8972222222222,
+      "takerBps": 5,
+      "RTC_bps": 12.03268446326225,
+      "floorRatio": 4.355230165426674,
+      "SweepDepth_bps": 24.0653689265245,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T3#3",
+      "symbol": "APTUSDT",
+      "tier": "T3",
+      "alsoT6": null,
+      "rank": 46,
+      "volUnitBps": 14.49026503087901,
+      "tickBps": 1.6874789065136686,
+      "tpm": 236.4920138888889,
+      "takerBps": 5,
+      "RTC_bps": 12.687478906513668,
+      "floorRatio": 3.5023455760060775,
+      "SweepDepth_bps": 25.374957813027336,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T3#4",
+      "symbol": "ZROUSDT",
+      "tier": "T3",
+      "alsoT6": null,
+      "rank": 69,
+      "volUnitBps": 17.22986579690022,
+      "tickBps": 0.9510675733510867,
+      "tpm": 256.1715277777778,
+      "takerBps": 5,
+      "RTC_bps": 11.951067573351086,
+      "floorRatio": 2.774500443410574,
+      "SweepDepth_bps": 23.90213514670217,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T3#5",
+      "symbol": "DASHUSDT",
+      "tier": "T3",
+      "alsoT6": null,
+      "rank": 34,
+      "volUnitBps": 20.270921261301915,
+      "tickBps": 2.044571662236762,
+      "tpm": 398.36041666666665,
+      "takerBps": 5,
+      "RTC_bps": 13.044571662236763,
+      "floorRatio": 2.5740461410877122,
+      "SweepDepth_bps": 26.089143324473525,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T4#1",
+      "symbol": "BULLAUSDT",
+      "tier": "T4",
+      "alsoT6": null,
+      "rank": 102,
+      "volUnitBps": 23.562079517577054,
+      "tickBps": 3.1652080332979895,
+      "tpm": 185.7159722222222,
+      "takerBps": 5,
+      "RTC_bps": 14.16520803329799,
+      "floorRatio": 2.404746664695856,
+      "SweepDepth_bps": 28.33041606659598,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T4#2",
+      "symbol": "HUSDT",
+      "tier": "T4",
+      "alsoT6": null,
+      "rank": 179,
+      "volUnitBps": 19.41937764267426,
+      "tickBps": 1.252426576491953,
+      "tpm": 86.77604166666666,
+      "takerBps": 5,
+      "RTC_bps": 12.252426576491953,
+      "floorRatio": 2.5237526767216543,
+      "SweepDepth_bps": 24.504853152983905,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "okx"
+      ]
+    },
+    {
+      "slot": "T4#3",
+      "symbol": "ZENUSDT",
+      "tier": "T4",
+      "alsoT6": null,
+      "rank": 76,
+      "volUnitBps": 18.234917102914004,
+      "tickBps": 1.6563146997929608,
+      "tpm": 222.82638888888889,
+      "takerBps": 5,
+      "RTC_bps": 12.656314699792961,
+      "floorRatio": 2.7762812692513834,
+      "SweepDepth_bps": 25.312629399585923,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T4#4",
+      "symbol": "GPSUSDT",
+      "tier": "T4",
+      "alsoT6": null,
+      "rank": 108,
+      "volUnitBps": 18.012601378318287,
+      "tickBps": 0.9320098793047207,
+      "tpm": 167.828125,
+      "takerBps": 5,
+      "RTC_bps": 11.93200987930472,
+      "floorRatio": 2.6497027561309925,
+      "SweepDepth_bps": 23.86401975860944,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T4#5",
+      "symbol": "LAUSDT",
+      "tier": "T4",
+      "alsoT6": null,
+      "rank": 109,
+      "volUnitBps": 17.44048237685478,
+      "tickBps": 1.623640201331385,
+      "tpm": 126.15902777777778,
+      "takerBps": 5,
+      "RTC_bps": 12.623640201331385,
+      "floorRatio": 2.8952502410332834,
+      "SweepDepth_bps": 25.24728040266277,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T5#1",
+      "symbol": "USELESSUSDT",
+      "tier": "T5",
+      "alsoT6": null,
+      "rank": 23,
+      "volUnitBps": 44.687888705895304,
+      "tickBps": 0.4951598128295908,
+      "tpm": 1296.692013888889,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 1.0562145889379038,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T5#2",
+      "symbol": "AKEUSDT",
+      "tier": "T5",
+      "alsoT6": null,
+      "rank": 27,
+      "volUnitBps": 35.52914506123715,
+      "tickBps": 0.7227783600159011,
+      "tpm": 1125.4802083333334,
+      "takerBps": 5,
+      "RTC_bps": 11.8,
+      "floorRatio": 1.3284867935506823,
+      "SweepDepth_bps": 23.6,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T5#3",
+      "symbol": "ASTERUSDT",
+      "tier": "T5",
+      "alsoT6": null,
+      "rank": 33,
+      "volUnitBps": 10.975080965531411,
+      "tickBps": 1.4262283391570991,
+      "tpm": 331.4864583333333,
+      "takerBps": 5,
+      "RTC_bps": 12.426228339157099,
+      "floorRatio": 4.528888079526044,
+      "SweepDepth_bps": 24.852456678314198,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T5#4",
+      "symbol": "UAIUSDT",
+      "tier": "T5",
+      "alsoT6": null,
+      "rank": 37,
+      "volUnitBps": 41.8720701271906,
+      "tickBps": 2.4922118380062304,
+      "tpm": 575.6149305555555,
+      "takerBps": 5,
+      "RTC_bps": 13.49221183800623,
+      "floorRatio": 1.2888984754775477,
+      "SweepDepth_bps": 26.98442367601246,
+      "BE_atFloor": 0.5,
+      "eligible": true,
+      "admittedVenues": [
+        "binance"
+      ]
+    },
+    {
+      "slot": "T6#1",
+      "symbol": "DOGEUSDT",
+      "tier": "T6",
+      "alsoT6": null,
+      "rank": 5,
+      "volUnitBps": 8.771297324664488,
+      "tickBps": 1.1732957878681216,
+      "tpm": 899.8902777777778,
+      "takerBps": 5,
+      "RTC_bps": 12.173295787868122,
+      "floorRatio": 5.551423164569907,
+      "SweepDepth_bps": 24.346591575736245,
+      "BE_atFloor": 0.5,
+      "eligible": false,
+      "admittedVenues": [
+        "binance",
+        "bybit",
+        "gate",
+        "okx"
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "tier": "T1",
+      "n": 5,
+      "volUnitBps": {
+        "p10": 5.300066007320412,
+        "p50": 10.243312196971626,
+        "p90": 18.71653514176785
+      },
+      "tickBps": {
+        "p10": 0.1012965964343598,
+        "p50": 0.14038240166212765,
+        "p90": 0.9833325138895719
+      },
+      "RTC_bps": {
+        "p10": 11.8,
+        "p50": 11.8,
+        "p90": 11.983332513889572
+      },
+      "floorRatio": {
+        "p10": 2.5218342840961205,
+        "p50": 4.607884548706267,
+        "p90": 8.905549465762824
+      },
+      "eligibleCount": 1,
+      "eligibleSymbols": [
+        "ZECUSDT"
+      ],
+      "tierEligible": false
+    },
+    {
+      "tier": "T2",
+      "n": 5,
+      "volUnitBps": {
+        "p10": 8.522418559393303,
+        "p50": 15.84744481929696,
+        "p90": 22.17427959850884
+      },
+      "tickBps": {
+        "p10": 1.332445036642239,
+        "p50": 2.3582124749439926,
+        "p90": 4.775549188156638
+      },
+      "RTC_bps": {
+        "p10": 12.33244503664224,
+        "p50": 13.358212474943993,
+        "p90": 15.775549188156639
+      },
+      "floorRatio": {
+        "p10": 2.4096769260260067,
+        "p50": 3.421271966423639,
+        "p90": 5.79146190660781
+      },
+      "eligibleCount": 4,
+      "eligibleSymbols": [
+        "SUIUSDT",
+        "WLDUSDT",
+        "NEARUSDT",
+        "PUMPUSDT"
+      ],
+      "tierEligible": true
+    },
+    {
+      "tier": "T3",
+      "n": 5,
+      "volUnitBps": {
+        "p10": 1.1863461616792303,
+        "p50": 14.49026503087901,
+        "p90": 20.270921261301915
+      },
+      "tickBps": {
+        "p10": 0.29637532971755437,
+        "p50": 1.0326844632622503,
+        "p90": 2.044571662236762
+      },
+      "RTC_bps": {
+        "p10": 11.8,
+        "p50": 12.03268446326225,
+        "p90": 13.044571662236763
+      },
+      "floorRatio": {
+        "p10": 2.5740461410877122,
+        "p50": 3.5023455760060775,
+        "p90": 39.786026646042416
+      },
+      "eligibleCount": 3,
+      "eligibleSymbols": [
+        "APTUSDT",
+        "ZROUSDT",
+        "DASHUSDT"
+      ],
+      "tierEligible": true
+    },
+    {
+      "tier": "T4",
+      "n": 5,
+      "volUnitBps": {
+        "p10": 17.44048237685478,
+        "p50": 18.234917102914004,
+        "p90": 23.562079517577054
+      },
+      "tickBps": {
+        "p10": 0.9320098793047207,
+        "p50": 1.623640201331385,
+        "p90": 3.1652080332979895
+      },
+      "RTC_bps": {
+        "p10": 11.93200987930472,
+        "p50": 12.623640201331385,
+        "p90": 14.16520803329799
+      },
+      "floorRatio": {
+        "p10": 2.404746664695856,
+        "p50": 2.6497027561309925,
+        "p90": 2.8952502410332834
+      },
+      "eligibleCount": 5,
+      "eligibleSymbols": [
+        "BULLAUSDT",
+        "HUSDT",
+        "ZENUSDT",
+        "GPSUSDT",
+        "LAUSDT"
+      ],
+      "tierEligible": true
+    },
+    {
+      "tier": "T5",
+      "n": 4,
+      "volUnitBps": {
+        "p10": 10.975080965531411,
+        "p50": 35.52914506123715,
+        "p90": 44.687888705895304
+      },
+      "tickBps": {
+        "p10": 0.4951598128295908,
+        "p50": 0.7227783600159011,
+        "p90": 2.4922118380062304
+      },
+      "RTC_bps": {
+        "p10": 11.8,
+        "p50": 11.8,
+        "p90": 13.49221183800623
+      },
+      "floorRatio": {
+        "p10": 1.0562145889379038,
+        "p50": 1.2888984754775477,
+        "p90": 4.528888079526044
+      },
+      "eligibleCount": 3,
+      "eligibleSymbols": [
+        "USELESSUSDT",
+        "AKEUSDT",
+        "UAIUSDT"
+      ],
+      "tierEligible": true
+    },
+    {
+      "tier": "T6",
+      "n": 2,
+      "volUnitBps": {
+        "p10": 8.771297324664488,
+        "p50": 8.771297324664488,
+        "p90": 12.896624697885983
+      },
+      "tickBps": {
+        "p10": 1.1732957878681216,
+        "p50": 1.1732957878681216,
+        "p90": 1.332445036642239
+      },
+      "RTC_bps": {
+        "p10": 12.173295787868122,
+        "p50": 12.173295787868122,
+        "p90": 12.33244503664224
+      },
+      "floorRatio": {
+        "p10": 3.8250147850433383,
+        "p50": 3.8250147850433383,
+        "p90": 5.551423164569907
+      },
+      "eligibleCount": 1,
+      "eligibleSymbols": [
+        "SUIUSDT"
+      ],
+      "tierEligible": false
+    }
+  ],
+  "byVenueInformational": {
+    "binance": {
+      "takerBps": 5,
+      "note": "informational only (post-hoc); VolUnit/tick are the Binance screen values",
+      "rows": [
+        {
+          "symbol": "BNBUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 8.905549465762824,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "XRPUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 4.607884548706267,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SOLUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.983332513889572,
+          "floorRatio": 5.305519697119004,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "ZECUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 2.5218342840961205,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 4.1236291883145775,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "tier": "T2",
+          "RTC_bps": 12.339315609723432,
+          "floorRatio": 5.79146190660781,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SUIUSDT",
+          "tier": "T2",
+          "RTC_bps": 12.33244503664224,
+          "floorRatio": 3.8250147850433383,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "WLDUSDT",
+          "tier": "T2",
+          "RTC_bps": 13.554604674926555,
+          "floorRatio": 3.421271966423639,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "tier": "T2",
+          "RTC_bps": 15.775549188156639,
+          "floorRatio": 3.0596626814037697,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "PUMPUSDT",
+          "tier": "T2",
+          "RTC_bps": 13.358212474943993,
+          "floorRatio": 2.4096769260260067,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "TRXUSDT",
+          "tier": "T3",
+          "RTC_bps": 11.8,
+          "floorRatio": 39.786026646042416,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "POLUSDT",
+          "tier": "T3",
+          "RTC_bps": 12.03268446326225,
+          "floorRatio": 4.355230165426674,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "APTUSDT",
+          "tier": "T3",
+          "RTC_bps": 12.687478906513668,
+          "floorRatio": 3.5023455760060775,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "ZROUSDT",
+          "tier": "T3",
+          "RTC_bps": 11.951067573351086,
+          "floorRatio": 2.774500443410574,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "DASHUSDT",
+          "tier": "T3",
+          "RTC_bps": 13.044571662236763,
+          "floorRatio": 2.5740461410877122,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "BULLAUSDT",
+          "tier": "T4",
+          "RTC_bps": 14.16520803329799,
+          "floorRatio": 2.404746664695856,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "HUSDT",
+          "tier": "T4",
+          "RTC_bps": 12.252426576491953,
+          "floorRatio": 2.5237526767216543,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "ZENUSDT",
+          "tier": "T4",
+          "RTC_bps": 12.656314699792961,
+          "floorRatio": 2.7762812692513834,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "GPSUSDT",
+          "tier": "T4",
+          "RTC_bps": 11.93200987930472,
+          "floorRatio": 2.6497027561309925,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "LAUSDT",
+          "tier": "T4",
+          "RTC_bps": 12.623640201331385,
+          "floorRatio": 2.8952502410332834,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "USELESSUSDT",
+          "tier": "T5",
+          "RTC_bps": 11.8,
+          "floorRatio": 1.0562145889379038,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "AKEUSDT",
+          "tier": "T5",
+          "RTC_bps": 11.8,
+          "floorRatio": 1.3284867935506823,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "ASTERUSDT",
+          "tier": "T5",
+          "RTC_bps": 12.426228339157099,
+          "floorRatio": 4.528888079526044,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "UAIUSDT",
+          "tier": "T5",
+          "RTC_bps": 13.49221183800623,
+          "floorRatio": 1.2888984754775477,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "tier": "T6",
+          "RTC_bps": 12.173295787868122,
+          "floorRatio": 5.551423164569907,
+          "wouldBeEligible": false
+        }
+      ]
+    },
+    "bybit": {
+      "takerBps": 5.5,
+      "note": "informational only (post-hoc); VolUnit/tick are the Binance screen values",
+      "rows": [
+        {
+          "symbol": "XRPUSDT",
+          "tier": "T1",
+          "RTC_bps": 12.8,
+          "floorRatio": 4.998383239274594,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SOLUSDT",
+          "tier": "T1",
+          "RTC_bps": 12.983332513889572,
+          "floorRatio": 5.748261287654818,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "ZECUSDT",
+          "tier": "T1",
+          "RTC_bps": 12.8,
+          "floorRatio": 2.7355490539347747,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "tier": "T1",
+          "RTC_bps": 12.8,
+          "floorRatio": 4.473089289019202,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "tier": "T2",
+          "RTC_bps": 13.339315609723432,
+          "floorRatio": 6.26081224092004,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SUIUSDT",
+          "tier": "T2",
+          "RTC_bps": 13.33244503664224,
+          "floorRatio": 4.135173457851401,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "WLDUSDT",
+          "tier": "T2",
+          "RTC_bps": 14.554604674926555,
+          "floorRatio": 3.673678587529479,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "NEARUSDT",
+          "tier": "T2",
+          "RTC_bps": 16.77554918815664,
+          "floorRatio": 3.2536123591557673,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "APTUSDT",
+          "tier": "T3",
+          "RTC_bps": 13.687478906513668,
+          "floorRatio": 3.778392976897361,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "HUSDT",
+          "tier": "T4",
+          "RTC_bps": 13.252426576491953,
+          "floorRatio": 2.7297325012866787,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "tier": "T6",
+          "RTC_bps": 13.173295787868122,
+          "floorRatio": 6.0074560468155225,
+          "wouldBeEligible": false
+        }
+      ]
+    },
+    "okx": {
+      "takerBps": 5,
+      "note": "informational only (post-hoc); VolUnit/tick are the Binance screen values",
+      "rows": [
+        {
+          "symbol": "BNBUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 8.905549465762824,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "XRPUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 4.607884548706267,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SOLUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.983332513889572,
+          "floorRatio": 5.305519697119004,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 4.1236291883145775,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "tier": "T2",
+          "RTC_bps": 12.339315609723432,
+          "floorRatio": 5.79146190660781,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SUIUSDT",
+          "tier": "T2",
+          "RTC_bps": 12.33244503664224,
+          "floorRatio": 3.8250147850433383,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "WLDUSDT",
+          "tier": "T2",
+          "RTC_bps": 13.554604674926555,
+          "floorRatio": 3.421271966423639,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "PUMPUSDT",
+          "tier": "T2",
+          "RTC_bps": 13.358212474943993,
+          "floorRatio": 2.4096769260260067,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "APTUSDT",
+          "tier": "T3",
+          "RTC_bps": 12.687478906513668,
+          "floorRatio": 3.5023455760060775,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "HUSDT",
+          "tier": "T4",
+          "RTC_bps": 12.252426576491953,
+          "floorRatio": 2.5237526767216543,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "tier": "T6",
+          "RTC_bps": 12.173295787868122,
+          "floorRatio": 5.551423164569907,
+          "wouldBeEligible": false
+        }
+      ]
+    },
+    "bitget": {
+      "takerBps": 5.999999999999999,
+      "note": "informational only (post-hoc); VolUnit/tick are the Binance screen values",
+      "rows": [
+        {
+          "symbol": "XRPUSDT",
+          "tier": "T1",
+          "RTC_bps": 13.799999999999999,
+          "floorRatio": 5.388881929842922,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SOLUSDT",
+          "tier": "T1",
+          "RTC_bps": 13.98333251388957,
+          "floorRatio": 6.191002878190631,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "tier": "T1",
+          "RTC_bps": 13.799999999999999,
+          "floorRatio": 4.822549389723827,
+          "wouldBeEligible": false
+        }
+      ]
+    },
+    "gate": {
+      "takerBps": 5,
+      "note": "informational only (post-hoc); VolUnit/tick are the Binance screen values",
+      "rows": [
+        {
+          "symbol": "XRPUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.8,
+          "floorRatio": 4.607884548706267,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SOLUSDT",
+          "tier": "T1",
+          "RTC_bps": 11.983332513889572,
+          "floorRatio": 5.305519697119004,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "tier": "T2",
+          "RTC_bps": 12.339315609723432,
+          "floorRatio": 5.79146190660781,
+          "wouldBeEligible": false
+        },
+        {
+          "symbol": "SUIUSDT",
+          "tier": "T2",
+          "RTC_bps": 12.33244503664224,
+          "floorRatio": 3.8250147850433383,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "tier": "T6",
+          "RTC_bps": 12.173295787868122,
+          "floorRatio": 5.551423164569907,
+          "wouldBeEligible": false
+        }
+      ]
+    },
+    "kucoin": {
+      "takerBps": 5.999999999999999,
+      "note": "informational only (post-hoc); VolUnit/tick are the Binance screen values",
+      "rows": [
+        {
+          "symbol": "ZECUSDT",
+          "tier": "T1",
+          "RTC_bps": 13.799999999999999,
+          "floorRatio": 2.9492638237734283,
+          "wouldBeEligible": true
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "tier": "T1",
+          "RTC_bps": 13.799999999999999,
+          "floorRatio": 4.822549389723827,
+          "wouldBeEligible": false
+        }
+      ]
+    }
+  }
+}
