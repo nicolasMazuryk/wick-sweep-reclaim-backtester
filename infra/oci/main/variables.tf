@@ -80,11 +80,11 @@ variable "boot_volume_gbs" {
 variable "data_volume_gbs" {
   description = "Data volume size. Grow only: OCI cannot shrink a block volume."
   type        = number
-  default     = 500
+  default     = 170
 
   validation {
-    condition     = var.data_volume_gbs >= 500
-    error_message = "The data volume is grow-only and was created at 500 GB."
+    condition     = var.data_volume_gbs >= 170
+    error_message = "The data volume is grow-only and was created at 170 GB."
   }
 }
 

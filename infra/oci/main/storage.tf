@@ -2,6 +2,19 @@ locals {
   data_device_path = "/dev/oracleoci/oraclevdb"
 }
 
+moved {
+  from = oci_core_volume.data_v2
+  to   = oci_core_volume.data
+}
+
+resource "oci_core_volume_attachment" "data" {
+  attachment_type = "paravirtualized"
+  instance_id     = oci_core_instance.vm.id
+  volume_id       = oci_core_volume.data.id
+  device          = local.data_device_path
+  display_name    = "wsr-data"
+}
+
 resource "oci_core_volume" "data" {
   compartment_id      = local.compartment_id
   availability_domain = local.availability_domain
@@ -12,14 +25,6 @@ resource "oci_core_volume" "data" {
   lifecycle {
     prevent_destroy = true
   }
-}
-
-resource "oci_core_volume_attachment" "data" {
-  attachment_type = "paravirtualized"
-  instance_id     = oci_core_instance.vm.id
-  volume_id       = oci_core_volume.data.id
-  device          = local.data_device_path
-  display_name    = "wsr-data"
 }
 
 resource "oci_objectstorage_bucket" "results" {
