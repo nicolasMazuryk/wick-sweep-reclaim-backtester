@@ -1,0 +1,4228 @@
+{
+  "phase": 2,
+  "generatedAt": "2026-09-20T20:24:52.807Z",
+  "approachedMin": 500,
+  "runs": [
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:11:46Z",
+      "venue": "bitget",
+      "symbol": "XRPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-16",
+      "runId": "3d313e9593d4f3e5",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#2",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 511,
+      "sets": {
+        "n": 42560,
+        "approached": 36742,
+        "complete": 36742,
+        "unresolvedShare": 0.031190463230090903,
+        "meanDisp": -0.02194048198163908,
+        "pHit": 0.4957813945892984
+      },
+      "blacklistedBuckets": 1731,
+      "totalBuckets": 736677,
+      "blacklistShare": 0.002349740795491104,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.03757390756230684,
+          "ci95": [
+            -0.08374365484293043,
+            0.008505027141480501
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": -0.02353126300066137,
+          "ci95": [
+            -0.060220746007893206,
+            0.011621463165502879
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.004624921259774359,
+          "ci95": [
+            -0.03176192705991498,
+            0.022043051105230613
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0012143546757285098,
+        "ci95": [
+          -0.011025668333456194,
+          0.008989274091189747
+        ],
+        "spearman": -0.18787878787878787,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:12:06Z",
+      "venue": "bitget",
+      "symbol": "SOLUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-16",
+      "runId": "7ea82b9b523308be",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#3",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 283,
+      "sets": {
+        "n": 53734,
+        "approached": 46546,
+        "complete": 46546,
+        "unresolvedShare": 0.03693120783740816,
+        "meanDisp": 0.0067784722563244545,
+        "pHit": 0.494714905684699
+      },
+      "blacklistedBuckets": 292,
+      "totalBuckets": 746188,
+      "blacklistShare": 0.0003913222941135478,
+      "randomClipped": 19738,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.007364685402609529,
+          "ci95": [
+            -0.03710371584499448,
+            0.02258163693065677
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.037340920345382694,
+          "ci95": [
+            -0.03237314264988414,
+            0.14023935511889682
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.037192779806049375,
+          "ci95": [
+            -0.11739463399872435,
+            0.016841667125765042
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0043726307025616674,
+        "ci95": [
+          -0.014948966333459442,
+          0.006022131204929139
+        ],
+        "spearman": -0.17575757575757575,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:12:16Z",
+      "venue": "okx",
+      "symbol": "BNBUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "37320eaeb88dd0d3",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 594,
+      "sets": {
+        "n": 40384,
+        "approached": 34810,
+        "complete": 34810,
+        "unresolvedShare": 0.03619649525998277,
+        "meanDisp": -0.029302973799462673,
+        "pHit": 0.47879919563343865
+      },
+      "blacklistedBuckets": 4114,
+      "totalBuckets": 858526,
+      "blacklistShare": 0.004791934082369084,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.07688533421546398,
+          "ci95": [
+            -0.11783699338402442,
+            -0.0327661215647694
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": -0.0006088027512775838,
+          "ci95": [
+            -0.03700443595232952,
+            0.03505153457469654
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.010767540218239141,
+          "ci95": [
+            -0.035508980703255415,
+            0.014660080829639537
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.003145116116139041,
+        "ci95": [
+          -0.007465397390845816,
+          0.014641740588830084
+        ],
+        "spearman": 0.12727272727272726,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:12:18Z",
+      "venue": "gate",
+      "symbol": "XRPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-31",
+      "runId": "1f617dea55a67fad",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#2",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 295,
+      "sets": {
+        "n": 50101,
+        "approached": 44005,
+        "complete": 44005,
+        "unresolvedShare": 0.00965799340983979,
+        "meanDisp": 0.03617438155568309,
+        "pHit": 0.5068514941483923
+      },
+      "blacklistedBuckets": 555,
+      "totalBuckets": 746287,
+      "blacklistShare": 0.000743681720303315,
+      "randomClipped": 5350,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.017917964408446722,
+          "ci95": [
+            -0.06124818643844463,
+            0.023087619023768366
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.028528051782061394,
+          "ci95": [
+            -0.009338547497628785,
+            0.06593661424134452
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.0015838915704213322,
+          "ci95": [
+            -0.027318415577865178,
+            0.02363396583076725
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0005850653931512707,
+        "ci95": [
+          -0.011654643308612047,
+          0.013048400670019956
+        ],
+        "spearman": 0.04242424242424243,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:12:37Z",
+      "venue": "gate",
+      "symbol": "SOLUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-31",
+      "runId": "7bb83e28013cc2a2",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#3",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 302,
+      "sets": {
+        "n": 48420,
+        "approached": 42746,
+        "complete": 42746,
+        "unresolvedShare": 0.008772750666729051,
+        "meanDisp": 0.03886242923266573,
+        "pHit": 0.5138726430543209
+      },
+      "blacklistedBuckets": 424,
+      "totalBuckets": 785096,
+      "blacklistShare": 0.0005400613428166747,
+      "randomClipped": 2674,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.02599588057788276,
+          "ci95": [
+            -0.06923744772085005,
+            0.015438317126125384
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.033473882664050957,
+          "ci95": [
+            -0.0017507306009169217,
+            0.06681922489439543
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.00993557000306984,
+          "ci95": [
+            -0.015253243826731678,
+            0.03445526146571052
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0039376871964114084,
+        "ci95": [
+          -0.014686723317707318,
+          0.0070793709598542375
+        ],
+        "spearman": -0.21212121212121213,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:11:47Z",
+      "end": "2026-09-20T20:12:54Z",
+      "venue": "kucoin",
+      "symbol": "ZECUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "none",
+      "exit": 4,
+      "ok": false,
+      "note": "no reaction.json"
+    },
+    {
+      "start": "2026-09-20T20:12:54Z",
+      "end": "2026-09-20T20:13:30Z",
+      "venue": "kucoin",
+      "symbol": "HYPEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "none",
+      "exit": 4,
+      "ok": false,
+      "note": "no reaction.json"
+    },
+    {
+      "start": "2026-09-20T20:12:37Z",
+      "end": "2026-09-20T20:13:31Z",
+      "venue": "bitget",
+      "symbol": "HYPEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-16",
+      "runId": "9fcc088397e922c5",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#5",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 518,
+      "sets": {
+        "n": 47431,
+        "approached": 40437,
+        "complete": 40437,
+        "unresolvedShare": 0.0675618863911764,
+        "meanDisp": 0.006195332150813364,
+        "pHit": 0.480747829957712
+      },
+      "blacklistedBuckets": 6652,
+      "totalBuckets": 747042,
+      "blacklistShare": 0.00890445249396955,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.014391470505404048,
+          "ci95": [
+            -0.052529281509059236,
+            0.02514875599825511
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.014681057672525828,
+          "ci95": [
+            -0.01680753289149287,
+            0.04703968782604103
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.016027468173799984,
+          "ci95": [
+            -0.04096920726416567,
+            0.008609378545061299
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.002056179550039926,
+        "ci95": [
+          -0.007061767666591478,
+          0.011667113609572208
+        ],
+        "spearman": -0.006060606060606061,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:13:57Z",
+      "venue": "bybit",
+      "symbol": "XRPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "3b58744c0acf1da7",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#2",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 669,
+      "sets": {
+        "n": 81893,
+        "approached": 71574,
+        "complete": 71574,
+        "unresolvedShare": 0.015312823092184312,
+        "meanDisp": 0.027108032148752677,
+        "pHit": 0.505490820689077
+      },
+      "blacklistedBuckets": 122,
+      "totalBuckets": 965099,
+      "blacklistShare": 0.0001264119017841693,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.01668326240850933,
+          "ci95": [
+            -0.04687406582878899,
+            0.0125508455487496
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.03756078130081176,
+          "ci95": [
+            0.009227499648720773,
+            0.06553218195461963
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.00929284298482682,
+          "ci95": [
+            -0.011000534813168412,
+            0.03013561174746559
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0015827824587965405,
+        "ci95": [
+          -0.009869195111695725,
+          0.006410203400721008
+        ],
+        "spearman": -0.24848484848484848,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:14:01Z",
+      "venue": "bybit",
+      "symbol": "SOLUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "178401aa93b383d0",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#3",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 402,
+      "sets": {
+        "n": 89944,
+        "approached": 78746,
+        "complete": 78745,
+        "unresolvedShare": 0.01690266048638009,
+        "meanDisp": 0.05580599944576326,
+        "pHit": 0.5157914788240523
+      },
+      "blacklistedBuckets": 90,
+      "totalBuckets": 949719,
+      "blacklistShare": 0.00009476487255704055,
+      "randomClipped": 35913,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.006866652323164142,
+          "ci95": [
+            -0.028995946075755858,
+            0.015527371570451054
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.0703636380118252,
+          "ci95": [
+            0.01845839041707173,
+            0.14536044748947297
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.028605306386868933,
+          "ci95": [
+            -0.010655024677641277,
+            0.0871082178078984
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0012908024381964951,
+        "ci95": [
+          -0.01028250043880244,
+          0.008748850395003045
+        ],
+        "spearman": -0.28484848484848485,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:14:14Z",
+      "venue": "bybit",
+      "symbol": "ZECUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "3642d6bd4969f7c3",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 728,
+      "sets": {
+        "n": 84396,
+        "approached": 73548,
+        "complete": 73548,
+        "unresolvedShare": 0.022869418610975144,
+        "meanDisp": 0.031935299617092225,
+        "pHit": 0.5088921520639582
+      },
+      "blacklistedBuckets": 2517,
+      "totalBuckets": 1050459,
+      "blacklistShare": 0.0023960954211444713,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.02332090262872235,
+          "ci95": [
+            -0.05589656420267629,
+            0.007469997963568021
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.041851171146274235,
+          "ci95": [
+            0.012752516215966361,
+            0.06874864884183622
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.01656557217826339,
+          "ci95": [
+            -0.03700062392873205,
+            0.003860650221166798
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0010222387055644762,
+        "ci95": [
+          -0.008738097080289175,
+          0.006834655342315688
+        ],
+        "spearman": -0.030303030303030304,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:14:23Z",
+      "venue": "okx",
+      "symbol": "XRPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "c5e96c6663f79c02",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#2",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 639,
+      "sets": {
+        "n": 71804,
+        "approached": 62650,
+        "complete": 62650,
+        "unresolvedShare": 0.02025538707102953,
+        "meanDisp": 0.03363574535879142,
+        "pHit": 0.5011971268954509
+      },
+      "blacklistedBuckets": 67,
+      "totalBuckets": 922376,
+      "blacklistShare": 0.00007263849016019498,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.03562937600332994,
+          "ci95": [
+            -0.07348964358852914,
+            0.005595115751345025
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.020884994424799228,
+          "ci95": [
+            -0.014868500628858371,
+            0.05796538283588389
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.03129949817791541,
+          "ci95": [
+            0.002152074801489795,
+            0.06837677088525826
+          ],
+          "significant": true
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.001742856706898855,
+        "ci95": [
+          -0.007366802636590174,
+          0.010198752588033448
+        ],
+        "spearman": 0.06666666666666667,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "PASS",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:14:01Z",
+      "end": "2026-09-20T20:14:45Z",
+      "venue": "gate",
+      "symbol": "AVAXUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-31",
+      "runId": "6ba48a41cbfb09d6",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 633,
+      "sets": {
+        "n": 24347,
+        "approached": 20920,
+        "complete": 20919,
+        "unresolvedShare": 0.0260528705961088,
+        "meanDisp": 0.005286537575211458,
+        "pHit": 0.5028443042210431
+      },
+      "blacklistedBuckets": 2327,
+      "totalBuckets": 923632,
+      "blacklistShare": 0.002519401666464566,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.017123725545308617,
+          "ci95": [
+            -0.0756238330924094,
+            0.045597181314573
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.010585670733526236,
+          "ci95": [
+            -0.03663653343884362,
+            0.05834290161422578
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.0005276222194270262,
+          "ci95": [
+            -0.036601956853278536,
+            0.034178015643175255
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0039214968494024945,
+        "ci95": [
+          -0.019070358958486352,
+          0.011293938044024347
+        ],
+        "spearman": -0.24848484848484848,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:13:31Z",
+      "end": "2026-09-20T20:15:01Z",
+      "venue": "bybit",
+      "symbol": "AVAXUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "c87b985789322d7f",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 668,
+      "sets": {
+        "n": 69916,
+        "approached": 60434,
+        "complete": 60434,
+        "unresolvedShare": 0.019293775027302514,
+        "meanDisp": -0.022685737450276282,
+        "pHit": 0.4942747460039051
+      },
+      "blacklistedBuckets": 6225,
+      "totalBuckets": 962806,
+      "blacklistShare": 0.006465476949665872,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.07209152262518256,
+          "ci95": [
+            -0.10778650403358266,
+            -0.03420667916799393
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.02240857496206865,
+          "ci95": [
+            -0.00801900170115894,
+            0.05324053458434549
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.009064614733777902,
+          "ci95": [
+            -0.010412934987710945,
+            0.030359274965752803
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.006246953950755364,
+        "ci95": [
+          -0.014820745609272726,
+          0.0025938864988630135
+        ],
+        "spearman": -0.38181818181818183,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:12:16Z",
+      "end": "2026-09-20T20:15:31Z",
+      "venue": "bybit",
+      "symbol": "HYPEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "56e1da9b8bafc7bd",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#5",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 630,
+      "sets": {
+        "n": 78188,
+        "approached": 68928,
+        "complete": 68928,
+        "unresolvedShare": 0.021747330547818012,
+        "meanDisp": 0.0368020941644698,
+        "pHit": 0.5177721680594243
+      },
+      "blacklistedBuckets": 72,
+      "totalBuckets": 907618,
+      "blacklistShare": 0.00007932852808119716,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.036847074836948344,
+          "ci95": [
+            -0.06869267713719794,
+            -0.001971599457721714
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.018779756492869608,
+          "ci95": [
+            -0.011443757341093564,
+            0.04746059027209572
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.009546710226378242,
+          "ci95": [
+            -0.03148971360998063,
+            0.013072687640942066
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0003018162243044581,
+        "ci95": [
+          -0.007999167740533697,
+          0.007670858380083323
+        ],
+        "spearman": -0.1393939393939394,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:15:43Z",
+      "venue": "binance",
+      "symbol": "BNBUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "4027fb9f7ed2171d",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 616,
+      "sets": {
+        "n": 84266,
+        "approached": 73709,
+        "complete": 73709,
+        "unresolvedShare": 0.010649988468165353,
+        "meanDisp": 0.0076174798585343035,
+        "pHit": 0.5037919385692385
+      },
+      "blacklistedBuckets": 22,
+      "totalBuckets": 890301,
+      "blacklistShare": 0.00002471074389448063,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.06081111065421257,
+          "ci95": [
+            -0.09585957920598827,
+            -0.02545881447467794
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.02278972811200114,
+          "ci95": [
+            -0.011540085420637959,
+            0.05706422088503886
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.011388160369291012,
+          "ci95": [
+            -0.032746488864151026,
+            0.009748722325223388
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.005925659524469001,
+        "ci95": [
+          -0.0027535732820208932,
+          0.014774321276589886
+        ],
+        "spearman": 0.5636363636363636,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:12:18Z",
+      "end": "2026-09-20T20:15:53Z",
+      "venue": "okx",
+      "symbol": "HYPEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "55d5327848a02c80",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#5",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 612,
+      "sets": {
+        "n": 76204,
+        "approached": 67137,
+        "complete": 67137,
+        "unresolvedShare": 0.014880021448679566,
+        "meanDisp": 0.005878984150768036,
+        "pHit": 0.5105530482446341
+      },
+      "blacklistedBuckets": 160,
+      "totalBuckets": 882331,
+      "blacklistShare": 0.00018133784260101934,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.06446207944269852,
+          "ci95": [
+            -0.0951328225821353,
+            -0.03272724286793124
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.016607715114123334,
+          "ci95": [
+            -0.013609159969122698,
+            0.04797153731609065
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.02705493068209115,
+          "ci95": [
+            -0.04659305417154839,
+            -0.006133690945057065
+          ],
+          "significant": true
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.009973543732556635,
+        "ci95": [
+          -0.018152265541645694,
+          -0.0024123975757733536
+        ],
+        "spearman": -0.806060606060606,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:16:08Z",
+      "venue": "okx",
+      "symbol": "SOLUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "0c7db9fb96ff7c08",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#3",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 623,
+      "sets": {
+        "n": 76430,
+        "approached": 67218,
+        "complete": 67218,
+        "unresolvedShare": 0.010086583950727484,
+        "meanDisp": 0.059844095517808234,
+        "pHit": 0.519280549852718
+      },
+      "blacklistedBuckets": 0,
+      "totalBuckets": 898459,
+      "blacklistShare": 0,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.0021457486471824494,
+          "ci95": [
+            -0.03206594075022396,
+            0.026883487760279372
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.04327444572240882,
+          "ci95": [
+            0.014176521840119244,
+            0.0728520009852994
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.01646111397535821,
+          "ci95": [
+            -0.005349449111735928,
+            0.03761052563936619
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.0030790708977242237,
+        "ci95": [
+          -0.00482264860512234,
+          0.011648636177249152
+        ],
+        "spearman": 0.22424242424242424,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:13:57Z",
+      "end": "2026-09-20T20:16:11Z",
+      "venue": "okx",
+      "symbol": "AVAXUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "1309d3e90d464054",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 654,
+      "sets": {
+        "n": 77807,
+        "approached": 67714,
+        "complete": 67714,
+        "unresolvedShare": 0.014044363056384204,
+        "meanDisp": -0.03730611678835885,
+        "pHit": 0.4928522905159937
+      },
+      "blacklistedBuckets": 3795,
+      "totalBuckets": 942343,
+      "blacklistShare": 0.004027196042205439,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.08151256941385712,
+          "ci95": [
+            -0.1197798953708262,
+            -0.043491499129460195
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.018729035673838337,
+          "ci95": [
+            -0.015302809424201596,
+            0.05500614517261767
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.007947192869804661,
+          "ci95": [
+            -0.029250684436787768,
+            0.014260791079125545
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.003979553503706116,
+        "ci95": [
+          -0.0054025462426568775,
+          0.01290028867961277
+        ],
+        "spearman": 0.40606060606060607,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:13:30Z",
+      "end": "2026-09-20T20:16:14Z",
+      "venue": "binance",
+      "symbol": "AVAXUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "b787c63e5e98ae2b",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 580,
+      "sets": {
+        "n": 76577,
+        "approached": 66871,
+        "complete": 66871,
+        "unresolvedShare": 0.00809020352619222,
+        "meanDisp": 0.0207149338420371,
+        "pHit": 0.5152457717097098
+      },
+      "blacklistedBuckets": 41,
+      "totalBuckets": 835242,
+      "blacklistShare": 0.00004908756983006123,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.07227356260846372,
+          "ci95": [
+            -0.10678879110531077,
+            -0.03838531441207111
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.019677165857109994,
+          "ci95": [
+            -0.012294526792803467,
+            0.05100240854638847
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.00038479045323436267,
+          "ci95": [
+            -0.025811261082403558,
+            0.023954204483442123
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0024169025721564596,
+        "ci95": [
+          -0.006028871753896766,
+          0.010659525430338658
+        ],
+        "spearman": 0.3090909090909091,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:15:01Z",
+      "end": "2026-09-20T20:16:16Z",
+      "venue": "gate",
+      "symbol": "SUIUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-31",
+      "runId": "cfb7921beb815dbd",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 540,
+      "sets": {
+        "n": 51432,
+        "approached": 44937,
+        "complete": 44937,
+        "unresolvedShare": 0.01838128936066048,
+        "meanDisp": -0.010187041646271398,
+        "pHit": 0.4988762044640274
+      },
+      "blacklistedBuckets": 632,
+      "totalBuckets": 779968,
+      "blacklistShare": 0.0008102896529088373,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.04802359709244912,
+          "ci95": [
+            -0.0917777068987964,
+            -0.005118849341000955
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.0014569669786670975,
+          "ci95": [
+            -0.03828615507981816,
+            0.03903955586203731
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.009133310262471085,
+          "ci95": [
+            -0.03456280141758443,
+            0.015040035827104538
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.012193552496213731,
+        "ci95": [
+          -0.023650130394344118,
+          -0.0007510457470611585
+        ],
+        "spearman": -0.6727272727272727,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:14:23Z",
+      "end": "2026-09-20T20:16:22Z",
+      "venue": "bybit",
+      "symbol": "SUIUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "744c22b58e4e88ec",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 699,
+      "sets": {
+        "n": 79435,
+        "approached": 69469,
+        "complete": 69469,
+        "unresolvedShare": 0.016842044653010695,
+        "meanDisp": 0.016276409863636834,
+        "pHit": 0.5012595546214859
+      },
+      "blacklistedBuckets": 2344,
+      "totalBuckets": 1008149,
+      "blacklistShare": 0.00232505314194628,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.0350962880421362,
+          "ci95": [
+            -0.06703471941188746,
+            -0.003461973618014505
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.039869013629802205,
+          "ci95": [
+            0.009304665203067093,
+            0.07062399189127878
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.001885212555414944,
+          "ci95": [
+            -0.022266843950808034,
+            0.017907434499697967
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.002676534230691375,
+        "ci95": [
+          -0.010498766164611416,
+          0.00538270957829314
+        ],
+        "spearman": -0.40606060606060607,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:17:01Z",
+      "venue": "binance",
+      "symbol": "XRPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "188e336cd5e43a6a",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#2",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 631,
+      "sets": {
+        "n": 85271,
+        "approached": 74848,
+        "complete": 74848,
+        "unresolvedShare": 0.008684266780675503,
+        "meanDisp": 0.033153971401542394,
+        "pHit": 0.5174620564343737
+      },
+      "blacklistedBuckets": 47,
+      "totalBuckets": 909899,
+      "blacklistShare": 0.00005165408468412428,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.053103619722789576,
+          "ci95": [
+            -0.08456311342714061,
+            -0.022901350739786625
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.01748770004706656,
+          "ci95": [
+            -0.014692506073083585,
+            0.04712984661748486
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.0037118616676093397,
+          "ci95": [
+            -0.023796776736017933,
+            0.015517852834065255
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0008101586296646288,
+        "ci95": [
+          -0.007315183643232312,
+          0.008955833043991812
+        ],
+        "spearman": 0.10303030303030303,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:15:43Z",
+      "end": "2026-09-20T20:17:23Z",
+      "venue": "bybit",
+      "symbol": "WLDUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "ae7287ac6499f3cd",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 682,
+      "sets": {
+        "n": 58306,
+        "approached": 50629,
+        "complete": 50629,
+        "unresolvedShare": 0.0219834482213751,
+        "meanDisp": 0.014616213187591489,
+        "pHit": 0.5010962096821979
+      },
+      "blacklistedBuckets": 6154,
+      "totalBuckets": 982554,
+      "blacklistShare": 0.006263268990813736,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.045668262349391454,
+          "ci95": [
+            -0.0795325351585506,
+            -0.013833126870308266
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.03168664052208013,
+          "ci95": [
+            0.0027629119219979943,
+            0.060241130215484245
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.023004097831892056,
+          "ci95": [
+            -0.04538651523290964,
+            -0.001258956489167004
+          ],
+          "significant": true
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0034462411188709735,
+        "ci95": [
+          -0.012243796696379988,
+          0.005032082018310026
+        ],
+        "spearman": -0.3212121212121212,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:14:45Z",
+      "end": "2026-09-20T20:17:44Z",
+      "venue": "okx",
+      "symbol": "SUIUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "27e5472ca61523e2",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 649,
+      "sets": {
+        "n": 78474,
+        "approached": 68820,
+        "complete": 68819,
+        "unresolvedShare": 0.013775265551664511,
+        "meanDisp": 0.0021652520896457824,
+        "pHit": 0.5064735029570322
+      },
+      "blacklistedBuckets": 864,
+      "totalBuckets": 937438,
+      "blacklistShare": 0.0009216609525109928,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.06599926716455852,
+          "ci95": [
+            -0.09750069596339828,
+            -0.033929485721779895
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.006554925319863874,
+          "ci95": [
+            -0.022758178753349977,
+            0.03577556093419813
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.020661870229228926,
+          "ci95": [
+            -0.03952517090438936,
+            -0.0026648060376923033
+          ],
+          "significant": true
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.005925925918596255,
+        "ci95": [
+          -0.0016484424654016029,
+          0.013609466991054356
+        ],
+        "spearman": 0.4909090909090909,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:16:11Z",
+      "end": "2026-09-20T20:17:55Z",
+      "venue": "bybit",
+      "symbol": "NEARUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "2c7dae9ce31dabe0",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 426,
+      "sets": {
+        "n": 55509,
+        "approached": 48647,
+        "complete": 48647,
+        "unresolvedShare": 0.019877895862026436,
+        "meanDisp": 0.020327527548169785,
+        "pHit": 0.5064443850597159
+      },
+      "blacklistedBuckets": 4720,
+      "totalBuckets": 879738,
+      "blacklistShare": 0.005365233740045332,
+      "randomClipped": 19302,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.01055187054068073,
+          "ci95": [
+            -0.037201264695664676,
+            0.017815543698799233
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.02161702254176282,
+          "ci95": [
+            -0.007892550173071732,
+            0.052404735678323905
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.016095994347591555,
+          "ci95": [
+            -0.03848280969707283,
+            0.006904506711874343
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0040198745742781984,
+        "ci95": [
+          -0.005064357609081692,
+          0.012874551281343032
+        ],
+        "spearman": 0.17575757575757575,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:16:22Z",
+      "end": "2026-09-20T20:17:57Z",
+      "venue": "binance",
+      "symbol": "TRXUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "c13623dd47fcb9c6",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 571,
+      "sets": {
+        "n": 43309,
+        "approached": 37515,
+        "complete": 37515,
+        "unresolvedShare": 0.01442089830734373,
+        "meanDisp": -0.024300087158952745,
+        "pHit": 0.4803945088631214
+      },
+      "blacklistedBuckets": 1348,
+      "totalBuckets": 823013,
+      "blacklistShare": 0.0016378842132505804,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.08882153601948894,
+          "ci95": [
+            -0.15217766603343516,
+            -0.024542117214029494
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": -0.026774095510059034,
+          "ci95": [
+            -0.07757636619695431,
+            0.02267616404386377
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.0029744769731793984,
+          "ci95": [
+            -0.03632157046279316,
+            0.031100407432043925
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.006668347193642862,
+        "ci95": [
+          -0.020834241444709346,
+          0.007679791026041655
+        ],
+        "spearman": -0.34545454545454546,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:16:08Z",
+      "end": "2026-09-20T20:18:05Z",
+      "venue": "binance",
+      "symbol": "NEARUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "7d70d2a59ac76993",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 570,
+      "sets": {
+        "n": 52129,
+        "approached": 44699,
+        "complete": 44698,
+        "unresolvedShare": 0.02554924157680433,
+        "meanDisp": 0.04593377482845833,
+        "pHit": 0.5313884290124837
+      },
+      "blacklistedBuckets": 0,
+      "totalBuckets": 821010,
+      "blacklistShare": 0,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.022867755153861562,
+          "ci95": [
+            -0.007704872314749325,
+            0.054032038029245825
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": -0.0026621470220952598,
+          "ci95": [
+            -0.0296467062283062,
+            0.024836237496483476
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.0010333469954997912,
+          "ci95": [
+            -0.020725438812971512,
+            0.021620312625443526
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.00022025831983553257,
+        "ci95": [
+          -0.007936313447328374,
+          0.007722212576643862
+        ],
+        "spearman": 0.12727272727272726,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:14:14Z",
+      "end": "2026-09-20T20:18:06Z",
+      "venue": "binance",
+      "symbol": "SUIUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "4fe17aac58a3c396",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 613,
+      "sets": {
+        "n": 76812,
+        "approached": 67325,
+        "complete": 67324,
+        "unresolvedShare": 0.011169865129819975,
+        "meanDisp": 0.063200761294281,
+        "pHit": 0.5236468421365338
+      },
+      "blacklistedBuckets": 33,
+      "totalBuckets": 883099,
+      "blacklistShare": 0.00003736840376899985,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.0023248254047960257,
+          "ci95": [
+            -0.029082765720877486,
+            0.032780409938827845
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.0537658786692843,
+          "ci95": [
+            0.02441143372517305,
+            0.0832559474605494
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.0026761593360748875,
+          "ci95": [
+            -0.017317555590776166,
+            0.022810854378415044
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.00008880720279414478,
+        "ci95": [
+          -0.008069749127626726,
+          0.008586509492781034
+        ],
+        "spearman": -0.07878787878787878,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:12:06Z",
+      "end": "2026-09-20T20:18:11Z",
+      "venue": "binance",
+      "symbol": "HYPEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "9aab0ad57d35b814",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#5",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 615,
+      "sets": {
+        "n": 80602,
+        "approached": 71194,
+        "complete": 71194,
+        "unresolvedShare": 0.010773379779194877,
+        "meanDisp": 0.059825393952232624,
+        "pHit": 0.5258027361856337
+      },
+      "blacklistedBuckets": 33,
+      "totalBuckets": 885790,
+      "blacklistShare": 0.00003725487982478917,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.016184104818634172,
+          "ci95": [
+            -0.04382690531990951,
+            0.014904242710189551
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.03795407717289756,
+          "ci95": [
+            0.01303703776791787,
+            0.06498868638269759
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.004026100174603385,
+          "ci95": [
+            -0.02399320788608426,
+            0.016885973914689142
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.00003355120783111391,
+        "ci95": [
+          -0.00762048207711612,
+          0.007760286472900938
+        ],
+        "spearman": 0.10303030303030303,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:16:16Z",
+      "end": "2026-09-20T20:18:19Z",
+      "venue": "okx",
+      "symbol": "PUMPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "92f02b633a479b11",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#5",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 578,
+      "sets": {
+        "n": 38776,
+        "approached": 33408,
+        "complete": 33408,
+        "unresolvedShare": 0.022210249042145594,
+        "meanDisp": 0.057186699371062584,
+        "pHit": 0.5192169540229885
+      },
+      "blacklistedBuckets": 3680,
+      "totalBuckets": 833607,
+      "blacklistShare": 0.004414550261694059,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.024376433625739977,
+          "ci95": [
+            -0.013175120226757682,
+            0.060717564406420774
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.039624831533883464,
+          "ci95": [
+            0.0076516812606507115,
+            0.06962987901902368
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.012514611663524779,
+          "ci95": [
+            -0.0379446663758335,
+            0.01199624525496706
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.011468155088707861,
+        "ci95": [
+          -0.019939149577425958,
+          -0.0032848623902621437
+        ],
+        "spearman": -0.6363636363636364,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:15:31Z",
+      "end": "2026-09-20T20:18:26Z",
+      "venue": "binance",
+      "symbol": "WLDUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "2dd21de8ab39e541",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 615,
+      "sets": {
+        "n": 66609,
+        "approached": 58369,
+        "complete": 58369,
+        "unresolvedShare": 0.011615754938409087,
+        "meanDisp": 0.07710304890695227,
+        "pHit": 0.5264438314858915
+      },
+      "blacklistedBuckets": 46,
+      "totalBuckets": 886155,
+      "blacklistShare": 0.000051909654631526084,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.0318817526367338,
+          "ci95": [
+            0.0029580942490672487,
+            0.060835773434440035
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.05554788357534066,
+          "ci95": [
+            0.02841245940224857,
+            0.08397547717326984
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.02025450290021308,
+          "ci95": [
+            -0.00033828011178001167,
+            0.04117358728169941
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.0004064700824394139,
+        "ci95": [
+          -0.007639424696158295,
+          0.007984656091501532
+        ],
+        "spearman": 0.030303030303030304,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:17:01Z",
+      "end": "2026-09-20T20:18:37Z",
+      "venue": "binance",
+      "symbol": "POLUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "5fff77947afda5c9",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#2",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 602,
+      "sets": {
+        "n": 61215,
+        "approached": 53209,
+        "complete": 53208,
+        "unresolvedShare": 0.014753420538264922,
+        "meanDisp": 0.006919590535902284,
+        "pHit": 0.5039467749210645
+      },
+      "blacklistedBuckets": 2179,
+      "totalBuckets": 867392,
+      "blacklistShare": 0.0025121283110750387,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.012831191734725245,
+          "ci95": [
+            -0.048987595764915036,
+            0.024298660995706475
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.023550550634118962,
+          "ci95": [
+            -0.008178233698364857,
+            0.057162247403143546
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.006579174036686392,
+          "ci95": [
+            -0.02879638689642116,
+            0.01485926569479398
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0010596205381318321,
+        "ci95": [
+          -0.009517290473424943,
+          0.007627496620756244
+        ],
+        "spearman": -0.2,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:15:53Z",
+      "end": "2026-09-20T20:18:45Z",
+      "venue": "okx",
+      "symbol": "WLDUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "76d1984686246692",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 619,
+      "sets": {
+        "n": 61563,
+        "approached": 53832,
+        "complete": 53832,
+        "unresolvedShare": 0.012260365581810076,
+        "meanDisp": 0.033948796826808396,
+        "pHit": 0.5080063902511517
+      },
+      "blacklistedBuckets": 1440,
+      "totalBuckets": 891267,
+      "blacklistShare": 0.0016156774569236827,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.0010532031686803014,
+          "ci95": [
+            -0.033802396682016754,
+            0.033019142286717644
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.03905668312835061,
+          "ci95": [
+            0.010668573746966836,
+            0.06652325205224635
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.001424033890034343,
+          "ci95": [
+            -0.020642722120789,
+            0.018740085292894934
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0007582965156898246,
+        "ci95": [
+          -0.008276230197724098,
+          0.007087817451950436
+        ],
+        "spearman": 0.06666666666666667,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:17:44Z",
+      "end": "2026-09-20T20:19:00Z",
+      "venue": "bybit",
+      "symbol": "APTUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "0548c22b9139e65a",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 637,
+      "sets": {
+        "n": 60886,
+        "approached": 52561,
+        "complete": 52561,
+        "unresolvedShare": 0.026179106181389245,
+        "meanDisp": -0.01527774554102639,
+        "pHit": 0.49614733357432317
+      },
+      "blacklistedBuckets": 12193,
+      "totalBuckets": 918505,
+      "blacklistShare": 0.013274832472332758,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.06200668827883192,
+          "ci95": [
+            -0.10129951314269271,
+            -0.02491000810892288
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.012682616300355175,
+          "ci95": [
+            -0.019721711837120803,
+            0.045397716644046064
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.004606536354527492,
+          "ci95": [
+            -0.017976822845465975,
+            0.026605911926912675
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.007210380940342055,
+        "ci95": [
+          -0.016163389405157637,
+          0.001998437261693114
+        ],
+        "spearman": -0.2727272727272727,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:17:55Z",
+      "end": "2026-09-20T20:19:20Z",
+      "venue": "okx",
+      "symbol": "APTUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "1c3482f42ff64467",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 600,
+      "sets": {
+        "n": 58041,
+        "approached": 50081,
+        "complete": 50081,
+        "unresolvedShare": 0.02456021245582157,
+        "meanDisp": 0.0064818197085378055,
+        "pHit": 0.4955771649927118
+      },
+      "blacklistedBuckets": 1820,
+      "totalBuckets": 864892,
+      "blacklistShare": 0.002104308977305837,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.029868653170578498,
+          "ci95": [
+            -0.06852751531752983,
+            0.007235117834220684
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.01211082870602952,
+          "ci95": [
+            -0.02222693849200326,
+            0.043953054025593685
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.004172268597516779,
+          "ci95": [
+            -0.019778923774560902,
+            0.027177141034385142
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0006689734956263863,
+        "ci95": [
+          -0.008722106298627616,
+          0.00943693822232846
+        ],
+        "spearman": 0.11515151515151516,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:19:34Z",
+      "venue": "binance",
+      "symbol": "SOLUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "040407d7359f1f12",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#3",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 624,
+      "sets": {
+        "n": 105705,
+        "approached": 93098,
+        "complete": 93098,
+        "unresolvedShare": 0.009677973748093406,
+        "meanDisp": 0.044157293908048637,
+        "pHit": 0.5227717029366904
+      },
+      "blacklistedBuckets": 94,
+      "totalBuckets": 899860,
+      "blacklistShare": 0.00010446069388571555,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.03558560321142763,
+          "ci95": [
+            -0.07656111881541725,
+            0.0014038872549559278
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.015389996186211275,
+          "ci95": [
+            -0.029301185774392544,
+            0.05573040311792994
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.007713438613569282,
+          "ci95": [
+            -0.04029932886206036,
+            0.02350207001146177
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.004222941876032843,
+        "ci95": [
+          -0.016373886072774044,
+          0.006911078768772596
+        ],
+        "spearman": -0.45454545454545453,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:17:23Z",
+      "end": "2026-09-20T20:19:46Z",
+      "venue": "binance",
+      "symbol": "APTUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "784d11b597177712",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 574,
+      "sets": {
+        "n": 67938,
+        "approached": 59302,
+        "complete": 59302,
+        "unresolvedShare": 0.013473407304981283,
+        "meanDisp": 0.02156101819971711,
+        "pHit": 0.5174361741593876
+      },
+      "blacklistedBuckets": 0,
+      "totalBuckets": 827142,
+      "blacklistShare": 0,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.05978415765861422,
+          "ci95": [
+            -0.08906034754886703,
+            -0.030118299308858926
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.023872757630990418,
+          "ci95": [
+            -0.002751440437135197,
+            0.05099065267107674
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.0017743106135399665,
+          "ci95": [
+            -0.01695688810276247,
+            0.020224353155679744
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0018805314245415872,
+        "ci95": [
+          -0.0058598241572836865,
+          0.010279999267848037
+        ],
+        "spearman": 0.15151515151515152,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:11Z",
+      "end": "2026-09-20T20:19:50Z",
+      "venue": "binance",
+      "symbol": "LAUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "92085c1034229239",
+      "exit": 3,
+      "tier": "T4",
+      "slot": "T4#5",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 1092,
+      "sets": {
+        "n": 64045,
+        "approached": 55617,
+        "complete": 55617,
+        "unresolvedShare": 0.025226099933473578,
+        "meanDisp": 0.052162531904696184,
+        "pHit": 0.5175755614290595
+      },
+      "blacklistedBuckets": 10638,
+      "totalBuckets": 1573857,
+      "blacklistShare": 0.0067591909557221524,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.020789170761657788,
+          "ci95": [
+            -0.009939883781983114,
+            0.04943331898377649
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.020676181366614976,
+          "ci95": [
+            -0.002831120729439754,
+            0.043056855843230414
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.0046439745894133674,
+          "ci95": [
+            -0.014744599723733329,
+            0.024848422934288815
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.004032068409566823,
+        "ci95": [
+          -0.003142422214471585,
+          0.011736839341377484
+        ],
+        "spearman": 0.2727272727272727,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:16:14Z",
+      "end": "2026-09-20T20:20:09Z",
+      "venue": "binance",
+      "symbol": "PUMPUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "b8ac38fcae6b5df7",
+      "exit": 3,
+      "tier": "T2",
+      "slot": "T2#5",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 608,
+      "sets": {
+        "n": 46111,
+        "approached": 39500,
+        "complete": 39500,
+        "unresolvedShare": 0.025341772151898735,
+        "meanDisp": 0.060748889313727794,
+        "pHit": 0.525746835443038
+      },
+      "blacklistedBuckets": 37,
+      "totalBuckets": 876737,
+      "blacklistShare": 0.00004220193741110504,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.021892110828960247,
+          "ci95": [
+            -0.014883015159097528,
+            0.05522512351110523
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.039555266659786384,
+          "ci95": [
+            0.009039452353078316,
+            0.06752226675472746
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.004191435697085459,
+          "ci95": [
+            -0.01934694552490213,
+            0.02729789661679385
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0016445631867318003,
+        "ci95": [
+          -0.009412976244340234,
+          0.006242901380967136
+        ],
+        "spearman": -0.2606060606060606,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:06Z",
+      "end": "2026-09-20T20:20:17Z",
+      "venue": "binance",
+      "symbol": "GPSUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "6c0b6145a13e47c5",
+      "exit": 3,
+      "tier": "T4",
+      "slot": "T4#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 1173,
+      "sets": {
+        "n": 71315,
+        "approached": 61567,
+        "complete": 61563,
+        "unresolvedShare": 0.03381901466790117,
+        "meanDisp": 0.06794321164210375,
+        "pHit": 0.5203774994720856
+      },
+      "blacklistedBuckets": 6138,
+      "totalBuckets": 1688844,
+      "blacklistShare": 0.003634438704818207,
+      "randomClipped": 5,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.04362364642222316,
+          "ci95": [
+            0.011593961327986166,
+            0.07585202866975323
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.014874305731155293,
+          "ci95": [
+            -0.010967950545779655,
+            0.040761099124263844
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": 0.014074609863536848,
+          "ci95": [
+            -0.005634030313437703,
+            0.03335587617171449
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0006957538904663399,
+        "ci95": [
+          -0.007461114095249349,
+          0.0084090945083576
+        ],
+        "spearman": -0.10303030303030303,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:17:57Z",
+      "end": "2026-09-20T20:20:22Z",
+      "venue": "binance",
+      "symbol": "ZROUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "0c12aaba8cc543fe",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 656,
+      "sets": {
+        "n": 78024,
+        "approached": 68526,
+        "complete": 68526,
+        "unresolvedShare": 0.013031550068587106,
+        "meanDisp": 0.0251979746200606,
+        "pHit": 0.5113533549309751
+      },
+      "blacklistedBuckets": 712,
+      "totalBuckets": 945873,
+      "blacklistShare": 0.0007527437615832146,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.029341238977845793,
+          "ci95": [
+            -0.062018452325379905,
+            0.0034798859600936568
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.005951908466770538,
+          "ci95": [
+            -0.020490637003513983,
+            0.03162862116033685
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.0037123879411915008,
+          "ci95": [
+            -0.02223575389354077,
+            0.015236623961506372
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.007329305969636706,
+        "ci95": [
+          -0.0001847436341064265,
+          0.01462437449288757
+        ],
+        "spearman": 0.40606060606060607,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:10:56Z",
+      "end": "2026-09-20T20:20:41Z",
+      "venue": "binance",
+      "symbol": "ZECUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "feaa22aae8447d0d",
+      "exit": 3,
+      "tier": "T1",
+      "slot": "T1#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 662,
+      "sets": {
+        "n": 87470,
+        "approached": 76361,
+        "complete": 76361,
+        "unresolvedShare": 0.01340998677335289,
+        "meanDisp": 0.07227712261416105,
+        "pHit": 0.5365566192166158
+      },
+      "blacklistedBuckets": 140,
+      "totalBuckets": 953575,
+      "blacklistShare": 0.00014681592952835382,
+      "randomClipped": 1,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.02872415960331312,
+          "ci95": [
+            -0.060471051228775094,
+            0.004932137937250882
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.0678052616533215,
+          "ci95": [
+            0.03492968749500162,
+            0.10164946640691713
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.022381738503700663,
+          "ci95": [
+            -0.04594618302423999,
+            0.0014904623657398198
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0014586152397225091,
+        "ci95": [
+          -0.01047313665275946,
+          0.008160869958417923
+        ],
+        "spearman": -0.18787878787878787,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:05Z",
+      "end": "2026-09-20T20:20:56Z",
+      "venue": "binance",
+      "symbol": "DASHUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "d8a027b16e8b9751",
+      "exit": 3,
+      "tier": "T3",
+      "slot": "T3#5",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 785,
+      "sets": {
+        "n": 67699,
+        "approached": 58873,
+        "complete": 58873,
+        "unresolvedShare": 0.015151257792196763,
+        "meanDisp": 0.07704347823781514,
+        "pHit": 0.528408608360369
+      },
+      "blacklistedBuckets": 1257,
+      "totalBuckets": 1131538,
+      "blacklistShare": 0.0011108774075638643,
+      "randomClipped": 11,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.025968174330033407,
+          "ci95": [
+            -0.004237058510837659,
+            0.05648819524290661
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.04271584256549872,
+          "ci95": [
+            0.014324429134173061,
+            0.07116645044305235
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.015644255363095688,
+          "ci95": [
+            -0.004302058320039085,
+            0.03506859913002996
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.0045041111034821125,
+        "ci95": [
+          -0.003179674880057923,
+          0.01255747803277006
+        ],
+        "spearman": 0.296969696969697,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:19:00Z",
+      "end": "2026-09-20T20:21:14Z",
+      "venue": "binance",
+      "symbol": "ZENUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "457d8e6448c3113f",
+      "exit": 3,
+      "tier": "T4",
+      "slot": "T4#3",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 689,
+      "sets": {
+        "n": 63850,
+        "approached": 55375,
+        "complete": 55375,
+        "unresolvedShare": 0.019340857787810382,
+        "meanDisp": 0.03501937690126137,
+        "pHit": 0.5195665914221219
+      },
+      "blacklistedBuckets": 4598,
+      "totalBuckets": 993075,
+      "blacklistShare": 0.00463006318757395,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.013945722735386912,
+          "ci95": [
+            -0.047244018251291986,
+            0.019001726911368217
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.02715317350584031,
+          "ci95": [
+            -0.002562733115225671,
+            0.05706906489182465
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.013825134671453986,
+          "ci95": [
+            -0.034965490164367695,
+            0.007681964721352483
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.005318243865926859,
+        "ci95": [
+          -0.013308138465509512,
+          0.0027741495709461632
+        ],
+        "spearman": -0.5393939393939394,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:26Z",
+      "end": "2026-09-20T20:21:18Z",
+      "venue": "bybit",
+      "symbol": "HUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "5e372279a80de184",
+      "exit": 3,
+      "tier": "T4",
+      "slot": "T4#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 890,
+      "sets": {
+        "n": 102580,
+        "approached": 88751,
+        "complete": 88751,
+        "unresolvedShare": 0.017960361010016787,
+        "meanDisp": 0.05115403718439583,
+        "pHit": 0.5164899550427601
+      },
+      "blacklistedBuckets": 11571,
+      "totalBuckets": 1281961,
+      "blacklistShare": 0.009026015612019399,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.00618803928160197,
+          "ci95": [
+            -0.03648109763812197,
+            0.02325884233130822
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.05775806647726151,
+          "ci95": [
+            0.03154464520289339,
+            0.0848157251795685
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.0014684054631274035,
+          "ci95": [
+            -0.01787787085314969,
+            0.020315882048701564
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.0004587117327969302,
+        "ci95": [
+          -0.007448548954334901,
+          0.006221331554123626
+        ],
+        "spearman": 0.17575757575757575,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:19:50Z",
+      "end": "2026-09-20T20:21:35Z",
+      "venue": "binance",
+      "symbol": "UAIUSDT",
+      "from": "2025-11-21",
+      "to": "2026-09-18",
+      "runId": "59b2652c697c4703",
+      "exit": 3,
+      "tier": "T5",
+      "slot": "T5#4",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 1025,
+      "sets": {
+        "n": 51089,
+        "approached": 43934,
+        "complete": 43934,
+        "unresolvedShare": 0.0277689261164474,
+        "meanDisp": 0.05796147967904515,
+        "pHit": 0.5281103473391906
+      },
+      "blacklistedBuckets": 6626,
+      "totalBuckets": 1475948,
+      "blacklistShare": 0.004489318051855485,
+      "randomClipped": 9,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.018617664655297253,
+          "ci95": [
+            -0.01620731597940216,
+            0.0532827007516961
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.02849666031322164,
+          "ci95": [
+            0.001327587510277413,
+            0.05544165489403406
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.00764467866688541,
+          "ci95": [
+            -0.03241188418474599,
+            0.016607879396599974
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.004590333525659317,
+        "ci95": [
+          -0.01338789340516904,
+          0.004223046903016909
+        ],
+        "spearman": -0.3333333333333333,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:37Z",
+      "end": "2026-09-20T20:21:52Z",
+      "venue": "okx",
+      "symbol": "HUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "cd6df7825a3724e3",
+      "exit": 3,
+      "tier": "T4",
+      "slot": "T4#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 835,
+      "sets": {
+        "n": 90814,
+        "approached": 78855,
+        "complete": 78855,
+        "unresolvedShare": 0.013962335933041659,
+        "meanDisp": 0.06223434234451686,
+        "pHit": 0.5253186227886627
+      },
+      "blacklistedBuckets": 10029,
+      "totalBuckets": 1206255,
+      "blacklistShare": 0.008314162428342266,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.0014608724904571352,
+          "ci95": [
+            -0.028295101779622415,
+            0.02472160373410937
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.04885121693545157,
+          "ci95": [
+            0.024742000725647518,
+            0.07305081145924139
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.007960404749392816,
+          "ci95": [
+            -0.00906265559721173,
+            0.02564427933882055
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.004566314252075268,
+        "ci95": [
+          -0.011611692628013478,
+          0.0024115047950166607
+        ],
+        "spearman": -0.38181818181818183,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:19:20Z",
+      "end": "2026-09-20T20:21:53Z",
+      "venue": "binance",
+      "symbol": "USELESSUSDT",
+      "from": "2025-08-30",
+      "to": "2026-09-18",
+      "runId": "32ac7342d24ddc81",
+      "exit": 3,
+      "tier": "T5",
+      "slot": "T5#1",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 811,
+      "sets": {
+        "n": 80676,
+        "approached": 70437,
+        "complete": 70435,
+        "unresolvedShare": 0.01354440264073259,
+        "meanDisp": 0.051610239551296386,
+        "pHit": 0.5295804642578263
+      },
+      "blacklistedBuckets": 1901,
+      "totalBuckets": 1168039,
+      "blacklistShare": 0.0016275141497843822,
+      "randomClipped": 5,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.00467395408641165,
+          "ci95": [
+            -0.024532981314990713,
+            0.031879159806007064
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.038161812725773334,
+          "ci95": [
+            0.014861852938179569,
+            0.06243930886572996
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.0015037020971489373,
+          "ci95": [
+            -0.02069473722805571,
+            0.01702676726549575
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.00218187490009206,
+        "ci95": [
+          -0.009129525462315071,
+          0.0047234936110149
+        ],
+        "spearman": -0.22424242424242424,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:45Z",
+      "end": "2026-09-20T20:21:54Z",
+      "venue": "binance",
+      "symbol": "BULLAUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "d27da152f45d6422",
+      "exit": 0,
+      "tier": "T4",
+      "slot": "T4#1",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 930,
+      "sets": {
+        "n": 73530,
+        "approached": 62430,
+        "complete": 62430,
+        "unresolvedShare": 0.0470446900528592,
+        "meanDisp": 0.10903496585789335,
+        "pHit": 0.5301938170751241
+      },
+      "blacklistedBuckets": 11134,
+      "totalBuckets": 2028114,
+      "blacklistShare": 0.005489829467179853,
+      "randomClipped": 3100,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.09903308737303756,
+          "ci95": [
+            0.06763459160183152,
+            0.12994667809777669
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.04191328385995746,
+          "ci95": [
+            0.012127320522506648,
+            0.07164552571580315
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.0027292709359523354,
+          "ci95": [
+            -0.019137875260524614,
+            0.021887155361345636
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.011240353515476597,
+        "ci95": [
+          0.0020439279473629906,
+          0.020570084367022103
+        ],
+        "spearman": 0.793939393939394,
+        "pass": true
+      },
+      "gate": {
+        "pass": true,
+        "reasons": []
+      },
+      "H2": "PASS",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:20:41Z",
+      "end": "2026-09-20T20:22:08Z",
+      "venue": "gate",
+      "symbol": "DOGEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-08-31",
+      "runId": "4bd61a6d0744a1cf",
+      "exit": 3,
+      "tier": "T6",
+      "slot": "T6#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 560,
+      "sets": {
+        "n": 50986,
+        "approached": 44604,
+        "complete": 44604,
+        "unresolvedShare": 0.014998654829163304,
+        "meanDisp": 0.019198976965300325,
+        "pHit": 0.5049547125818312
+      },
+      "blacklistedBuckets": 509,
+      "totalBuckets": 807569,
+      "blacklistShare": 0.0006302866999600035,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.04977583893107577,
+          "ci95": [
+            -0.09153067579395292,
+            -0.0075751643548381525
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.03068135098549092,
+          "ci95": [
+            -0.00909373696050251,
+            0.06852115378294749
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.01076346735515225,
+          "ci95": [
+            -0.037115755428171165,
+            0.014163743755080413
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": 0.0003302866152766263,
+        "ci95": [
+          -0.011424493624185236,
+          0.011505488979967166
+        ],
+        "spearman": -0.01818181818181818,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:20:17Z",
+      "end": "2026-09-20T20:22:20Z",
+      "venue": "bybit",
+      "symbol": "DOGEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "dff44e58b856dd11",
+      "exit": 3,
+      "tier": "T6",
+      "slot": "T6#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 736,
+      "sets": {
+        "n": 80527,
+        "approached": 69720,
+        "complete": 69720,
+        "unresolvedShare": 0.028485370051635112,
+        "meanDisp": -0.0002453896245819448,
+        "pHit": 0.4926419965576592
+      },
+      "blacklistedBuckets": 821,
+      "totalBuckets": 1060465,
+      "blacklistShare": 0.0007741886813803379,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.045921464613265475,
+          "ci95": [
+            -0.07755351107084564,
+            -0.011394549622156906
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.02371825423677832,
+          "ci95": [
+            -0.00610724758017113,
+            0.05416958655360555
+          ],
+          "significant": false
+        },
+        "1-3": {
+          "diffDisp": -0.0019840176802744594,
+          "ci95": [
+            -0.02131364989147419,
+            0.0172943775517109
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": "fast/decisive is irrelevant and only extremum matters",
+      "monotone": {
+        "slope": -0.0004251435627213925,
+        "ci95": [
+          -0.008860085141061347,
+          0.008361858782310383
+        ],
+        "spearman": -0.1393939393939394,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "NO",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:18:19Z",
+      "end": "2026-09-20T20:22:43Z",
+      "venue": "binance",
+      "symbol": "HUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "aa7bb2e4514858d6",
+      "exit": 3,
+      "tier": "T4",
+      "slot": "T4#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 842,
+      "sets": {
+        "n": 99866,
+        "approached": 86791,
+        "complete": 86791,
+        "unresolvedShare": 0.011464322337569563,
+        "meanDisp": 0.08002263990393631,
+        "pHit": 0.533788065582837
+      },
+      "blacklistedBuckets": 908,
+      "totalBuckets": 1213954,
+      "blacklistShare": 0.0007479690334230128,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.014833206360783294,
+          "ci95": [
+            -0.011196969902581021,
+            0.04054574121264261
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.04843212937551762,
+          "ci95": [
+            0.024314703362117763,
+            0.07011702635312957
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.002561650680994579,
+          "ci95": [
+            -0.014367163815999838,
+            0.01943362024495652
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.00004978998860961828,
+        "ci95": [
+          -0.0059863667214325525,
+          0.0063562282039709645
+        ],
+        "spearman": -0.04242424242424243,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:19:46Z",
+      "end": "2026-09-20T20:22:44Z",
+      "venue": "binance",
+      "symbol": "ASTERUSDT",
+      "from": "2025-10-04",
+      "to": "2026-09-18",
+      "runId": "f05a20817033534c",
+      "exit": 3,
+      "tier": "T5",
+      "slot": "T5#3",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 630,
+      "sets": {
+        "n": 63100,
+        "approached": 55132,
+        "complete": 55132,
+        "unresolvedShare": 0.01882754117390989,
+        "meanDisp": 0.0847011447328761,
+        "pHit": 0.5200428063556555
+      },
+      "blacklistedBuckets": 103,
+      "totalBuckets": 908186,
+      "blacklistShare": 0.00011341289119189241,
+      "randomClipped": 1,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.03267045983680933,
+          "ci95": [
+            -0.009342258758636538,
+            0.07446703114754344
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.09316928699659041,
+          "ci95": [
+            0.0530653896398376,
+            0.13398967388234034
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.034606764197648444,
+          "ci95": [
+            -0.0013675963317956842,
+            0.07472473018863537
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.012496573688891614,
+        "ci95": [
+          -0.0006550179688412235,
+          0.02576950186486303
+        ],
+        "spearman": 0.7575757575757576,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:20:22Z",
+      "end": "2026-09-20T20:23:53Z",
+      "venue": "okx",
+      "symbol": "DOGEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-17",
+      "runId": "56d5119157be604c",
+      "exit": 3,
+      "tier": "T6",
+      "slot": "T6#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 619,
+      "sets": {
+        "n": 71347,
+        "approached": 62411,
+        "complete": 62411,
+        "unresolvedShare": 0.011808815753633174,
+        "meanDisp": 0.037701173498179696,
+        "pHit": 0.5138837704891766
+      },
+      "blacklistedBuckets": 11,
+      "totalBuckets": 892747,
+      "blacklistShare": 0.000012321519982705066,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.041899856350089734,
+          "ci95": [
+            -0.07384723121558479,
+            -0.011366943337141487
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.039927990359511646,
+          "ci95": [
+            0.011734409574163352,
+            0.06819940959531591
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.0016467018696849633,
+          "ci95": [
+            -0.01739481838477992,
+            0.020973980962543645
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.00847984700567965,
+        "ci95": [
+          -0.016778257120292777,
+          -0.0007370376617270187
+        ],
+        "spearman": -0.806060606060606,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:20:09Z",
+      "end": "2026-09-20T20:24:20Z",
+      "venue": "binance",
+      "symbol": "DOGEUSDT",
+      "from": "2025-09-18",
+      "to": "2026-09-18",
+      "runId": "38153a551ed01b71",
+      "exit": 3,
+      "tier": "T6",
+      "slot": "T6#1",
+      "h1aEligible": false,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 631,
+      "sets": {
+        "n": 82601,
+        "approached": 72142,
+        "complete": 72142,
+        "unresolvedShare": 0.010465470876881705,
+        "meanDisp": 0.05035803605643619,
+        "pHit": 0.5214022344819939
+      },
+      "blacklistedBuckets": 100,
+      "totalBuckets": 908912,
+      "blacklistShare": 0.000110021652261165,
+      "randomClipped": 0,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": -0.011494000931107369,
+          "ci95": [
+            -0.042690452876154875,
+            0.022910168588571662
+          ],
+          "significant": false
+        },
+        "1-2": {
+          "diffDisp": 0.05153401479672346,
+          "ci95": [
+            0.022815574601342262,
+            0.08020672914954757
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": -0.004524196812046376,
+          "ci95": [
+            -0.02423803795325381,
+            0.015641779539830192
+          ],
+          "significant": false
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": -0.007739560141903594,
+        "ci95": [
+          -0.015244330448537272,
+          0.0007357398077130683
+        ],
+        "spearman": -0.6727272727272727,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "(1)−(4): E[ReactionDisplacement] of WickLevels not above random levels",
+          "(1)−(4): 95 % block-bootstrap CI contains 0",
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "FAIL",
+      "ok": true
+    },
+    {
+      "start": "2026-09-20T20:19:34Z",
+      "end": "2026-09-20T20:24:20Z",
+      "venue": "binance",
+      "symbol": "AKEUSDT",
+      "from": "2025-10-11",
+      "to": "2026-09-18",
+      "runId": "c3cc6800d733e33b",
+      "exit": 3,
+      "tier": "T5",
+      "slot": "T5#2",
+      "h1aEligible": true,
+      "configHash": "9d0d6ea08c35",
+      "gateConfigHash": "8abb77f93458",
+      "B": 2000,
+      "blocks": 1492,
+      "sets": {
+        "n": 72819,
+        "approached": 61946,
+        "complete": 61946,
+        "unresolvedShare": 0.04770283795563878,
+        "meanDisp": 0.08303176713776168,
+        "pHit": 0.5241823523714203
+      },
+      "blacklistedBuckets": 9935,
+      "totalBuckets": 2151692,
+      "blacklistShare": 0.004617296527569931,
+      "randomClipped": 124,
+      "contrasts": {
+        "1-4": {
+          "diffDisp": 0.04626746368075889,
+          "ci95": [
+            0.005671197163954939,
+            0.08306365114921295
+          ],
+          "significant": true
+        },
+        "1-2": {
+          "diffDisp": 0.040477055679185525,
+          "ci95": [
+            0.0034793002045533155,
+            0.07474550140157249
+          ],
+          "significant": true
+        },
+        "1-3": {
+          "diffDisp": 0.022362376578214993,
+          "ci95": [
+            0.002004045280730058,
+            0.04440710469955954
+          ],
+          "significant": true
+        }
+      },
+      "conclusion12": null,
+      "monotone": {
+        "slope": 0.0029296797542339645,
+        "ci95": [
+          -0.008576645421510216,
+          0.01430261125208407
+        ],
+        "spearman": 0.23636363636363636,
+        "pass": false
+      },
+      "gate": {
+        "pass": false,
+        "reasons": [
+          "ReactionDisplacement not monotone in WickStrength (decile slope ≤ 0 or CI contains 0)"
+        ]
+      },
+      "H2": "FAIL",
+      "H3": "YES",
+      "H4a": "PASS",
+      "ok": true
+    }
+  ]
+}
