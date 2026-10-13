@@ -9,7 +9,7 @@ One long-lived ARM VM in `uk-london-1` on which a Claude Code agent runs
 | VCN `10.20.0.0/16`, public subnet `10.20.1.0/24`, IGW | default security list emptied; NSG allows 22/tcp from `ssh_allowed_cidrs` only, all egress | free |
 | VM `wsr-research` | `VM.Standard.A1.Flex` 4 OCPU / 24 GB, Ubuntu 24.04 aarch64, 50 GB boot | Always Free |
 | Burst | in-place resize to 16 OCPU / 64 GB for Phases 4–5 | ≈ $0.18/h |
-| Block volume `wsr-data` | 500 GB Balanced (10 VPU), paravirtualized, ext4 at `/mnt/wsr`; `prevent_destroy` | ≈ $15/mo (150 GB free) |
+| Block volume `wsr-data` | 170 GB Balanced (10 VPU), paravirtualized, ext4 at `/mnt/wsr`; `prevent_destroy` | ≈ $0.5/mo (with the 50 GB boot volume, 20 GB over the 200 GB free tier) |
 | Bucket `wsr-tfstate` | versioned, private; state of `main/` | free |
 | Bucket `wsr-results` | versioned, private; hourly sync of `runs/**` minus `*.parquet`, `cells/`, `logs/` | free |
 | Dynamic group + policy | VM (instance principal) may manage objects in `wsr-results` only | free |
@@ -80,7 +80,7 @@ tmux new -As wsr                         # run the agent here
 ```
 
 The VM gets `WSR_DATA_ROOT=/mnt/wsr/data` and `NODE_OPTIONS=--max-old-space-size=4096`
-from `/etc/profile.d/wsr.sh`, a 16 GB swapfile on the data volume, security-only
+from `/etc/profile.d/wsr.sh`, an 8 GB swapfile on the data volume, security-only
 unattended upgrades (no auto-reboot) and chrony.
 
 To re-apply provisioning changes (cloud-init edits do not recreate the VM):
@@ -119,7 +119,7 @@ oci os object sync --bucket-name wsr-results --prefix runs/ --dest-dir ./runs-re
 
 ## Cost
 
-- Base ≈ $15/mo (350 GB of billed block storage).
+- Base ≈ $0.5/mo (20 GB of billed block storage: 170 GB data + 50 GB boot, 200 GB free).
 - Burst ≈ $0.18/h at 16 OCPU / 64 GB. The grid is ~4–5 h per survivor at 15
   workers (ASSUMPTION; re-bench on the VM), so 2–3 survivors plus variants ≈ $3–6.
 - Budget $30/mo with email alerts.

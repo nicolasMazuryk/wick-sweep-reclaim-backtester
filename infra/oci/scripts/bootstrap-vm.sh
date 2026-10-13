@@ -50,8 +50,8 @@ install -d -o "$USER_NAME" -g "$USER_NAME" "$WSR_MOUNT"/{data,runs,cache,logs}
 
 swapfile=$WSR_MOUNT/swapfile
 if [ ! -f "$swapfile" ]; then
-  log "creating 16G swapfile"
-  fallocate -l 16G "$swapfile"
+  log "creating 8G swapfile"
+  fallocate -l 8G "$swapfile"
   chmod 600 "$swapfile"
   mkswap "$swapfile" >/dev/null
 fi
