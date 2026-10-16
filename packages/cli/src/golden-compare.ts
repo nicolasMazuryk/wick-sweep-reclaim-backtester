@@ -1,3 +1,4 @@
+import { readRecordsParquet } from '@wsr/data';
 import { expect } from 'vitest';
 
 /** Cross-platform relative tolerance for Stage B-derived floats (see docs/adr/0003-determinism-contract.md). */
@@ -47,4 +48,17 @@ export function expectGolden(name: string, actual: string, expected: string): vo
     });
   } else if (name === 'report.md') expect(roundNumbers(actual), name).toBe(roundNumbers(expected));
   else expect(actual, name).toBe(expected);
+}
+
+/**
+ * Parquet golden: byte-exact when equal; otherwise the decoded rows are compared with the same
+ * relative tolerance (and the key-value metadata exactly), because the Stage B float noise
+ * described above reaches `trades.parquet` too.
+ */
+export function expectParquetGolden(name: string, actual: Buffer, expected: Buffer): void {
+  if (actual.equals(expected)) return;
+  const a = readRecordsParquet(actual);
+  const e = readRecordsParquet(expected);
+  expect(Object.fromEntries(a.metadata), `${name} metadata`).toEqual(Object.fromEntries(e.metadata));
+  expectClose(a.rows, e.rows, name);
 }
