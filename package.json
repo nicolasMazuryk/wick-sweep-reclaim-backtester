@@ -24,5 +24,14 @@
     "typescript": "^5.6.3",
     "vitest": "^2.1.4",
     "zod": "^3.23.8"
+  },
+  "description": "Deterministic trade-stream backtester for a wick sweep-and-reclaim hypothesis",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasMazuryk/wick-sweep-reclaim-backtester.git"
   }
 }
