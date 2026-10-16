@@ -14,6 +14,8 @@ Same data, config and seed give byte-identical outputs (`docs/determinism.md`). 
 - `@wsr/core` has no I/O, no `Date.now()` and no `Math.random()`.
 - The e2e tests run each fixture twice and compare against checked-in goldens.
 
+Scope: outputs are byte-identical on the same platform. Across platforms (macOS arm64 vs Linux x64) the Stage B logistic fit can differ in the last ulp of a float, so the two e2e golden tests compare `stageB.json` as parsed JSON with a 1e-12 relative tolerance (`packages/cli/src/golden-compare.ts`). Every other golden stays byte-exact.
+
 ## Consequences
 - Regressions show up as golden diffs.
 - Adding a random draw to one stream does not shift any other.
