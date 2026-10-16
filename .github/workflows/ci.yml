@@ -75,8 +75,12 @@ jobs:
           WSR_PROPERTY_RUNS: '200'
 
   bench:
-    name: bench regression
+    name: bench regression (advisory)
     runs-on: ubuntu-latest
+    # benchmarks/baseline.json was recorded on an Apple M3 Pro; shared runners
+    # are ~2.5x slower, so this job reports but does not gate until the
+    # baseline is refreshed on a dedicated runner class.
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
