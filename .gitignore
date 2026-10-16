@@ -10,3 +10,8 @@ coverage/
 *.tfstate.*
 terraform.tfvars
 *.tfplan
+.env
+.env.*
+!.env.example
+.DS_Store
+**/.DS_Store

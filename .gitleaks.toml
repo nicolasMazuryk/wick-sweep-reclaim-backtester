@@ -1,0 +1,4 @@
+# reactionKey values in recorded e2e goldens are sha256 content hashes, not credentials.
+[allowlist]
+description = "e2e golden content hashes"
+paths = ['''fixtures/e2e/.*/reaction\.json''']
