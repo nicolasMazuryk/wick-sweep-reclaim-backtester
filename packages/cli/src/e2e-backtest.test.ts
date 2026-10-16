@@ -7,6 +7,7 @@ import { parseDay, readRecordsParquet, VENUE_ORDER } from '@wsr/data';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { ExitCode } from './exit-codes.js';
 import { runCli } from './program.js';
+import { expectGolden } from './golden-compare.js';
 
 // Spec §11.4 end-to-end fixture, backtest part (build step 12): 8 warm-up +
 // 14 span days of the synthetic data root, hidden `--folds 4,2,2` (5 folds,
@@ -116,7 +117,7 @@ describe('e2e: wsr backtest on the synthetic fixture (Spec §11.4, §6)', () => 
     if (UPDATE) {
       for (const name of [...GOLDENS, ...PARQUET_GOLDENS]) await writeFile(join(FIXTURE, name), a.files[name]!);
     }
-    for (const name of GOLDENS) expect(a.files[name]!.toString('utf8'), name).toBe(await readFile(join(FIXTURE, name), 'utf8'));
+    for (const name of GOLDENS) expectGolden(name, a.files[name]!.toString('utf8'), await readFile(join(FIXTURE, name), 'utf8'));
     for (const name of PARQUET_GOLDENS) expect(a.files[name]!.equals(await readFile(join(FIXTURE, name))), name).toBe(true);
 
     const md = a.files['report.md']!.toString('utf8');

@@ -7,6 +7,7 @@ import { donePath, partitionPath, readDoneMarker, readRecordsParquet, VENUE_ORDE
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { ExitCode } from './exit-codes.js';
 import { runCli } from './program.js';
+import { expectGolden } from './golden-compare.js';
 
 // Spec §11.4 end-to-end fixture on recorded data (A-150): one recorded
 // Binance ETHUSDT venue-day (2025-03-01, 4 872 005 archive trades merged to
@@ -60,7 +61,7 @@ describe('e2e: wsr backtest --fixture on the recorded Binance day (Spec §11.4, 
     if (UPDATE) {
       for (const name of [...GOLDENS, ...PARQUET_GOLDENS]) await writeFile(join(FIXTURE, name), a.files[name]!);
     }
-    for (const name of GOLDENS) expect(a.files[name]!.toString('utf8'), name).toBe(await readFile(join(FIXTURE, name), 'utf8'));
+    for (const name of GOLDENS) expectGolden(name, a.files[name]!.toString('utf8'), await readFile(join(FIXTURE, name), 'utf8'));
     for (const name of PARQUET_GOLDENS) expect(a.files[name]!.equals(await readFile(join(FIXTURE, name))), name).toBe(true);
 
     // The recorded day is the replayed input, not a re-derivation of it: the
