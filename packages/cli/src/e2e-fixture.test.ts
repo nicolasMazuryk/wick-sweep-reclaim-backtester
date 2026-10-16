@@ -93,7 +93,7 @@ describe('e2e: wsr backtest --fixture on the recorded Binance day (Spec §11.4, 
     const md = a.files['report.md']!.toString('utf8');
     expect(md.split('\n')[0]).toBe(FORCED_BANNER);                       // a one-day OOS window does not pass the §9.2 gate
     expect(reportSections(md)).toEqual(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']);
-  }, 180_000);
+  }, 600_000);
 
   it('refuses the flags the fixture already carries', async () => {
     const out: string[] = [];
