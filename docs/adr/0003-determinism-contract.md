@@ -14,7 +14,7 @@ Same data, config and seed give byte-identical outputs (`docs/determinism.md`). 
 - `@wsr/core` has no I/O, no `Date.now()` and no `Math.random()`.
 - The e2e tests run each fixture twice and compare against checked-in goldens.
 
-Scope: outputs are byte-identical on the same platform. Across platforms (macOS arm64 vs Linux x64) the Stage B logistic fit can differ in the last ulp of a float, and that difference reaches the files derived from it. The e2e golden tests therefore compare `stageB.json` and `run.json` as parsed JSON, and `trades.jsonl` line by line, with a 1e-12 relative tolerance on numbers (integer fields stay exact), and `report.md` with decimals rounded to 9 significant digits (`packages/cli/src/golden-compare.ts`). Every other golden stays byte-exact.
+Scope: outputs are byte-identical on the same platform. Across platforms (macOS arm64 vs Linux x64) the Stage B logistic fit can differ in the last ulp of a float, and that difference reaches the files derived from it. The e2e golden tests therefore compare `stageB.json` and `run.json` as parsed JSON, and `trades.jsonl` line by line, with a 1e-12 relative tolerance on numbers (integer fields stay exact), `report.md` with decimals rounded to 9 significant digits, and the Parquet goldens by decoded rows when the bytes differ (`packages/cli/src/golden-compare.ts`). Every other golden stays byte-exact.
 
 ## Consequences
 - Regressions show up as golden diffs.
