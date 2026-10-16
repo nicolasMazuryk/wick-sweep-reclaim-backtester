@@ -15,3 +15,4 @@ terraform.tfvars
 !.env.example
 .DS_Store
 **/.DS_Store
+.claude/worktrees/
