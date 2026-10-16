@@ -200,12 +200,20 @@ describe('e2e: wsr backtest on the synthetic fixture (Spec §11.4, §6)', () => 
     const lines = (await readFile(join(runsRoot, runId!, 'logs', 'reaction.jsonl'), 'utf8')).trim().split('\n')
       .map((l) => JSON.parse(l) as Record<string, unknown>);
     expect(lines.every((l) => l.runId === runId && l.venue === VENUE_ORDER[f.venueIndex]! && l.symbol === f.symbol)).toBe(true);
-    expect(lines.map((l) => l.msg)).toEqual(['run start', 'reaction test done', 'progress', 'run done']);   // the last sample is flushed at close
+    // 'progress' samples are taken every 5 s of wall clock, so how many land before 'reaction test done' depends on
+    // runner speed; the last sample is flushed at close, so at least one is always present.
+    const msgs = lines.map((l) => l.msg);
+    expect(msgs[0]).toBe('run start');
+    expect(msgs[msgs.length - 1]).toBe('run done');
+    expect(msgs.filter((m) => m !== 'progress')).toEqual(['run start', 'reaction test done', 'run done']);
+    expect(msgs.filter((m) => m === 'progress').length).toBeGreaterThanOrEqual(1);
     const progress = lines.find((l) => l.msg === 'progress')!;
     expect(progress.eventsProcessed as number).toBeGreaterThan(0);
     expect(progress.eventsPerSec as number).toBeGreaterThanOrEqual(0);
     // The same sample as NDJSON on stderr; stdout keeps the human-readable summary.
-    expect(err.map((l) => (JSON.parse(l) as { type: string }).type)).toEqual(['progress']);
+    const errTypes = err.map((l) => (JSON.parse(l) as { type: string }).type);
+    expect(errTypes.length).toBeGreaterThanOrEqual(1);
+    expect(errTypes.every((t) => t === 'progress')).toBe(true);
     expect(out[0]).toMatch(/^reaction test /);
 
     // First SIGINT: the replay itself stops, exit 130, nothing written.
