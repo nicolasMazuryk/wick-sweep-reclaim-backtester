@@ -1,6 +1,6 @@
 import { expect } from 'vitest';
 
-/** Cross-platform tolerance for Stage B floats (see docs/adr/0003-determinism-contract.md). */
+/** Cross-platform relative tolerance for Stage B-derived floats (see docs/adr/0003-determinism-contract.md). */
 export const STAGE_B_REL_TOL = 1e-12;
 
 function expectClose(actual: unknown, expected: unknown, path: string): void {
@@ -20,12 +20,31 @@ function expectClose(actual: unknown, expected: unknown, path: string): void {
   }
 }
 
+/** Rounds every decimal number in formatted text to 9 significant digits. */
+function roundNumbers(text: string): string {
+  return text.replace(/-?\d+\.\d+(?:e[+-]?\d+)?/gi, (m) => String(Number(Number(m).toPrecision(9))));
+}
+
+const TOLERANT_JSON = new Set(['stageB.json', 'run.json']);
+
 /**
- * Golden check for one run file. Byte-exact everywhere except `stageB.json`, which is
- * compared as parsed JSON with a 1e-12 relative tolerance on numbers: its logistic fit
- * differs in the last ulp between macOS arm64 and Linux x64.
+ * Golden check for one run file. Byte-exact on the same platform; across platforms the
+ * logistic fit behind Stage B differs in the last ulp between macOS arm64 and Linux x64 and
+ * that reaches the files derived from it. Those are compared structurally:
+ * `stageB.json` and `run.json` as parsed JSON, `trades.jsonl` line by line, with a 1e-12
+ * relative tolerance on numbers (integers stay exact in practice), and `report.md` text
+ * with decimals rounded to 9 significant digits. Everything else stays byte-exact.
  */
 export function expectGolden(name: string, actual: string, expected: string): void {
-  if (name === 'stageB.json') expectClose(JSON.parse(actual), JSON.parse(expected), name);
+  if (TOLERANT_JSON.has(name)) expectClose(JSON.parse(actual), JSON.parse(expected), name);
+  else if (name === 'trades.jsonl') {
+    const a = actual.split('\n');
+    const e = expected.split('\n');
+    expect(a.length, `${name} line count`).toBe(e.length);
+    e.forEach((line, i) => {
+      if (line === '') expect(a[i], `${name}:${i + 1}`).toBe('');
+      else expectClose(JSON.parse(a[i]!), JSON.parse(line), `${name}:${i + 1}`);
+    });
+  } else if (name === 'report.md') expect(roundNumbers(actual), name).toBe(roundNumbers(expected));
   else expect(actual, name).toBe(expected);
 }
